@@ -1,0 +1,395 @@
+#################################
+# 1. VARIABLES & BASICS
+#################################
+
+set $mod Alt
+
+set $left  h
+set $down  j
+set $up    k
+set $right l
+
+#################################
+# 2. AUTOSTART / DAEMONS / FIXES
+#################################
+
+# Notification
+exec_always dunst
+
+# RGB LEDs
+exec_always openrgb --profile gruvbox.orp
+
+# Dynamic Tiling Script
+exec_always autotiling
+
+# Polkit (Password dialog)
+exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
+exec --no-startup-id gnome-keyring-daemon --start --components=secrets,ssh
+
+# Flatpak Fix
+exec_always --no-startup-id /usr/libexec/xdg-desktop-portal --replace
+exec_always export XDG_CURRENT_DESKTOP=sway
+
+# ZapZap
+exec flatpak run com.rtosta.zapzap
+
+# Start GNOME Keyring
+exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY DISPLAY XDG_RUNTIME_DIR
+exec_always /usr/bin/gnome-keyring-daemon --start --components=secrets,pkcs11
+
+# Screen Share
+exec --no-startup-id /usr/lib/xdg-desktop-portal -r
+
+# Removable USB Auto mount
+exec udiskie
+
+# Enable portal for Discord Screen Sharing
+exec systemctl --user set-environment XDG_CONFIG_HOME=/home/bgduke/.config
+exec systemctl --user set-environment GTK_USE_PORTAL=0
+exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
+exec systemctl --user restart pipewire-media-session xdg-desktop-portal xdg-desktop-portal-wlr 
+
+# Idle / Lock
+# Catppuccin Mocha
+# exec_always swayidle -w --color 1e1e2e \
+#   timeout 3600 'swaymsg "output * dpms off"' \
+#   resume 'swaymsg "output * dpms on"'
+
+# Gruvbox
+exec_always swayidle -w --color 282828 \
+  timeout 3600 'swaymsg "output * dpms off"' \
+  resume 'swaymsg "output * dpms on"'
+
+#################################
+# 3. APPLICATIONS
+#################################
+
+set $term --no-startup-id kitty
+
+# Shows a combined list of the applications with desktop files and
+set $menu --no-startup-id rofi -show drun -click-to-exit
+set $menu_cmd --no-startup-id rofi -show run -click-to-exit
+
+#################################
+# 4. VISUAL LAYOUT
+#################################
+
+gaps outer 5
+gaps inner 5
+
+default_border pixel 2
+default_floating_border pixel 2
+
+
+#################################
+# 5. THEMES / COLORS
+#################################
+# Gruvbox Material Dark
+set $bg0        #1d2021
+set $bg1        #282828
+set $bg2        #3c3836
+
+set $fg0        #d4be98
+set $fg1        #ddc7a1
+
+set $mauve      #d3869b
+set $green      #b8bb26
+set $red        #ea6962
+set $orange     #fe8019
+
+# Catppuccin Mocha
+# set $bg0        #181926
+# set $bg1        #1e2030
+# set $bg2        #24273a
+#
+# set $fg0        #cad3f5
+# set $fg1        #b8c0e0
+#
+# set $mauve      #c6a0f6
+# set $green      #a6da95
+# set $red        #ed8796
+# set $orange     #f5a97f
+
+# Color configuration
+client.focused          $mauve  $mauve  $fg1 $fg0    $fg1
+client.focused_inactive $bg2    $bg2    $fg0 $bg2    $bg2
+client.unfocused        $bg1    $bg1    $fg0 $bg1    $bg1
+client.urgent           $red    $red    $bg0 $red    $red
+
+#################################
+# 6. OUTPUTS / MONITORS
+#################################
+
+output DP-3 mode 2560x1440@179.999Hz pos 0 0 scale 1
+output HDMI-A-1 mode 2560x1600@59.997Hz pos 320 1440 scale 1.25
+output * allow_tearing yes
+
+
+# WALPAPERS
+output * bg ~/Pictures/Wallpapers/desk-gruvbox-material.jpg fill
+
+#
+#################################
+# 7. INPUT
+#################################
+
+input * {
+    xkb_layout us,br
+    xkb_options caps:escape
+    repeat_delay 300
+    repeat_rate 40
+    accel_profile flat
+}
+
+#################################
+# 8. WORKSPACES
+#################################
+
+workspace 1  output DP-3
+workspace 2  output DP-3
+workspace 3  output DP-3
+workspace 4  output DP-3
+workspace 5  output DP-3
+workspace 6  output DP-3
+workspace 7  output HDMI-A-1
+workspace 8  output HDMI-A-1
+workspace 9  output HDMI-A-1
+workspace 10 output HDMI-A-1
+
+
+#################################
+# 9. KEYBINDINGS — SYSTEM
+#################################
+
+bindsym $mod+Return        exec $term
+bindsym $mod+Shift+q      kill
+bindsym $mod+ctrl+space   exec $menu
+bindsym $mod+ctrl+shift+space   exec $menu_cmd
+
+bindsym $mod+Shift+r reload
+bindsym $mod+Shift+e exec swaynag -t warning
+
+bindsym $mod+e exec nemo
+
+# Catppuccin Mocha
+bindsym super+Shift+l exec swaylock -f --color 1e1e2e
+
+floating_modifier $mod normal
+
+# Volume wheel
+bindsym XF86AudioRaiseVolume exec wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+
+bindsym XF86AudioLowerVolume exec wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-
+bindsym XF86AudioMute exec wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle
+
+# Media
+bindsym XF86AudioPlay exec playerctl play-pause
+
+
+#################################
+# 10. KEYBINDINGS — FOCUS & MOVE
+#################################
+
+# Focus
+bindsym $mod+$left  focus left
+bindsym $mod+$down  focus down
+bindsym $mod+$up    focus up
+bindsym $mod+$right focus right
+
+bindsym $mod+Left   focus left
+bindsym $mod+Down   focus down
+bindsym $mod+Up     focus up
+bindsym $mod+Right  focus right
+
+# Move
+bindsym $mod+Shift+$left  move left
+bindsym $mod+Shift+$down  move down
+bindsym $mod+Shift+$up    move up
+bindsym $mod+Shift+$right move right
+
+bindsym $mod+Shift+Left   move left
+bindsym $mod+Shift+Down   move down
+bindsym $mod+Shift+Up     move up
+bindsym $mod+Shift+Right  move right
+
+bindsym super+space input * xkb_switch_layout next
+
+#################################
+# 11. KEYBINDINGS — WORKSPACES
+#################################
+
+bindsym $mod+1 workspace number 1
+bindsym $mod+2 workspace number 2
+bindsym $mod+3 workspace number 3
+bindsym $mod+4 workspace number 4
+bindsym $mod+5 workspace number 5
+bindsym $mod+6 workspace number 6
+bindsym $mod+7 workspace number 7
+bindsym $mod+8 workspace number 8
+bindsym $mod+9 workspace number 9
+bindsym $mod+0 workspace number 10
+
+bindsym $mod+Shift+1 move container to workspace number 1; workspace number 1
+bindsym $mod+Shift+2 move container to workspace number 2; workspace number 2
+bindsym $mod+Shift+3 move container to workspace number 3; workspace number 3
+bindsym $mod+Shift+4 move container to workspace number 4; workspace number 4
+bindsym $mod+Shift+5 move container to workspace number 5; workspace number 5
+bindsym $mod+Shift+6 move container to workspace number 6; workspace number 6
+bindsym $mod+Shift+7 move container to workspace number 7; workspace number 7
+bindsym $mod+Shift+8 move container to workspace number 8; workspace number 8
+bindsym $mod+Shift+9 move container to workspace number 9; workspace number 9
+bindsym $mod+Shift+0 move container to workspace number 10; workspace number 10
+
+
+#################################
+# 12. LAYOUT & WINDOW MODES
+#################################
+
+bindsym $mod+s layout stacking
+bindsym $mod+w layout tabbed
+bindsym $mod+v layout toggle split
+
+bindsym $mod+f fullscreen
+bindsym $mod+t floating toggle; border pixel 2
+bindsym $mod+space focus mode_toggle
+bindsym $mod+a focus parent
+
+
+#################################
+# 13. SCRATCHPAD
+#################################
+
+bindsym $mod+Shift+minus move scratchpad
+bindsym $mod+minus scratchpad show
+
+
+#################################
+# 14. RESIZE MODE
+#################################
+
+mode "resize" {
+    bindsym $left  resize shrink width 80px
+    bindsym $down  resize grow height 80px
+    bindsym $up    resize shrink height 80px
+    bindsym $right resize grow width 80px
+
+    bindsym Left  resize shrink width 80px
+    bindsym Down  resize grow height 80px
+    bindsym Up    resize shrink height 80px
+    bindsym Right resize grow width 80px
+
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+}
+
+bindsym $mod+r mode "resize"
+
+################################
+# 15. SPECIAL MODE
+#################################
+
+set $SCREENSHOT_DIR $HOME/Pictures/Screenshots
+exec_always mkdir -p $SCREENSHOT_DIR
+
+mode "special" {
+  bindsym c exec sh -c 'wl-color-picker clipboard; notify-send "Color copied"'; mode "default"
+  # bindsym c exec sh -c 'wl-color-picker | wl-copy; notify-send "Color copied to clipboard"'; mode "default"
+
+  bindsym s exec slurp | grim -g - - | wl-copy \
+    && notify-send "Screenshot copied"; mode "default"
+
+  bindsym a exec grim -g "$(slurp -o -f '%x,%y %wx%h')" \
+    "$SCREENSHOT_DIR/screenshot-$(date +%Y%m%d-%H%M%S).png" \
+    && notify-send "Window screenshot saved"; mode "default"
+
+  bindsym Shift+s exec grim -g "$(slurp)" \
+    "$SCREENSHOT_DIR/screenshot-$(date +%Y%m%d-%H%M%S).png" \
+    && notify-send "Screenshot saved"; mode "default"
+
+  bindsym f exec grim \
+    "$SCREENSHOT_DIR/screenshot-$(date +%Y%m%d-%H%M%S).png" \
+    && notify-send "Fullscreen screenshot saved"; mode "default"
+
+  bindsym Escape mode "default"
+  bindsym Return mode "default"
+}
+
+bindsym $mod+z mode "special"
+
+
+#################################
+# 15. WINDOW RULES
+#################################
+
+for_window [app_id="org.pulseaudio.pavucontrol"] floating enable
+for_window [title="^Extention:"] floating enable
+
+# Common dialogs
+for_window [title="^Open File"] floating enable
+for_window [title="^Save As"] floating enable
+for_window [title="^Save File"] floating enable
+for_window [title="^Confirm"] floating enable
+for_window [title="^Authentication"] floating enable
+for_window [title="^Preferences"] floating enable
+for_window [title="^Settings"] floating enable
+for_window [title="^Properties"] floating enable
+for_window [app_id="org.mozilla.firefox" title="^Extension:.*Bitwarden"] floating enable
+assign [app_id="org.mozilla.firefox" title=".*Bitwarden.*"] floating
+
+# Generic small popups
+for_window [window_role="pop-up"] floating enable
+for_window [window_role="dialog"] floating enable
+
+# Firefox / Chromium PiP
+for_window [title="Picture-in-Picture"] floating enable, sticky enable, border pixel 1
+for_window [app_id="org.mozilla.firefox" title="^Settings"] floating disable
+
+# Network manager
+for_window [app_id="nm-connection-editor"] floating enable
+
+# Bluetooth
+for_window [app_id="blueman-manager"] floating enable
+for_window [app_id="blueman-adapters"] floating enable
+
+# Audio controls
+for_window [app_id="pavucontrol"] floating enable, resize set 900 600
+
+# Polkit / auth agents
+for_window [title="^Authentication Required"] floating enable
+
+# File chooser dialogs
+for_window [title="^File Upload"] floating enable
+for_window [title="^Select File"] floating enable
+for_window [title="^Choose Files"] floating enable
+
+# Screen recording / capture
+for_window [app_id="com.obsproject.Studio"] floating enable
+for_window [app_id="grimshot"] floating enable
+
+# Godot
+for_window [title="^Please Confirm..."] floating enable
+for_window [title="^Save Scene As..."] floating enable
+
+# Steam
+for_window [class="steam"] floating enable, sticky enable, border pixel 1, resize set 800 1000
+for_window [class="steam" title="Friends List"] floating enable, sticky enable, border pixel 1, resize set 400 800
+for_window [class="steam" title="Steam"] floating disable
+
+# Other Apps
+for_window [app_id="com.rtosta.zapzap"] floating enable, sticky enable, border pixel 1, resize set 1200 800
+for_window [app_id="org.gnome.Calculator"] floating enable, sticky enable, border pixel 1, resize set 400 400
+
+#################################
+# 16. MISC
+#################################
+
+# Start waybar manually
+bar {
+    swaybar_command waybar
+}
+
+# Forces workspace 1 on startup
+workspace 1
+
+# Volume Fix
+exec_always sleep 5 && pactl set-sink-volume @DEFAULT_SINK@ 90%
+exec_always sleep 6 && pactl set-sink-volume @DEFAULT_SINK@ 100%

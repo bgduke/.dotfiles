@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Helium
+Exec=helium-browser 
+Icon=/home/bgduke/.local/share/applications/helium.png
+Terminal=false
+Categories=System;Utility;
+StartupNotify=false
+MimeType=x-scheme-handler/unknown;x-scheme-handler/about;x-scheme-handler/https;x-scheme-handler/http;text/html;

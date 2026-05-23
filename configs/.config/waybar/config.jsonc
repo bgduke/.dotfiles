@@ -1,0 +1,131 @@
+{
+  "position": "top",
+  "height": 24,
+  "spacing": 4,
+  "modules-left": ["sway/workspaces", "sway/window", "sway/mode"],
+  "modules-center": ["custom/clock"],
+  "modules-right": [
+    "tray",
+    "pulseaudio",
+    "sway/language",
+    "custom/powermenu"
+  ],
+
+  // Sway
+  "sway/workspaces": {
+    "all-outputs": false,
+    "tooltip": false
+  },
+
+  "sway/window": {
+    "format": "",
+    "format-alt": "{app_id} | {title}",
+    "icon": true,
+    "icon-size": 16,
+    "max-length": 50,
+    "all-outputs": true,
+    "offscreen-css": true,
+    "rewrite": {
+      "(.*) - Firefox": " $1",
+      "(.*) - Alacritty": "> [$1]"
+    }
+  },
+
+  "sway/mode": {
+    "format": "  {}"
+  },
+
+  // Hyprland
+  "hyprland/language": {
+    "format": "{}",
+    "format-en": "EN",
+    "format-br": "BR",
+    "keyboard-name": "at-translated-set-2-keyboard"
+  },
+
+  // Waybar
+  "custom/clock": {
+    "format": "{text}",
+    "exec": "date +'%H:%M | %b %d' | awk '{print tolower($0)}'",
+    "interval": 3,
+    "tooltip": false
+  },
+
+  "custom/rofi": {
+    "format": "",
+    "on-click": "rofi -show drun",
+    "tooltip": false
+  },
+
+  "keyboard-state": {
+    "numlock": true,
+    "capslock": true,
+    "format": "{name} {icon}",
+    "format-icons": {
+      "locked": "",
+      "unlocked": ""
+    }
+  },
+
+  "clock": {
+    "format": "{:%H:%M}",
+    "format-alt": "{:%A, %B %d, %Y (%R)}  ",
+    "tooltip-format": "<tt><small>{calendar}</small></tt>",
+    "calendar": {
+      "mode": "year",
+      "mode-mon-col": 3,
+      "weeks-pos": "right",
+      "on-scroll": 1,
+      "format": {
+        "months": "<span color='#cba6f7'><b>{}</b></span>",
+        "days": "<span color='#cdd6f4'><b>{}</b></span>",
+        "weeks": "<span color='#94e2d5'><b>W{}</b></span>",
+        "weekdays": "<span color='#f9e2af'><b>{}</b></span>",
+        "today": "<span color='#f38ba8'><b><u>{}</u></b></span>"
+      }
+    },
+    "actions": {
+      "on-click-right": "calendar",
+      "on-scroll-up": "tz_up",
+      "on-scroll-down": "tz_down",
+      "on-scroll-up": "shift_up",
+      "on-scroll-down": "shift_down"
+    }
+  },
+
+  "sway/language": {
+    "format": "{short}",
+    "tooltip": false
+  },
+
+  "pulseaudio": {
+    "format": "{icon}  {volume}% {format_source}",
+    "format-bluetooth": "{volume}% {icon} {format_source}",
+    "format-bluetooth-muted": " {icon} {format_source}",
+    "format-muted": " {format_source}",
+    "format-source": " {volume}%",
+    "format-source-muted": "",
+    "format-icons": {
+      "headphone": "",
+      "hands-free": "",
+      "headset": "",
+      "phone": "",
+      "portable": "",
+      "car": "",
+      "default": ["", "", ""]
+    },
+    "on-click": "pavucontrol"
+  },
+
+  "tray": {
+    "icon-size": 16,
+    "spacing": 7,
+    "tooltip": false
+  },
+
+  "custom/powermenu": {
+    "format": "⏻",
+    "tooltip": false,
+    "on-click": "/home/bgduke/.config/rofi/powermenu.sh"
+  }
+}

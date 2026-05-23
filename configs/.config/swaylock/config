@@ -1,0 +1,62 @@
+# General
+daemonize
+show-failed-attempts
+ignore-empty-password
+clock
+indicator
+indicator-radius=110
+indicator-thickness=8
+
+# Colors (dark, neutral)
+# Gruvbox Material Dark
+# color=282828ff
+# inside-color=282828cc
+# ring-color=458588ff
+# key-hl-color=83a598ff
+# bs-hl-color=cc241dff
+# line-color=00000000
+# separator-color=00000000
+
+# Text
+# text-color=ebdbb2ff
+# text-clear-color=cc241dff
+# text-ver-color=98971aff
+# text-wrong-color=cc241dff
+# font=monospace
+
+# Indicator states
+# inside-clear-color=282828cc
+# inside-ver-color=282828cc
+# inside-wrong-color=282828cc
+
+# ring-clear-color=cc241dff
+# ring-ver-color=98971aff
+# ring-wrong-color=cc241dff
+
+# Catppuccin Mocha
+color=1e1e2eff
+inside-color=1e1e2ecc
+ring-color=89b4faff
+key-hl-color=b4befeff
+bs-hl-color=f38ba8ff
+line-color=00000000
+separator-color=00000000
+
+text-color=cdd6f4ff
+text-clear-color=f38ba8ff
+text-ver-color=a6e3a1ff
+text-wrong-color=f38ba8ff
+font=monospace
+
+inside-clear-color=1e1e2ecc
+inside-ver-color=1e1e2ecc
+inside-wrong-color=1e1e2ecc
+
+ring-clear-color=f38ba8ff
+ring-ver-color=a6e3a1ff
+ring-wrong-color=f38ba8ff
+
+# Dates
+datestr=%a, %d %b
+timestr=%H:%M
+

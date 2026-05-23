@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Power Menu
+Comment=Shutdown, reboot, logout, suspend
+Exec=/home/bgduke/.config/rofi/powermenu.sh
+Icon=system-shutdown
+Terminal=false
+Categories=System;Utility;
+StartupNotify=false

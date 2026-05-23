@@ -1,0 +1,109 @@
+/* Gruvbox Material Dark */
+* {
+    bg:       #282828;
+    bg-alt:   #1d2021;
+    fg:       #ebdbb2;
+    fg-alt:   #a89984;
+
+    border:   #3c3836;
+    selected: #3c3836;
+
+    accent:   #b8bb26;
+
+    spacing:  8;
+    border-radius: 10;
+}
+
+/* Catppuccin Mocha
+* {
+    bg:       #1e1e2e;
+    bg-alt:   #181825;
+    fg:       #cdd6f4;
+    fg-alt:   #bac2de;
+
+    border:   #cba6f7;
+    selected: #313244;
+
+    accent:   #cba6f7;
+
+    spacing:  8;
+    border-radius: 10;
+}
+*/
+
+window {
+    transparency: "real";
+    location: center;
+    anchor: center;
+    width: 420px;
+    border: 2px;
+    border-radius: 0px;
+    border-color: @fg;
+    background-color: @bg;
+}
+
+mainbox {
+    padding: 12px;
+    background-color: @bg;
+}
+
+inputbar {
+    children: [ prompt, entry ];
+    spacing: 8px;
+    padding: 8px;
+    background-color: @bg-alt;
+    border-radius: 8px;
+}
+
+prompt {
+    background-color: @bg-alt;
+    text-color: @fg;
+    border-radius: 0px;
+}
+
+textbox-prompt-colon {
+    background-color: @bg-alt;
+    text-color: @accent;
+}
+
+entry {
+    background-color: @bg-alt;
+    text-color: @accent;
+    border-radius: 0px;
+}
+
+listview {
+    lines: 6;
+    spacing: 6px;
+    scrollbar: false;
+    background-color: @bg;
+}
+
+element {
+    padding: 8px;
+    border-radius: 8px;
+    background-color: @bg;
+    text-color: @fg;
+}
+
+element-text {
+    background-color: inherit;
+    text-color: @fg;
+}
+
+element-icon {
+    background-color: inherit;
+}
+
+element selected {
+    background-color: @selected;
+}
+
+element selected element-text {
+    background-color: inherit;
+    text-color: @fg;
+}
+
+element selected element-icon {
+    background-color: inherit;
+}

@@ -1,0 +1,8 @@
+# This file contains fish universal variable definitions.
+# VERSION: 3.0
+SETUVAR __done_exclude:\x5egit\x20\x28\x3f\x21push\x7cpull\x7cfetch\x29\x7c\x5els\x7c\x5ecd\x7c\x5eclear
+SETUVAR __done_min_cmd_duration:8000
+SETUVAR __done_notification_urgency_level:low
+SETUVAR __done_notify_sound:0
+SETUVAR __done_sway_ignore_visible:1
+SETUVAR __fish_initialized:4300
