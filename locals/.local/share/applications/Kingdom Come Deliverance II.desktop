@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Kingdom Come: Deliverance II
+Comment=Play this game on Steam
+Exec=steam steam://rungameid/1771300
+Icon=steam_icon_1771300
+Terminal=false
+Type=Application
+Categories=Game;

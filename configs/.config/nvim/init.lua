@@ -166,6 +166,10 @@ vim.keymap.set("n", "<C-j>", "<C-w>j")
 vim.keymap.set("n", "<C-k>", "<C-w>k")
 vim.keymap.set("n", "<C-l>", "<C-w>l")
 
+-- Navigate cursor history like VS Code
+vim.keymap.set("n", "<C-->", "<C-o>", { desc = "Jump back" })
+vim.keymap.set("n", "<C-=>", "<C-i>", { desc = "Jump forward" })
+
 -- Ctrl+C behave like escape
 vim.keymap.set({ "i", "n", "v" }, "<C-C>", "<esc>")
 
@@ -188,6 +192,36 @@ vim.keymap.set("n", "<leader>x", ":bdelete<CR>", { desc = "Close Buffer", silent
 
 -- Show diagnostics
 vim.keymap.set("n", "<leader>D", vim.diagnostic.open_float, { desc = "Show diagnostics" })
+
+-- Dotnet
+vim.keymap.set("n", "<C-b>", ":Dotnet build<CR>", { desc = "Build Project" })
+
+-- LspAttach
+vim.api.nvim_create_autocmd("LspAttach", {
+	group = vim.api.nvim_create_augroup("lsp_keymaps", { clear = true }),
+	callback = function(event)
+		local function map(lhs, rhs, desc)
+			vim.keymap.set("n", lhs, rhs, { buffer = event.buf, desc = desc })
+		end
+
+		local function telescope(method)
+			return function()
+				require("telescope.builtin")[method]()
+			end
+		end
+
+		map("gd", telescope("lsp_definitions"), "LSP go to definition")
+		map("gD", vim.lsp.buf.declaration, "LSP go to declaration")
+		map("gi", telescope("lsp_implementations"), "LSP go to implementation")
+		map("gr", telescope("lsp_references"), "LSP show references")
+		map("gy", telescope("lsp_type_definitions"), "LSP go to type definition")
+		map("K", vim.lsp.buf.hover, "LSP hover")
+		map("<leader>rn", vim.lsp.buf.rename, "LSP rename symbol")
+		map("<leader>ca", vim.lsp.buf.code_action, "LSP code action")
+		map("<leader>ds", telescope("lsp_document_symbols"), "LSP document symbols")
+		map("<leader>ws", telescope("lsp_dynamic_workspace_symbols"), "LSP workspace symbols")
+	end,
+})
 
 -- ==================================================================================================================================================
 -- PLUGINS
@@ -479,22 +513,22 @@ end
 
 vim.keymap.set("n", "<F5>", function()
 	dap.continue()
-end)
+end, { desc = "DAP continue" })
 vim.keymap.set("n", "<F10>", function()
 	dap.step_over()
-end)
+end, { desc = "DAP step over" })
 vim.keymap.set("n", "<F11>", function()
 	dap.step_into()
-end)
+end, { desc = "DAP step into" })
 vim.keymap.set("n", "<F12>", function()
 	dap.step_out()
-end)
+end, { desc = "DAP step out" })
 vim.keymap.set("n", "<F9>", function()
 	dap.toggle_breakpoint()
-end)
+end, { desc = "DAP toggle breakpoint" })
 vim.keymap.set("n", "<Leader>B", function()
 	dap.set_breakpoint()
-end)
+end, { desc = "DAP set breakpoint" })
 
 -- Which Key
 require("which-key").setup()
@@ -520,6 +554,11 @@ local function my_on_attach(bufnr)
 	-- custom mappings
 	vim.keymap.set("n", "<C-t>", api.tree.change_root_to_parent, opts("Up"))
 	vim.keymap.set("n", "?", api.tree.toggle_help, opts("Help"))
+	vim.keymap.set("n", "A", function()
+		local node = api.tree.get_node_under_cursor()
+		local path = node.type == "directory" and node.absolute_path or vim.fs.dirname(node.absolute_path)
+		require("easy-dotnet").create_new_item(path)
+	end, opts("Create file from dotnet template"))
 end
 
 local config = {
@@ -655,7 +694,7 @@ require("easy-dotnet").setup({
 	-- if no picker is specified, the plugin will determine
 	-- the available one automatically with this priority:
 	--  snacks -> fzf -> telescope ->  basic
-	picker = "snacks",
+	picker = "telescope",
 	background_scanning = true,
 	notifications = {
 		--Set this to false if you have configured lualine to avoid double logging

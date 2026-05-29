@@ -48,7 +48,8 @@ fish_add_path \
     ~/.local/bin \
     ~/.cargo/bin \
     ~/Applications/depot_tools \
-    ~/root/.dotnet/tools
+    ~/root/.dotnet/tools \
+    ~/.dotnet/tools
 
 # -----------------------------------------
 # History shortcuts (!! and !$)
