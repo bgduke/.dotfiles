@@ -1,0 +1,63 @@
+{
+    "project_panel": {
+        "dock": "left",
+        "default_width": 300,
+        "hide_gitignore": true,
+        "hide_hidden": true,
+    },
+    "outline_panel": {
+        "dock": "left",
+    },
+    "collaboration_panel": {
+        "dock": "left",
+    },
+    "agent": {
+        "dock": "right",
+        "favorite_models": [],
+        "model_parameters": [],
+    },
+    "git_panel": {
+        "dock": "left",
+    },
+    "session": {
+        "trust_all_worktrees": true,
+    },
+    "vim_mode": true,
+    "agent_servers": {
+        "codex-acp": {
+            "type": "registry",
+        },
+    },
+    "icon_theme": "Zed (Default)",
+    "ui_font_size": 16,
+    "buffer_font_size": 15,
+    "theme": {
+        "mode": "dark",
+        "light": "One Light",
+        "dark": "Gruvbox Dark",
+    },
+    "base_keymap": "VSCode",
+    "buffer_font_family": "ZedMono Nerd Font",
+
+    "relative_line_numbers": "enabled",
+    "cursor_blink": false,
+    "show_wrap_guides": false,
+    "soft_wrap": "none",
+    "tab_size": 4,
+    "hard_tabs": false,
+    "ensure_final_newline_on_save": true,
+
+    "format_on_save": "on",
+    "show_completions_on_input": true,
+    "show_completion_documentation": false,
+
+    "inlay_hints": {
+        "enabled": true,
+    },
+
+    "terminal": {
+        "dock": "bottom",
+        "font_family": "ZedMono Nerd Font",
+        "font_size": 14,
+    },
+}

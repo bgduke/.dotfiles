@@ -1,0 +1,46 @@
+[
+    {
+        "context": "Workspace",
+        "bindings": {
+            "ctrl-h": "workspace::ActivatePaneLeft",
+            "ctrl-j": "workspace::ActivatePaneDown",
+            "ctrl-k": "workspace::ActivatePaneUp",
+            "ctrl-l": "workspace::ActivatePaneRight",
+
+            "ctrl-b": ["task::Spawn", { "task_name": "dotnet build" }],
+
+            "f5": "debugger::Continue",
+            "f9": "debugger::ToggleEnableBreakpoint",
+            "f10": "debugger::StepOver",
+            "f11": "debugger::StepInto",
+            "f12": "debugger::StepOut",
+        },
+    },
+    {
+        "context": "Editor && vim_mode == normal",
+        "bindings": {
+            "gd": "editor::GoToDefinition",
+            "gD": "editor::GoToDeclaration",
+            "gi": "editor::GoToImplementation",
+            "gy": "editor::GoToTypeDefinition",
+            "gr": "editor::FindAllReferences",
+            "K": "editor::Hover",
+            "space r n": "editor::Rename",
+            "space c a": "editor::ToggleCodeActions",
+            "space d s": "outline_panel::ToggleFocus",
+            "space w s": "project_symbols::Toggle",
+            "space w": "workspace::Save",
+            "space e": "project_panel::ToggleFocus",
+            "space f f": "file_finder::Toggle",
+            "space f g": "workspace::NewSearch",
+            "space f b": "tab_switcher::Toggle",
+            "space q": "pane::CloseActiveItem",
+            "space x": "pane::CloseActiveItem",
+            "space D": "diagnostics::DeployCurrentFile",
+            "space p": "editor::Format",
+
+            "shift-h": "pane::ActivatePreviousItem",
+            "shift-l": "pane::ActivateNextItem",
+        },
+    },
+]
