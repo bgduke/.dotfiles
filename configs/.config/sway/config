@@ -64,7 +64,7 @@ exec_always swayidle -w --color 282828 \
 # 3. APPLICATIONS
 #################################
 
-set $term --no-startup-id kitty
+set $term --no-startup-id wezterm
 
 # Shows a combined list of the applications with desktop files and
 set $menu --no-startup-id rofi -show drun -click-to-exit
