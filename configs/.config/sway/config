@@ -74,8 +74,8 @@ set $menu_cmd --no-startup-id rofi -show run -click-to-exit
 # 4. VISUAL LAYOUT
 #################################
 
-gaps outer 5
-gaps inner 5
+gaps outer 0
+gaps inner 0
 
 default_border pixel 2
 default_floating_border pixel 2

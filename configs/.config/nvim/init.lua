@@ -551,8 +551,29 @@ local function my_on_attach(bufnr)
 	-- default mappings
 	api.map.on_attach.default(bufnr)
 
+	local lefty = function()
+		local node_at_cursor = api.tree.get_node_under_cursor()
+		if (node_at_cursor.name == ".." or node_at_cursor.nodes) and node_at_cursor.open then
+			api.node.open.edit()
+		else
+			api.node.navigate.parent()
+		end
+	end
+	local righty = function()
+		local node_at_cursor = api.tree.get_node_under_cursor()
+		if (node_at_cursor.name == ".." or node_at_cursor.nodes) and not node_at_cursor.open then
+			api.node.open.edit()
+		elseif node_at_cursor.open then
+			api.node.open.edit()
+		else
+			api.node.open.edit()
+		end
+	end
+
 	-- custom mappings
-	vim.keymap.set("n", "<C-t>", api.tree.change_root_to_parent, opts("Up"))
+	vim.keymap.set("n", "<C-[>", api.tree.change_root_to_parent, opts("Up"))
+	vim.keymap.set("n", "h", lefty, opts("C-tollapse"))
+	vim.keymap.set("n", "l", righty, opts("Expand"))
 	vim.keymap.set("n", "?", api.tree.toggle_help, opts("Help"))
 	vim.keymap.set("n", "A", function()
 		local node = api.tree.get_node_under_cursor()

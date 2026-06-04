@@ -2,18 +2,10 @@
     {
         "context": "Workspace",
         "bindings": {
-            "ctrl-h": "workspace::ActivatePaneLeft",
-            "ctrl-j": "workspace::ActivatePaneDown",
-            "ctrl-k": "workspace::ActivatePaneUp",
-            "ctrl-l": "workspace::ActivatePaneRight",
-
-            "ctrl-b": ["task::Spawn", { "task_name": "dotnet build" }],
-
-            "f5": "debugger::Continue",
-            "f9": "debugger::ToggleEnableBreakpoint",
-            "f10": "debugger::StepOver",
-            "f11": "debugger::StepInto",
-            "f12": "debugger::StepOut",
+            "ctrl-shift-h": "workspace::ActivatePaneLeft",
+            "ctrl-shift-j": "workspace::ActivatePaneDown",
+            "ctrl-shift-k": "workspace::ActivatePaneUp",
+            "ctrl-shift-l": "workspace::ActivatePaneRight",
         },
     },
     {
@@ -41,6 +33,21 @@
 
             "shift-h": "pane::ActivatePreviousItem",
             "shift-l": "pane::ActivateNextItem",
+
+            "ctrl-shift-b": ["task::Spawn", { "task_name": "dotnet build" }],
+
+            "ctrl-b": "workspace::ToggleLeftDock",
+
+            "ctrl-shift-h": "workspace::ActivatePaneLeft",
+            "ctrl-shift-j": "workspace::ActivatePaneDown",
+            "ctrl-shift-k": "workspace::ActivatePaneUp",
+            "ctrl-shift-l": "workspace::ActivatePaneRight",
+
+            "f5": "debugger::Continue",
+            "f9": "debugger::ToggleEnableBreakpoint",
+            "f10": "debugger::StepOver",
+            "f11": "debugger::StepInto",
+            "f12": "debugger::StepOut",
         },
     },
 ]
