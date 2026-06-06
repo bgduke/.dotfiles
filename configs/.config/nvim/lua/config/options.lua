@@ -1,5 +1,4 @@
 -- UI
-vim.o.background = "dark"
 vim.o.number = true
 vim.o.relativenumber = true
 vim.o.cursorline = true
@@ -10,6 +9,7 @@ vim.o.scrolloff = 8
 vim.o.sidescrolloff = 8
 vim.o.confirm = true
 vim.o.ttimeoutlen = 1
+vim.g.root_spec = { "lsp", { ".git", "lua" }, "cwd" }
 
 vim.cmd([[
   hi Normal guibg=NONE ctermbg=NONE
@@ -42,16 +42,3 @@ vim.o.splitright = true
 
 -- Clipboard
 vim.o.clipboard = "unnamedplus"
-
--- Diagnostics
-vim.diagnostic.config({
-	severity_sort = true,
-	update_in_insert = false,
-	float = { source = "if_many" },
-	jump = { float = true },
-	virtual_text = {
-		source = "if_many",
-		prefix = "●",
-	},
-	virtual_lines = false,
-})

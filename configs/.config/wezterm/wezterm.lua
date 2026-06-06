@@ -25,6 +25,8 @@ return {
 	},
 	window_decorations = "RESIZE",
 
+	enable_wayland = false,
+
 	-- Tabs
 	enable_tab_bar = true,
 	tab_bar_at_bottom = false,
@@ -33,22 +35,6 @@ return {
 	-- Scrolling
 	scrollback_lines = 10000,
 	mouse_wheel_scrolls_tabs = false,
-
-	-- Mouse copy on select
-	automatically_reload_config = true,
-	selection_word_boundary = " \t\n{}[]()\"'`,;:",
-	mouse_bindings = {
-		{
-			event = { Up = { streak = 1, button = "Left" } },
-			mods = "NONE",
-			action = wezterm.action.CompleteSelectionOrOpenLinkAtMouseCursor("ClipboardAndPrimarySelection"),
-		},
-		{
-			event = { Up = { streak = 1, button = "Right" } },
-			mods = "NONE",
-			action = wezterm.action.PasteFrom("Clipboard"),
-		},
-	},
 
 	-- Confirm close
 	window_close_confirmation = "NeverPrompt",

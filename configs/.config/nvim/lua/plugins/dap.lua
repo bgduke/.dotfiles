@@ -1,10 +1,19 @@
-require("mason-nvim-dap").setup({
-	ensure_installed = { "cppdbg" },
-	handlers = {},
+vim.pack.add({
+	"https://github.com/mfussenegger/nvim-dap",
+	"https://github.com/nvim-neotest/nvim-nio",
+	"https://github.com/rcarriga/nvim-dap-ui",
 })
 
-local dap, dapui = require("dap"), require("dapui")
+local dap = require("dap")
+local dapui = require("dapui")
+
 dapui.setup()
+
+vim.fn.sign_define("DapBreakpoint", { text = "●", texthl = "DiagnosticError", linehl = "", numhl = "" })
+vim.fn.sign_define("DapBreakpointCondition", { text = "◆", texthl = "DiagnosticWarn", linehl = "", numhl = "" })
+vim.fn.sign_define("DapLogPoint", { text = "◆", texthl = "DiagnosticInfo", linehl = "", numhl = "" })
+vim.fn.sign_define("DapStopped", { text = "▶", texthl = "DiagnosticOk", linehl = "Visual", numhl = "" })
+vim.fn.sign_define("DapBreakpointRejected", { text = "○", texthl = "DiagnosticHint", linehl = "", numhl = "" })
 
 dap.listeners.before.attach.dapui_config = function()
 	dapui.open()
@@ -19,21 +28,22 @@ dap.listeners.before.event_exited.dapui_config = function()
 	dapui.close()
 end
 
-vim.keymap.set("n", "<F5>", function()
-	dap.continue()
-end, { desc = "DAP continue" })
-vim.keymap.set("n", "<F10>", function()
-	dap.step_over()
-end, { desc = "DAP step over" })
-vim.keymap.set("n", "<F11>", function()
-	dap.step_into()
-end, { desc = "DAP step into" })
-vim.keymap.set("n", "<F12>", function()
-	dap.step_out()
-end, { desc = "DAP step out" })
-vim.keymap.set("n", "<F9>", function()
-	dap.toggle_breakpoint()
-end, { desc = "DAP toggle breakpoint" })
-vim.keymap.set("n", "<Leader>B", function()
-	dap.set_breakpoint()
-end, { desc = "DAP set breakpoint" })
+local map = function(keys, rhs, desc)
+	vim.keymap.set("n", keys, rhs, { desc = "DAP: " .. desc, noremap = true, silent = true })
+end
+
+map("<F5>", dap.continue, "Continue")
+map("<F10>", dap.step_over, "Step Over")
+map("<F11>", dap.step_into, "Step Into")
+map("<F12>", dap.step_out, "Step Out")
+map("<leader>db", dap.toggle_breakpoint, "Toggle Breakpoint")
+map("<leader>dB", function()
+	dap.set_breakpoint(vim.fn.input("Breakpoint condition: "))
+end, "Conditional Breakpoint")
+map("<leader>dl", function()
+	dap.set_breakpoint(nil, nil, vim.fn.input("Log point message: "))
+end, "Log Point")
+map("<leader>dr", dap.repl.open, "Open REPL")
+map("<leader>du", dapui.toggle, "Toggle UI")
+map("<leader>dt", dap.terminate, "Terminate")
+map("<leader>dh", require("dap.ui.widgets").hover, "Hover")

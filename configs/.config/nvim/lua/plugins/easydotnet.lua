@@ -1,3 +1,13 @@
+vim.pack.add({ "https://github.com/GustavEikaas/easy-dotnet.nvim", "https://github.com/nvim-lua/plenary.nvim" })
+
+vim.lsp.config.easy_dotnet = vim.tbl_deep_extend("force", vim.lsp.config.easy_dotnet or {}, {
+	capabilities = vim.tbl_deep_extend(
+		"force",
+		vim.lsp.protocol.make_client_capabilities(),
+		require("mini.completion").get_lsp_capabilities()
+	),
+})
+
 require("easy-dotnet").setup({
 	managed_terminal = {
 		auto_hide = true,
@@ -87,7 +97,7 @@ require("easy-dotnet").setup({
 	server = {
 		log_level = nil,
 	},
-	picker = "telescope",
+	picker = "basic",
 	background_scanning = true,
 	notifications = {
 		handler = function(start_event)

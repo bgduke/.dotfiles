@@ -85,6 +85,9 @@ deleted = "✖ "
 symbol = " "
 style = "bold green"
 format = "[$symbol($version)]($style) "
+detect_extensions = ["js", "mjs", "cjs", "ts", "mts", "cts"]
+detect_files = ["package.json", ".node-version", ".nvmrc"]
+detect_folders = []
 
 [dotnet]
 symbol = " "
@@ -125,4 +128,3 @@ disabled = true
 
 [line_break]
 disabled = false
-
