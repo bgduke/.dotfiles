@@ -76,7 +76,7 @@ vim.schedule(function()
 	require("mini.comment").setup()
 	require("mini.bracketed").setup()
 	require("mini.git").setup()
-	require("mini.notify").setup()
+	-- require("mini.notify").setup()
 end)
 
 -- ============================================================================

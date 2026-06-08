@@ -1,10 +1,10 @@
+require("plugins.mason")
 require("plugins.lsp")
 require("plugins.mini")
 require("plugins.conform")
 require("plugins.gruvbox")
 require("plugins.dap")
 require("plugins.easydotnet")
-require("plugins.mason")
 
 require("config.options")
 require("config.keymaps")

@@ -1,15 +1,17 @@
 return {
 	cmd = {
-		"vscode-html-language-server",
-		"--stdio",
+		"taplo",
+		"lsp",
+		"stdio",
 	},
 	filetypes = {
-		"html",
+		"toml",
 	},
 	root_markers = {
-		"index.js",
-		"index.html",
-		"styles.css",
+		".taplo.toml",
+		"taplo.toml",
+		"Cargo.toml",
+		"pyproject.toml",
 		".git",
 	},
 	single_file_support = true,

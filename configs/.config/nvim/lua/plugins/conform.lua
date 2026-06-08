@@ -17,8 +17,10 @@ conform.setup({
 	formatters_by_ft = {
 		lua = { "stylua" },
 		javascript = { "prettierd", "prettier", stop_after_first = true },
+		html = { "prettierd", "prettier", stop_after_first = true },
 		json = { "prettier_json" },
 		jsonc = { "prettier_json" },
+		toml = { "taplo" },
 	},
 })
 

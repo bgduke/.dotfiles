@@ -2,6 +2,7 @@ vim.lsp.enable({
 	"lua_ls",
 	"html",
 	"json",
+	"toml",
 })
 
 vim.api.nvim_create_autocmd("LspAttach", {
@@ -21,27 +22,15 @@ vim.api.nvim_create_autocmd("LspAttach", {
 		end, "Find References")
 		map("<leader>ca", vim.lsp.buf.code_action, "Code Action")
 		map("<leader>rr", vim.lsp.buf.rename, "Rename all references")
-		map("<leader>kp", vim.lsp.buf.format, "Format")
+		map("<leader>kp", function()
+			require("conform").format({ async = true, lsp_format = "fallback" })
+		end, "Format")
 		map("<leader>v", "<cmd>vsplit | lua vim.lsp.buf.definition()<cr>", "Goto Definition in Vertical Split")
 
 		local client = vim.lsp.get_client_by_id(event.data.client_id)
-		local highlight_augroup = vim.api.nvim_create_augroup("lsp-highlight", { clear = false })
 		if client and client:supports_method("textDocument/inlayHint", event.buf) then
 			vim.lsp.inlay_hint.enable(true, { bufnr = event.buf })
 		end
-
-		-- When cursor stops moving: Highlights all instances of the symbol under the cursor
-		-- When cursor moves: Clears the highlighting
-		vim.api.nvim_create_autocmd({ "CursorHold", "CursorHoldI" }, {
-			buffer = event.buf,
-			group = highlight_augroup,
-			callback = vim.lsp.buf.document_highlight,
-		})
-		vim.api.nvim_create_autocmd({ "CursorMoved", "CursorMovedI" }, {
-			buffer = event.buf,
-			group = highlight_augroup,
-			callback = vim.lsp.buf.clear_references,
-		})
 
 		-- When LSP detaches: Clears the highlighting
 		vim.api.nvim_create_autocmd("LspDetach", {

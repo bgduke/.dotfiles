@@ -1,6 +1,7 @@
 return {
 	cmd = {
-		"json-lsp",
+		"vscode-json-language-server",
+		"--stdio",
 	},
 	filetypes = {
 		"json",
