@@ -1,11 +1,14 @@
 vim.pack.add({
 	"https://github.com/mfussenegger/nvim-dap",
 	"https://github.com/nvim-neotest/nvim-nio",
-	"https://github.com/rcarriga/nvim-dap-ui",
 })
+vim.pack.add({ "https://github.com/rcarriga/nvim-dap-ui" })
 
 local dap = require("dap")
 local dapui = require("dapui")
+
+dap.defaults["easy-dotnet"].exception_breakpoints = { "all", "user-unhandled" }
+dap.defaults.fallback.exception_breakpoints = { "all", "user-unhandled" }
 
 dapui.setup()
 
@@ -47,3 +50,9 @@ map("<leader>dr", dap.repl.open, "Open REPL")
 map("<leader>du", dapui.toggle, "Toggle UI")
 map("<leader>dt", dap.terminate, "Terminate")
 map("<leader>dh", require("dap.ui.widgets").hover, "Hover")
+map("<leader>de", dap.set_exception_breakpoints, "Set Exception Breakpoints")
+map("<leader>dE", function()
+	local session = dap.session()
+	local filters = session and session.capabilities and session.capabilities.exceptionBreakpointFilters
+	vim.notify(vim.inspect(filters or {}), vim.log.levels.INFO, { title = "DAP exception filters" })
+end, "Show Exception Filters")

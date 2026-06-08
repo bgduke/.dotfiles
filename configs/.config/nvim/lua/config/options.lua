@@ -11,6 +11,11 @@ vim.o.confirm = true
 vim.o.ttimeoutlen = 1
 vim.g.root_spec = { "lsp", { ".git", "lua" }, "cwd" }
 
+-- Folding
+vim.o.foldlevel = 99
+vim.o.foldlevelstart = 99
+vim.o.foldenable = true
+
 vim.cmd([[
   hi Normal guibg=NONE ctermbg=NONE
   hi NormalNC guibg=NONE ctermbg=NONE

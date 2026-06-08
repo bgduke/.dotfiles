@@ -25,11 +25,18 @@ vim.api.nvim_create_autocmd("LspAttach", {
 		map("<leader>kp", function()
 			require("conform").format({ async = true, lsp_format = "fallback" })
 		end, "Format")
-		map("<leader>v", "<cmd>vsplit | lua vim.lsp.buf.definition()<cr>", "Goto Definition in Vertical Split")
+		map("<leader>gv", "<cmd>vsplit | lua vim.lsp.buf.definition()<cr>", "Goto Definition in Vertical Split")
 
 		local client = vim.lsp.get_client_by_id(event.data.client_id)
 		if client and client:supports_method("textDocument/inlayHint", event.buf) then
 			vim.lsp.inlay_hint.enable(true, { bufnr = event.buf })
+		end
+
+		if client and client:supports_method("textDocument/foldingRange", event.buf) then
+			local win = vim.api.nvim_get_current_win()
+			vim.wo[win][0].foldmethod = "expr"
+			vim.wo[win][0].foldexpr = "v:lua.vim.lsp.foldexpr()"
+			vim.wo[win][0].foldtext = "v:lua.vim.lsp.foldtext()"
 		end
 	end,
 })
@@ -41,7 +48,7 @@ vim.diagnostic.config({
 		prefix = "●",
 	},
 	underline = true,
-	update_in_insert = false,
+	update_in_insert = true,
 	severity_sort = true,
 	float = {
 		border = "rounded",
