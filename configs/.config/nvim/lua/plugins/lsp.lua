@@ -31,15 +31,6 @@ vim.api.nvim_create_autocmd("LspAttach", {
 		if client and client:supports_method("textDocument/inlayHint", event.buf) then
 			vim.lsp.inlay_hint.enable(true, { bufnr = event.buf })
 		end
-
-		-- When LSP detaches: Clears the highlighting
-		vim.api.nvim_create_autocmd("LspDetach", {
-			group = vim.api.nvim_create_augroup("lsp-detach", { clear = true }),
-			callback = function(event2)
-				vim.lsp.buf.clear_references()
-				vim.api.nvim_clear_autocmds({ group = "lsp-highlight", buffer = event2.buf })
-			end,
-		})
 	end,
 })
 
