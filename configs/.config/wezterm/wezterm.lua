@@ -29,6 +29,7 @@ return {
 
 	-- Tabs
 	enable_tab_bar = true,
+	hide_tab_bar_if_only_one_tab = true,
 	tab_bar_at_bottom = false,
 	use_fancy_tab_bar = false,
 
@@ -125,12 +126,12 @@ return {
 		},
 
 		{
-			key = "j",
+			key = "n",
 			mods = "CTRL|SHIFT",
 			action = wezterm.action.SpawnTab("CurrentPaneDomain"),
 		},
 		{
-			key = "k",
+			key = "q",
 			mods = "CTRL|SHIFT",
 			action = wezterm.action.CloseCurrentTab({ confirm = false }),
 		},
@@ -153,24 +154,9 @@ return {
 			action = wezterm.action.DisableDefaultAssignment,
 		},
 		{
-			key = "_",
-			mods = "CTRL",
-			action = wezterm.action.DisableDefaultAssignment,
-		},
-		{
 			key = "=",
 			mods = "CTRL",
 			action = wezterm.action.DisableDefaultAssignment,
-		},
-		{
-			key = "+",
-			mods = "CTRL",
-			action = wezterm.action.DisableDefaultAssignment,
-		},
-		{
-			key = "-",
-			mods = "CTRL|SHIFT",
-			action = wezterm.action.DecreaseFontSize,
 		},
 		{
 			key = "_",
@@ -179,11 +165,6 @@ return {
 		},
 		{
 			key = "=",
-			mods = "CTRL|SHIFT",
-			action = wezterm.action.IncreaseFontSize,
-		},
-		{
-			key = "+",
 			mods = "CTRL|SHIFT",
 			action = wezterm.action.IncreaseFontSize,
 		},
