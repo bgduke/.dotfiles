@@ -22,7 +22,7 @@ set -U __done_sway_ignore_visible 1
 # -----------------------------------------
 function fish_greeting
     if type -q fastfetch
-        fastfetch
+        sleep 0.1 && fastfetch --pipe false
     end
 end
 

@@ -13,7 +13,8 @@
   },
 
   "display": {
-    "separator": " ➜ "
+    "separator": " ➜ ",
+    "pipe": false
   },
 
   "modules": [
