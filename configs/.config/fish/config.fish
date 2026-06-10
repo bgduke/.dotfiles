@@ -179,9 +179,6 @@ alias psmem10='ps auxf | sort -nr -k 4 | head -10'
 # Hardware
 alias hw='hwinfo --short'
 
-# Quick uploads
-alias tb='nc termbin.com 9999'
-
 # Files
 alias wget='wget -c'
 alias tarnow='tar -acf'
@@ -190,6 +187,9 @@ alias untar='tar -zxvf'
 # Dev
 alias v='nvim'
 alias c='clear'
+
+# Terminal
+alias ff='fastfetch'
 
 # -----------------------------------------
 # Zoxide integration
