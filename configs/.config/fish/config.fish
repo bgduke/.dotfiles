@@ -46,6 +46,7 @@ end
 # -----------------------------------------
 fish_add_path \
     ~/.local/bin \
+    ~/.scripts \
     ~/.cargo/bin \
     ~/Applications/depot_tools \
     ~/root/.dotnet/tools \
@@ -190,6 +191,9 @@ alias c='clear'
 
 # Terminal
 alias ff='fastfetch'
+alias tm='tmux'
+alias tma='tmux a'
+alias tmn='tmux new-session'
 
 # -----------------------------------------
 # Zoxide integration

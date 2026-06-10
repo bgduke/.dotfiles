@@ -3,6 +3,10 @@ vim.o.number = true
 vim.o.relativenumber = true
 vim.o.cursorline = true
 vim.o.showmode = false
+vim.o.showcmd = false
+vim.o.ruler = false
+vim.o.laststatus = 3
+vim.o.colorcolumn = "100"
 vim.o.signcolumn = "yes"
 vim.o.wrap = false
 vim.o.scrolloff = 8
@@ -20,6 +24,7 @@ vim.cmd([[
   hi Normal guibg=NONE ctermbg=NONE
   hi NormalNC guibg=NONE ctermbg=NONE
   hi EndOfBuffer guibg=NONE ctermbg=NONE
+  hi ColorColumn guibg=#3c3836 ctermbg=237
 ]])
 
 -- Indentation

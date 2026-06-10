@@ -6,7 +6,7 @@ family = "ZedMono Nerd Font"
 
 [window]
 dimensions = { columns = 120, lines = 32 }
-padding = { x = 10, y = 10 }
+padding = { x = 5, y = 5 }
 decorations = "None"
 
 [scrolling]
@@ -54,7 +54,7 @@ bindings = [
   { key = "V", mods = "Control|Shift", action = "Paste" },
 
   { key = "_", mods = "Control|Shift", action = "DecreaseFontSize" },
-  { key = "=", mods = "Control|Shift", action = "IncreaseFontSize" },
+  { key = "+", mods = "Control|Shift", action = "IncreaseFontSize" },
 
   # Desabilita zoom padrão aproximado
   { key = "-", mods = "Control", action = "None" },
