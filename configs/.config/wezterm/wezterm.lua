@@ -2,7 +2,7 @@ local wezterm = require("wezterm")
 
 return {
 	-- Font
-	font = wezterm.font("ZedMono Nerd Font"),
+	font = wezterm.font("JetBrainsMono Nerd Font"),
 	font_size = 11.0,
 	font_rasterizer = "FreeType",
 	freetype_load_target = "Normal",

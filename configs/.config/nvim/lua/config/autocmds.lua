@@ -12,6 +12,25 @@ vim.api.nvim_create_autocmd("FileType", {
 	end,
 })
 
+vim.api.nvim_create_autocmd("FileType", {
+	group = vim.api.nvim_create_augroup("markdown_options", { clear = true }),
+	pattern = "markdown",
+	callback = function()
+		vim.opt_local.textwidth = 120
+		vim.opt_local.colorcolumn = "120"
+		vim.opt_local.wrap = true
+		vim.opt_local.linebreak = true
+		vim.opt_local.breakindent = true
+		vim.opt_local.conceallevel = 1
+		vim.opt_local.foldmethod = "expr"
+		vim.opt_local.foldexpr = "v:lua.vim.treesitter.foldexpr()"
+		vim.opt_local.foldtext = "v:lua.vim.treesitter.foldtext()"
+		vim.opt_local.foldlevel = 99
+		vim.opt_local.foldlevelstart = 99
+		vim.opt_local.formatoptions:append({ "t" })
+	end,
+})
+
 vim.api.nvim_create_autocmd("BufRead", {
 	group = vim.api.nvim_create_augroup("dotenv_ft", { clear = true }),
 	pattern = { ".env", ".env.*" },

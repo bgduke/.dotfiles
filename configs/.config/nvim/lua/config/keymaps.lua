@@ -19,8 +19,8 @@ map("n", "<leader>zC", "zM", opts("Close all folds"))
 map("n", "<leader>zO", "zR", opts("Open all folds"))
 
 -- Tabs and buffers
-map("n", "<S-h>", ":tabprevious<CR>", opts("Prev tab"))
-map("n", "<S-l>", ":tabnext<CR>", opts("Next tab"))
+map("n", "<S-h>", ":bprevious<CR>", opts("Prev buffer"))
+map("n", "<S-l>", ":bnext<CR>", opts("Next buffer"))
 map("n", "<leader><space>", "<cmd>Pick buffers<CR>", opts("Pick buffer"))
 map("n", "<leader>q", ":bd<CR>", opts("Close buffer"))
 map("n", "<leader>sv", ":vsplit<CR>", opts("Vertical Split"))
@@ -50,5 +50,10 @@ map_multistep("i", "<BS>", { "minipairs_bs" })
 local tab_steps = { "minisnippets_next", "pmenu_next" }
 map_multistep("i", "<Tab>", tab_steps)
 
-local shifttab_steps = { "minisnippets_prev", "pmenu_prev" }
-map_multistep("i", "<S-Tab>", shifttab_steps)
+vim.keymap.set("i", "<S-Tab>", function()
+	if vim.fn.pumvisible() == 1 then
+		return "<C-p>"
+	end
+
+	return "<C-d>"
+end, { expr = true, desc = "Unindent or previous completion" })

@@ -34,8 +34,8 @@ require("mini.diff").setup({
 })
 
 local win_config = function()
-	local height = math.floor(0.618 * vim.o.lines)
-	local width = math.floor(0.618 * vim.o.columns)
+	local height = math.floor(0.418 * vim.o.lines)
+	local width = math.floor(0.418 * vim.o.columns)
 	return {
 		anchor = "NW",
 		height = height,
