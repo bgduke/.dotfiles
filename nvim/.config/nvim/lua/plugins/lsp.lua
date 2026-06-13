@@ -1,3 +1,5 @@
+vim.pack.add({ "https://github.com/b0o/SchemaStore.nvim" })
+
 vim.lsp.enable({
 	"lua_ls",
 	"html",
