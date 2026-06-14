@@ -6,4 +6,4 @@ SETUVAR __done_notification_urgency_level:low
 SETUVAR __done_notify_sound:0
 SETUVAR __done_sway_ignore_visible:1
 SETUVAR __fish_initialized:4300
-SETUVAR fish_user_paths:/home/bgduke/\x2escripts\x1e/home/bgduke/\x2edotnet/tools
+SETUVAR fish_user_paths:/home/bgduke/\x2elocal/bin\x1e/home/bgduke/\x2envm\x1e/home/bgduke/\x2ecargo/bin\x1e/home/bgduke/\x2escripts\x1e/home/bgduke/\x2edotnet/tools

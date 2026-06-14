@@ -2,8 +2,12 @@
 # Fish Config - Mixed Minimal Dev Setup
 # =========================================
 
-if not status is-interactive
-    exit
+if status is-interactive
+    if test (tty) = "/dev/tty1"
+        if not set -q DISPLAY; and not set -q WAYLAND_DISPLAY
+            exec sway
+        end
+    end
 end
 
 # done.fish settings
@@ -50,7 +54,7 @@ fish_add_path \
     ~/.cargo/bin \
     ~/Applications/depot_tools \
     ~/root/.dotnet/tools \
-    ~/.dotnet/tools
+    ~/.dotnet/tools \
 
 # -----------------------------------------
 # History shortcuts (!! and !$)
