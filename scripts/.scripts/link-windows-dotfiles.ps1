@@ -47,8 +47,12 @@ $links = @(
         Name = 'ideavim'
         Source = Join-Path $repoRoot 'ideavim\.ideavimrc'
         Target = Join-Path $HOME '.ideavimrc'
+    },
+    @{
+        Name = 'fastfetch'
+        Source = Join-Path $repoRoot 'fastfetch\.config\fastfetch'
+        Target = Join-Path $HOME '.config\fastfetch'
     }
-
 
 )
 
