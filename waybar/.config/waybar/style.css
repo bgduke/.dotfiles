@@ -37,6 +37,7 @@
 #backlight,
 #custom-clock,
 #custom-rofi,
+#custom-scratchpad,
 #custom-powermenu {
   color: @fg;
   padding: 0px 12px;
@@ -116,6 +117,15 @@ window#waybar.hidden {
 
 #custom-rofi:hover {
   color: @blue-hover;
+}
+
+#custom-scratchpad {
+  color: @green;
+  padding: 0px 4px;
+}
+
+#custom-scratchpad:hover {
+  color: @main-hl-hover;
 }
 
 tooltip {

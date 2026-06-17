@@ -2,7 +2,7 @@
   "position": "top",
   "height": 24,
   "spacing": 4,
-  "modules-left": ["sway/workspaces", "sway/window", "sway/mode"],
+  "modules-left": ["sway/workspaces", "custom/scratchpad", "sway/window", "sway/mode"],
   "modules-center": ["custom/clock"],
   "modules-right": [
     "tray",
@@ -54,6 +54,15 @@
   "custom/rofi": {
     "format": "",
     "on-click": "rofi -show drun",
+    "tooltip": false
+  },
+
+  "custom/scratchpad": {
+    "exec": "/home/bgduke/.config/waybar/scripts/sway-scratchpad-count.sh",
+    "exec-if": "/home/bgduke/.config/waybar/scripts/sway-scratchpad-count.sh --has-windows",
+    "format": " {}",
+    "interval": 2,
+    "on-click": "swaymsg scratchpad show",
     "tooltip": false
   },
 
