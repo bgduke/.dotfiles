@@ -1,33 +1,35 @@
 # Dotfiles
 A vault for all my dotfiles I've made along these years, tho I don't use all of them.
-These are the relevant .dotfiles for my current setup:
 
-### General
- - nvim
- - ideavim
- - scripts
- - fastfetch
- - starship
-
-### Linux
- - sway
- - swaylock
- - waybar
- - alacritty
- - fish
- - tmux
- - rofi
- - dunst
- - themes
- - locals
- - gtk
-
-### Windows
- - glazewm
- - yasb
- - vsvim
- - powershell
- - psmux
+|OS|Type|Dotfile|In Use|
+|--|--|--|:---:|
+|Any|Editor|nvim|✔️|
+|Any|Editor|ideavim|✔️|
+|Any|Editor|zed|❌|
+|Any|CLI App|fastfetch|✔️|
+|Any|CLI App|starship|✔️|
+|Any|CLI App|zellij|❌|
+|Any|Folder|scripts|✔️|
+|Linux|TWM|sway|✔️|
+|Linux|TWM|hypr|❌|
+|Linux|TWM Lock|swaylock|✔️|
+|Linux|TWM Statusbar|waybar|✔️|
+|Linux|TWM Launcher|rofi|✔️|
+|Linux|TWM Daemon|dunst|✔️|
+|Linux|Terminal|alacritty|✔️|
+|Linux|Terminal|kitty|❌|
+|Linux|Shell|fish|✔️|
+|Linux|Shell|zsh|❌|
+|Linux|CLI App|tmux|✔️|
+|Linux|Folder|themes|✔️|
+|Linux|Folder|locals|✔️|
+|Linux|Folder|gtk|✔️|
+|Windows|TWM|glazewm|✔️|
+|Windows|TWM Statusbar|yasb|✔️|
+|Windows|Editor|vsvim|✔️|
+|Windows|Shell|powershell|✔️|
+|Windows|CLI App|psmux|✔️|
+|Windows|Terminal|wezterm|✔️|
 
 # Installation
 ### Linux
@@ -42,7 +44,7 @@ Install through `link-windows-dotfiles.ps1` inside scripts folder.
 sudo pwsh .\link-windows-dotfiles.ps1
 ```
 You'll need either to enable **sudo** or be in a admin elevated shell to run it.
-This will delete the current config for all Windows and General dotfiles if they exists, and create a symbolic link to them in the dotfiles repository.
+This will delete the current config for all Windows and Any dotfiles if they exists, and create a symbolic link to them in the dotfiles repository.
 
 ### Manual
 If you don't wan't a symbolic link to my repo, just copy the config file/folder manually.
