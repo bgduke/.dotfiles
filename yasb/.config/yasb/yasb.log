@@ -4347,3 +4347,58 @@ RuntimeError: Event loop stopped before Future completed.
 2026-06-17 11:59:30,956 [INFO] [MainThread] [root/watcher.py:65]: Watching directory: c:\users\breno\.config\yasb
 2026-06-17 11:59:30,956 [INFO] [MainThread] [root/watcher.py:104]: Created file watcher
 2026-06-17 11:59:31,192 [INFO] [MainThread] [root/update_service.py:434]: Background update checker started
+2026-06-18 02:15:34,220 [INFO] [MainThread] [root/bar_manager.py:119]: Stopping SystemEventListener...
+2026-06-18 09:18:06,534 [INFO] [MainThread] [root/log.py:104]: YASB v2.0.3
+2026-06-18 09:18:06,535 [INFO] [CLIPipeServer] [cli_server/cli_server.py:216]: CLI server started v1.1.7
+2026-06-18 09:18:06,535 [INFO] [MainThread] [cli_server/cli_server.py:106]: Log pipe server started
+2026-06-18 09:18:06,696 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] BarAlignment: 'center' - Use 'align' instead.
+2026-06-18 09:18:06,696 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] BarBlurEffect: 'acrylic' - No longer supported and can be removed from the config.
+2026-06-18 09:18:06,875 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] GlazewmWorkspacesConfig: 'hide_empty_workspaces' - No longer supported and can be removed from the config.
+2026-06-18 09:18:06,875 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] GlazewmWorkspacesConfig: 'btn_shadow' - Use CSS box-shadow instead.
+2026-06-18 09:18:06,875 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] GlazewmWorkspacesConfig: 'animation' - Use CSS animations instead.
+2026-06-18 09:18:06,963 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] GlazewmTilingDirectionConfig: 'btn_shadow' - Use CSS box-shadow instead.
+2026-06-18 09:18:08,300 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] MediaWidgetConfig: 'label_shadow' - Use CSS text-shadow instead.
+2026-06-18 09:18:08,314 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] LanguageConfig: 'label_shadow' - Use CSS text-shadow instead.
+2026-06-18 09:18:08,321 [WARNING] [MainThread] [deprecation/deprecation.py:140]: [DEPRECATED] VolumeConfig: 'volume_icons' renamed to 'icons' - Use 'icons' with the dictionary format instead.
+2026-06-18 09:18:08,321 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] VolumeConfig: 'label_shadow' - Use CSS text-shadow instead.
+2026-06-18 09:18:08,330 [INFO] [MainThread] [root/service.py:52]: AudioOutputService starting...
+2026-06-18 09:18:08,379 [INFO] [MainThread] [root/service.py:41]: AudioInputService starting...
+2026-06-18 09:18:08,429 [ERROR] [MainThread] [root/weather.py:40]: API key or location is missing. Please provide a valid API key and location.
+2026-06-18 09:18:08,560 [ERROR] [MainThread] [root/weather.py:40]: API key or location is missing. Please provide a valid API key and location.
+2026-06-18 09:18:08,586 [INFO] [MainThread] [root/bar_manager.py:103]: Starting SystemEventListener...
+2026-06-18 09:18:08,588 [INFO] [MainThread] [root/watcher.py:65]: Watching directory: c:\users\breno\.config\yasb
+2026-06-18 09:18:08,588 [INFO] [MainThread] [root/watcher.py:104]: Created file watcher
+2026-06-18 09:18:08,790 [INFO] [MainThread] [root/update_service.py:434]: Background update checker started
+2026-06-18 10:16:32,199 [INFO] [MainThread] [root/bar_manager.py:119]: Stopping SystemEventListener...
+2026-06-18 10:16:32,352 [ERROR] [MainThread] [qasync._QEventLoop/__init__.py:770]: Exception in callback Task.task_wakeup()
+handle: <Handle Task.task_wakeup()>
+Traceback (most recent call last):
+  File "C:\hostedtoolcache\windows\Python\3.14.5\x64\Lib\asyncio\events.py", line 94, in _run
+RuntimeError: loop <QIOCPEventLoop running=False closed=False debug=False> is not the running loop
+2026-06-18 10:16:32,353 [ERROR] [MainThread] [root/main.py:190]: Exception during application startup
+Traceback (most recent call last):
+  File "main.py", line 188, in <module>
+  File "main.py", line 98, in main
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\qasync\__init__.py", line 435, in run_until_complete
+RuntimeError: Event loop stopped before Future completed.
+2026-06-18 10:52:13,533 [INFO] [MainThread] [root/log.py:104]: YASB v2.0.4
+2026-06-18 10:52:13,534 [INFO] [CLIPipeServer] [cli_server/cli_server.py:216]: CLI server started v1.1.7
+2026-06-18 10:52:13,534 [INFO] [MainThread] [cli_server/cli_server.py:106]: Log pipe server started
+2026-06-18 10:52:13,673 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] BarAlignment: 'center' - Use 'align' instead.
+2026-06-18 10:52:13,673 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] BarBlurEffect: 'acrylic' - No longer supported and can be removed from the config.
+2026-06-18 10:52:13,969 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] GlazewmWorkspacesConfig: 'hide_empty_workspaces' - No longer supported and can be removed from the config.
+2026-06-18 10:52:13,969 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] GlazewmWorkspacesConfig: 'btn_shadow' - Use CSS box-shadow instead.
+2026-06-18 10:52:13,969 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] GlazewmWorkspacesConfig: 'animation' - Use CSS animations instead.
+2026-06-18 10:52:14,098 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] GlazewmTilingDirectionConfig: 'btn_shadow' - Use CSS box-shadow instead.
+2026-06-18 10:52:14,705 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] MediaWidgetConfig: 'label_shadow' - Use CSS text-shadow instead.
+2026-06-18 10:52:14,715 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] LanguageConfig: 'label_shadow' - Use CSS text-shadow instead.
+2026-06-18 10:52:14,724 [WARNING] [MainThread] [deprecation/deprecation.py:140]: [DEPRECATED] VolumeConfig: 'volume_icons' renamed to 'icons' - Use 'icons' with the dictionary format instead.
+2026-06-18 10:52:14,724 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] VolumeConfig: 'label_shadow' - Use CSS text-shadow instead.
+2026-06-18 10:52:14,733 [INFO] [MainThread] [root/service.py:52]: AudioOutputService starting...
+2026-06-18 10:52:14,770 [INFO] [MainThread] [root/service.py:41]: AudioInputService starting...
+2026-06-18 10:52:14,840 [ERROR] [MainThread] [root/weather.py:40]: API key or location is missing. Please provide a valid API key and location.
+2026-06-18 10:52:15,505 [ERROR] [MainThread] [root/weather.py:40]: API key or location is missing. Please provide a valid API key and location.
+2026-06-18 10:52:15,531 [INFO] [MainThread] [root/bar_manager.py:103]: Starting SystemEventListener...
+2026-06-18 10:52:15,532 [INFO] [MainThread] [root/watcher.py:65]: Watching directory: c:\users\breno\.config\yasb
+2026-06-18 10:52:15,532 [INFO] [MainThread] [root/watcher.py:104]: Created file watcher
+2026-06-18 10:52:15,753 [INFO] [MainThread] [root/update_service.py:434]: Background update checker started

@@ -31,7 +31,6 @@ set ideajoin
 set idearefactormode=keep
 
 set visualbell
-set noerrorbells
 
 " ============================================================
 " General
@@ -102,6 +101,8 @@ vnoremap > >gv
 
 nnoremap [[ :action MethodUp<CR>
 nnoremap ]] :action MethodDown<CR>
+nnoremap <leader>c :action CommentByLineComment<CR>
+nnoremap <leader>F :action ReformatCode<CR>
 
 nnoremap <leader>r  :action Refactorings.QuickListPopupAction<CR>
 nnoremap <leader>rr :action RenameElement<CR>
@@ -119,16 +120,14 @@ nnoremap <leader>hh :action LocalHistory.ShowHistory<CR>
 " Navigation / Search
 " ============================================================
 
-nnoremap <C-a> :action GotoAction<CR>
-nnoremap <C-f> :action GotoFile<CR>
-nnoremap <C-o> :action GotoSymbol<CR>
 nnoremap <C-s> :action FileStructurePopup<CR>
-nnoremap <C-/> :action FindInPath<CR>
 
 nnoremap [[ :action MethodUp<CR>
 nnoremap ]] :action MethodDown<CR>
 
 nnoremap <leader>ff :action GotoFile<CR>
+nnoremap <leader>fs :action GotoSymbol<CR>
+nnoremap <leader>fa :action GotoAction<CR>
 nnoremap <leader>/  :action FindInPath<CR>
 nnoremap <leader>sr :action ReplaceInPath<CR>
 
@@ -148,8 +147,8 @@ nnoremap gp :action GotoSuperMethod<CR>
 nnoremap gr :action FindUsages<CR>
 
 " Navigation History
-nnoremap gb :action Back<CR>
-nnoremap gf :action Forward<CR>
+nnoremap <c-i> :action Forward<CR>
+nnoremap <c-o> :action Back<CR>
 
 " Diagnostics
 nnoremap ge :action GotoNextError<CR>
