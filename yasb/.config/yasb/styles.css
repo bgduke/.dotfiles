@@ -485,12 +485,14 @@
   color: var(--fg0);
   margin-top: -20px;
 }
-.glazewm-workspaces {
+.glazewm-workspaces,
+.komorebi-workspaces {
   margin: 0;
   padding: 0;
 }
 
-.glazewm-workspaces .ws-btn {
+.glazewm-workspaces .ws-btn,
+.komorebi-workspaces .ws-btn {
   font-size: 14px;
   background-color: transparent;
   border: none;
@@ -501,21 +503,45 @@
   color: var(--bg3);
 }
 
-.glazewm-workspaces .ws-btn.active_populated {
+.glazewm-workspaces .ws-btn.active_populated,
+.glazewm-workspaces .ws-btn.active_empty,
+.komorebi-workspaces .ws-btn.active_populated,
+.komorebi-workspaces .ws-btn.active_empty,
+.komorebi-workspaces .ws-btn.active {
   color: var(--fg0);
   background-color: var(--transparent);
   font-weight: bolder;
 }
 
-.glazewm-workspaces .ws-btn.populated {
+.glazewm-workspaces .ws-btn.populated,
+.komorebi-workspaces .ws-btn.populated {
   color: var(--bg4);
 }
 
 .glazewm-workspaces .ws-btn:hover,
 .glazewm-workspaces .ws-btn.populated:hover,
-.glazewm-workspaces .ws-btn.empty:hover {
+.glazewm-workspaces .ws-btn.empty:hover,
+.komorebi-workspaces .ws-btn:hover,
+.komorebi-workspaces .ws-btn.populated:hover,
+.komorebi-workspaces .ws-btn.empty:hover {
   background-color: var(--bg2);
 }
+.komorebi-active-layout {
+  background-color: transparent;
+  padding: 0;
+  margin: 0 -10px 0 2px;
+}
+
+.komorebi-active-layout .label {
+  font-size: 18px;
+  padding: 10px;
+  color: var(--fg1);
+}
+
+.komorebi-active-layout .label:hover {
+  color: var(--orange);
+}
+
 .glazewm-tiling-direction {
   background-color: transparent;
   padding: 0;

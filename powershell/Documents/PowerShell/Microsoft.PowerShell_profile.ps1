@@ -139,8 +139,8 @@ function rm {
 
 $env:EDITOR = 'nvim'
 $env:VISUAL = 'nvim'
-$env:TERMINAL = 'kitty'
-$env:BROWSER = 'firefox'
+$env:TERMINAL = 'wezterm'
+$env:BROWSER = 'helium'
 $env:MANROFFOPT = '-c'
 
 if (Test-Command 'bat') {

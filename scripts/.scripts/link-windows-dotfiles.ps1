@@ -52,8 +52,22 @@ $links = @(
         Name = 'fastfetch'
         Source = Join-Path $repoRoot 'fastfetch\.config\fastfetch'
         Target = Join-Path $HOME '.config\fastfetch'
+    },
+    @{
+        Name = 'komorebi'
+        Source = Join-Path $repoRoot 'komorebi\komorebi.json'
+        Target = Join-Path $HOME 'komorebi.json'
+    },
+    @{
+        Name = 'komorebi-applications'
+        Source = Join-Path $repoRoot 'komorebi\applications.json'
+        Target = Join-Path $HOME 'applications.json'
+    },
+    @{
+        Name = 'komorebi-whkd'
+        Source = Join-Path $repoRoot 'komorebi\.config\whkdrc'
+        Target = Join-Path $HOME '.config\whkdrc'
     }
-
 )
 
 function Remove-ExistingTarget {

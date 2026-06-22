@@ -4402,3 +4402,480 @@ RuntimeError: Event loop stopped before Future completed.
 2026-06-18 10:52:15,532 [INFO] [MainThread] [root/watcher.py:65]: Watching directory: c:\users\breno\.config\yasb
 2026-06-18 10:52:15,532 [INFO] [MainThread] [root/watcher.py:104]: Created file watcher
 2026-06-18 10:52:15,753 [INFO] [MainThread] [root/update_service.py:434]: Background update checker started
+2026-06-18 18:29:57,007 [WARNING] [MainThread] [glazewm_client/client.py:134]: WebSocket error: SocketError.RemoteHostClosedError. Reconnecting...
+2026-06-18 18:29:57,012 [WARNING] [MainThread] [glazewm_client/client.py:134]: WebSocket error: SocketError.RemoteHostClosedError. Reconnecting...
+2026-06-18 18:29:57,012 [WARNING] [MainThread] [glazewm_client/client.py:134]: WebSocket error: SocketError.RemoteHostClosedError. Reconnecting...
+2026-06-18 18:29:57,014 [WARNING] [MainThread] [glazewm_client/client.py:134]: WebSocket error: SocketError.RemoteHostClosedError. Reconnecting...
+2026-06-18 18:29:57,452 [INFO] [MainThread] [root/bar_manager.py:119]: Stopping SystemEventListener...
+2026-06-19 09:43:40,561 [INFO] [MainThread] [root/log.py:104]: YASB v2.0.4
+2026-06-19 09:43:40,562 [INFO] [CLIPipeServer] [cli_server/cli_server.py:216]: CLI server started v1.1.7
+2026-06-19 09:43:40,562 [INFO] [MainThread] [cli_server/cli_server.py:106]: Log pipe server started
+2026-06-19 09:43:40,715 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] BarAlignment: 'center' - Use 'align' instead.
+2026-06-19 09:43:40,715 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] BarBlurEffect: 'acrylic' - No longer supported and can be removed from the config.
+2026-06-19 09:43:40,886 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] GlazewmWorkspacesConfig: 'hide_empty_workspaces' - No longer supported and can be removed from the config.
+2026-06-19 09:43:40,886 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] GlazewmWorkspacesConfig: 'btn_shadow' - Use CSS box-shadow instead.
+2026-06-19 09:43:40,886 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] GlazewmWorkspacesConfig: 'animation' - Use CSS animations instead.
+2026-06-19 09:43:40,963 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] GlazewmTilingDirectionConfig: 'btn_shadow' - Use CSS box-shadow instead.
+2026-06-19 09:43:42,100 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] MediaWidgetConfig: 'label_shadow' - Use CSS text-shadow instead.
+2026-06-19 09:43:42,111 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] LanguageConfig: 'label_shadow' - Use CSS text-shadow instead.
+2026-06-19 09:43:42,117 [WARNING] [MainThread] [deprecation/deprecation.py:140]: [DEPRECATED] VolumeConfig: 'volume_icons' renamed to 'icons' - Use 'icons' with the dictionary format instead.
+2026-06-19 09:43:42,117 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] VolumeConfig: 'label_shadow' - Use CSS text-shadow instead.
+2026-06-19 09:43:42,126 [INFO] [MainThread] [root/service.py:52]: AudioOutputService starting...
+2026-06-19 09:43:42,171 [INFO] [MainThread] [root/service.py:41]: AudioInputService starting...
+2026-06-19 09:43:42,225 [ERROR] [MainThread] [root/weather.py:40]: API key or location is missing. Please provide a valid API key and location.
+2026-06-19 09:43:42,342 [ERROR] [MainThread] [root/weather.py:40]: API key or location is missing. Please provide a valid API key and location.
+2026-06-19 09:43:42,364 [INFO] [MainThread] [root/bar_manager.py:103]: Starting SystemEventListener...
+2026-06-19 09:43:42,379 [INFO] [MainThread] [root/watcher.py:65]: Watching directory: c:\users\breno\.config\yasb
+2026-06-19 09:43:42,379 [INFO] [MainThread] [root/watcher.py:104]: Created file watcher
+2026-06-19 09:43:42,582 [INFO] [MainThread] [root/update_service.py:434]: Background update checker started
+2026-06-19 18:09:45,043 [WARNING] [MainThread] [glazewm_client/client.py:134]: WebSocket error: SocketError.RemoteHostClosedError. Reconnecting...
+2026-06-19 18:09:45,045 [WARNING] [MainThread] [glazewm_client/client.py:134]: WebSocket error: SocketError.RemoteHostClosedError. Reconnecting...
+2026-06-19 18:09:45,046 [WARNING] [MainThread] [glazewm_client/client.py:134]: WebSocket error: SocketError.RemoteHostClosedError. Reconnecting...
+2026-06-19 18:09:45,047 [WARNING] [MainThread] [glazewm_client/client.py:134]: WebSocket error: SocketError.RemoteHostClosedError. Reconnecting...
+2026-06-19 18:30:37,891 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] BarAlignment: 'center' - Use 'align' instead.
+2026-06-19 18:30:37,895 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] BarBlurEffect: 'acrylic' - No longer supported and can be removed from the config.
+2026-06-19 18:30:37,900 [INFO] [MainThread] [root/controller.py:21]: Reloading Application because of config change.
+2026-06-19 18:30:38,015 [INFO] [MainThread] [cli_server/cli_server.py:114]: Log pipe server stopped
+2026-06-19 18:30:38,034 [INFO] [MainThread] [root/bar_manager.py:93]: Successfully loaded updated config and re-initialised all bars.
+2026-06-19 18:30:38,125 [INFO] [MainThread] [root/bar_manager.py:119]: Stopping SystemEventListener...
+2026-06-19 18:30:38,548 [INFO] [MainThread] [root/log.py:104]: YASB v2.0.4
+2026-06-19 18:30:38,548 [INFO] [CLIPipeServer] [cli_server/cli_server.py:216]: CLI server started v1.1.7
+2026-06-19 18:30:38,549 [INFO] [MainThread] [cli_server/cli_server.py:106]: Log pipe server started
+2026-06-19 18:30:38,621 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] BarAlignment: 'center' - Use 'align' instead.
+2026-06-19 18:30:38,621 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] BarBlurEffect: 'acrylic' - No longer supported and can be removed from the config.
+2026-06-19 18:30:39,242 [ERROR] [MainThread] [root/widget_builder.py:87]: Failed to import widget with type komorebi.workspaces.KomorebiWorkspacesWidget
+Traceback (most recent call last):
+  File "D:\a\yasb\yasb\src\core\utils\widget_builder.py", line 44, in _build_widget
+AttributeError: module 'core.widgets.komorebi.workspaces' has no attribute 'KomorebiWorkspacesWidget'. Did you mean: 'KomorebiWorkspacesConfig'?
+2026-06-19 18:30:39,254 [ERROR] [MainThread] [root/widget_builder.py:87]: Failed to import widget with type komorebi.active_layout.KomorebiActiveLayoutWidget
+Traceback (most recent call last):
+  File "D:\a\yasb\yasb\src\core\utils\widget_builder.py", line 44, in _build_widget
+AttributeError: module 'core.widgets.komorebi.active_layout' has no attribute 'KomorebiActiveLayoutWidget'
+2026-06-19 18:30:39,807 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] MediaWidgetConfig: 'label_shadow' - Use CSS text-shadow instead.
+2026-06-19 18:30:39,815 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] LanguageConfig: 'label_shadow' - Use CSS text-shadow instead.
+2026-06-19 18:30:39,822 [WARNING] [MainThread] [deprecation/deprecation.py:140]: [DEPRECATED] VolumeConfig: 'volume_icons' renamed to 'icons' - Use 'icons' with the dictionary format instead.
+2026-06-19 18:30:39,822 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] VolumeConfig: 'label_shadow' - Use CSS text-shadow instead.
+2026-06-19 18:30:39,831 [INFO] [MainThread] [root/service.py:52]: AudioOutputService starting...
+2026-06-19 18:30:39,870 [INFO] [MainThread] [root/service.py:41]: AudioInputService starting...
+2026-06-19 18:30:39,949 [ERROR] [MainThread] [root/weather.py:40]: API key or location is missing. Please provide a valid API key and location.
+2026-06-19 18:30:40,005 [ERROR] [MainThread] [root/widget_builder.py:87]: Failed to import widget with type komorebi.workspaces.KomorebiWorkspacesWidget
+Traceback (most recent call last):
+  File "D:\a\yasb\yasb\src\core\utils\widget_builder.py", line 44, in _build_widget
+AttributeError: module 'core.widgets.komorebi.workspaces' has no attribute 'KomorebiWorkspacesWidget'. Did you mean: 'KomorebiWorkspacesConfig'?
+2026-06-19 18:30:40,006 [ERROR] [MainThread] [root/widget_builder.py:87]: Failed to import widget with type komorebi.active_layout.KomorebiActiveLayoutWidget
+Traceback (most recent call last):
+  File "D:\a\yasb\yasb\src\core\utils\widget_builder.py", line 44, in _build_widget
+AttributeError: module 'core.widgets.komorebi.active_layout' has no attribute 'KomorebiActiveLayoutWidget'
+2026-06-19 18:30:40,042 [ERROR] [MainThread] [root/weather.py:40]: API key or location is missing. Please provide a valid API key and location.
+2026-06-19 18:30:40,057 [INFO] [MainThread] [root/bar_manager.py:103]: Starting SystemEventListener...
+2026-06-19 18:30:40,057 [ERROR] [MainThread] [root/widget_builder.py:129]: Failed to build widget(s) due to unknown widget type(s)  - komorebi_workspaces has unknown type "komorebi.workspaces.KomorebiWorkspacesWidget"
+ - komorebi_active_layout has unknown type "komorebi.active_layout.KomorebiActiveLayoutWidget"
+2026-06-19 18:30:40,087 [INFO] [MainThread] [root/watcher.py:65]: Watching directory: c:\users\breno\.config\yasb
+2026-06-19 18:30:40,087 [INFO] [MainThread] [root/watcher.py:104]: Created file watcher
+2026-06-19 18:30:40,325 [INFO] [MainThread] [root/update_service.py:434]: Background update checker started
+2026-06-19 18:36:19,325 [INFO] [MainThread] [root/controller.py:21]: Reloading Application from tray...
+2026-06-19 18:36:19,437 [INFO] [MainThread] [cli_server/cli_server.py:114]: Log pipe server stopped
+2026-06-19 18:36:19,561 [INFO] [MainThread] [root/bar_manager.py:119]: Stopping SystemEventListener...
+2026-06-19 18:36:19,860 [INFO] [MainThread] [root/log.py:104]: YASB v2.0.4
+2026-06-19 18:36:19,860 [INFO] [CLIPipeServer] [cli_server/cli_server.py:216]: CLI server started v1.1.7
+2026-06-19 18:36:19,860 [INFO] [MainThread] [cli_server/cli_server.py:106]: Log pipe server started
+2026-06-19 18:36:19,892 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] BarAlignment: 'center' - Use 'align' instead.
+2026-06-19 18:36:19,892 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] BarBlurEffect: 'acrylic' - No longer supported and can be removed from the config.
+2026-06-19 18:36:19,924 [ERROR] [MainThread] [root/widget_builder.py:87]: Failed to import widget with type komorebi.workspaces.KomorebiWorkspacesWidget
+Traceback (most recent call last):
+  File "D:\a\yasb\yasb\src\core\utils\widget_builder.py", line 44, in _build_widget
+AttributeError: module 'core.widgets.komorebi.workspaces' has no attribute 'KomorebiWorkspacesWidget'. Did you mean: 'KomorebiWorkspacesConfig'?
+2026-06-19 18:36:19,927 [ERROR] [MainThread] [root/widget_builder.py:87]: Failed to import widget with type komorebi.active_layout.KomorebiActiveLayoutWidget
+Traceback (most recent call last):
+  File "D:\a\yasb\yasb\src\core\utils\widget_builder.py", line 44, in _build_widget
+AttributeError: module 'core.widgets.komorebi.active_layout' has no attribute 'KomorebiActiveLayoutWidget'
+2026-06-19 18:36:20,301 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] MediaWidgetConfig: 'label_shadow' - Use CSS text-shadow instead.
+2026-06-19 18:36:20,307 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] LanguageConfig: 'label_shadow' - Use CSS text-shadow instead.
+2026-06-19 18:36:20,312 [WARNING] [MainThread] [deprecation/deprecation.py:140]: [DEPRECATED] VolumeConfig: 'volume_icons' renamed to 'icons' - Use 'icons' with the dictionary format instead.
+2026-06-19 18:36:20,312 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] VolumeConfig: 'label_shadow' - Use CSS text-shadow instead.
+2026-06-19 18:36:20,322 [INFO] [MainThread] [root/service.py:52]: AudioOutputService starting...
+2026-06-19 18:36:20,357 [INFO] [MainThread] [root/service.py:41]: AudioInputService starting...
+2026-06-19 18:36:20,423 [ERROR] [MainThread] [root/weather.py:40]: API key or location is missing. Please provide a valid API key and location.
+2026-06-19 18:36:20,481 [ERROR] [MainThread] [root/widget_builder.py:87]: Failed to import widget with type komorebi.workspaces.KomorebiWorkspacesWidget
+Traceback (most recent call last):
+  File "D:\a\yasb\yasb\src\core\utils\widget_builder.py", line 44, in _build_widget
+AttributeError: module 'core.widgets.komorebi.workspaces' has no attribute 'KomorebiWorkspacesWidget'. Did you mean: 'KomorebiWorkspacesConfig'?
+2026-06-19 18:36:20,481 [ERROR] [MainThread] [root/widget_builder.py:87]: Failed to import widget with type komorebi.active_layout.KomorebiActiveLayoutWidget
+Traceback (most recent call last):
+  File "D:\a\yasb\yasb\src\core\utils\widget_builder.py", line 44, in _build_widget
+AttributeError: module 'core.widgets.komorebi.active_layout' has no attribute 'KomorebiActiveLayoutWidget'
+2026-06-19 18:36:20,519 [ERROR] [MainThread] [root/weather.py:40]: API key or location is missing. Please provide a valid API key and location.
+2026-06-19 18:36:20,540 [INFO] [MainThread] [root/bar_manager.py:103]: Starting SystemEventListener...
+2026-06-19 18:36:20,540 [ERROR] [MainThread] [root/widget_builder.py:129]: Failed to build widget(s) due to unknown widget type(s)  - komorebi_workspaces has unknown type "komorebi.workspaces.KomorebiWorkspacesWidget"
+ - komorebi_active_layout has unknown type "komorebi.active_layout.KomorebiActiveLayoutWidget"
+2026-06-19 18:36:20,549 [INFO] [MainThread] [root/watcher.py:65]: Watching directory: c:\users\breno\.config\yasb
+2026-06-19 18:36:20,549 [INFO] [MainThread] [root/watcher.py:104]: Created file watcher
+2026-06-19 18:36:20,573 [INFO] [MainThread] [root/update_service.py:434]: Background update checker started
+2026-06-19 18:59:59,229 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] BarAlignment: 'center' - Use 'align' instead.
+2026-06-19 18:59:59,229 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] BarBlurEffect: 'acrylic' - No longer supported and can be removed from the config.
+2026-06-19 18:59:59,229 [INFO] [MainThread] [root/controller.py:21]: Reloading Application because of config change.
+2026-06-19 18:59:59,330 [INFO] [MainThread] [cli_server/cli_server.py:114]: Log pipe server stopped
+2026-06-19 18:59:59,334 [INFO] [MainThread] [root/bar_manager.py:93]: Successfully loaded updated config and re-initialised all bars.
+2026-06-19 18:59:59,442 [INFO] [MainThread] [root/bar_manager.py:119]: Stopping SystemEventListener...
+2026-06-19 18:59:59,745 [INFO] [MainThread] [root/log.py:104]: YASB v2.0.4
+2026-06-19 18:59:59,746 [INFO] [CLIPipeServer] [cli_server/cli_server.py:216]: CLI server started v1.1.7
+2026-06-19 18:59:59,746 [INFO] [MainThread] [cli_server/cli_server.py:106]: Log pipe server started
+2026-06-19 18:59:59,777 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] BarAlignment: 'center' - Use 'align' instead.
+2026-06-19 18:59:59,777 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] BarBlurEffect: 'acrylic' - No longer supported and can be removed from the config.
+2026-06-19 18:59:59,811 [WARNING] [MainThread] [root/widget_builder.py:39]: No widget config could be found for widget 'komorebi_active_layout
+2026-06-19 19:00:00,197 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] MediaWidgetConfig: 'label_shadow' - Use CSS text-shadow instead.
+2026-06-19 19:00:00,203 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] LanguageConfig: 'label_shadow' - Use CSS text-shadow instead.
+2026-06-19 19:00:00,208 [WARNING] [MainThread] [deprecation/deprecation.py:140]: [DEPRECATED] VolumeConfig: 'volume_icons' renamed to 'icons' - Use 'icons' with the dictionary format instead.
+2026-06-19 19:00:00,208 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] VolumeConfig: 'label_shadow' - Use CSS text-shadow instead.
+2026-06-19 19:00:00,218 [INFO] [MainThread] [root/service.py:52]: AudioOutputService starting...
+2026-06-19 19:00:00,251 [INFO] [MainThread] [root/service.py:41]: AudioInputService starting...
+2026-06-19 19:00:00,318 [ERROR] [MainThread] [root/weather.py:40]: API key or location is missing. Please provide a valid API key and location.
+2026-06-19 19:00:00,386 [WARNING] [MainThread] [root/widget_builder.py:36]: Ignoring construction of invalid widget 'komorebi_active_layout'
+2026-06-19 19:00:00,422 [ERROR] [MainThread] [root/weather.py:40]: API key or location is missing. Please provide a valid API key and location.
+2026-06-19 19:00:00,452 [INFO] [MainThread] [root/bar_manager.py:103]: Starting SystemEventListener...
+2026-06-19 19:00:00,452 [INFO] [MainThread] [root/bar_manager.py:103]: Starting KomorebiEventListener...
+2026-06-19 19:00:00,452 [ERROR] [MainThread] [root/widget_builder.py:100]: Failed to add undefined widget(s)  - The widget "komorebi_active_layout" is undefined.
+2026-06-19 19:00:00,453 [INFO] [Dummy-5] [root/event_listener.py:54]: Created named pipe yasb-37b97506-6c2a-11f1-a4e1-001a7dda7113
+2026-06-19 19:00:00,463 [INFO] [MainThread] [root/watcher.py:65]: Watching directory: c:\users\breno\.config\yasb
+2026-06-19 19:00:00,463 [INFO] [MainThread] [root/watcher.py:104]: Created file watcher
+2026-06-19 19:00:00,522 [INFO] [MainThread] [root/update_service.py:434]: Background update checker started
+2026-06-19 19:00:00,543 [WARNING] [Dummy-5] [root/event_listener.py:136]: Komorebi failed to subscribe named pipe. 'komorebic.exe' is not recognized as an internal or external command, operable program or batch file.
+2026-06-19 19:00:56,316 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] BarAlignment: 'center' - Use 'align' instead.
+2026-06-19 19:00:56,316 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] BarBlurEffect: 'acrylic' - No longer supported and can be removed from the config.
+2026-06-19 19:00:56,317 [INFO] [MainThread] [root/controller.py:21]: Reloading Application because of config change.
+2026-06-19 19:00:56,417 [INFO] [MainThread] [cli_server/cli_server.py:114]: Log pipe server stopped
+2026-06-19 19:00:56,421 [INFO] [MainThread] [root/bar_manager.py:93]: Successfully loaded updated config and re-initialised all bars.
+2026-06-19 19:00:56,528 [INFO] [MainThread] [root/bar_manager.py:119]: Stopping SystemEventListener...
+2026-06-19 19:00:56,539 [INFO] [MainThread] [root/bar_manager.py:119]: Stopping KomorebiEventListener...
+2026-06-19 19:00:56,807 [INFO] [MainThread] [root/log.py:104]: YASB v2.0.4
+2026-06-19 19:00:56,808 [INFO] [CLIPipeServer] [cli_server/cli_server.py:216]: CLI server started v1.1.7
+2026-06-19 19:00:56,808 [INFO] [MainThread] [cli_server/cli_server.py:106]: Log pipe server started
+2026-06-19 19:00:56,839 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] BarAlignment: 'center' - Use 'align' instead.
+2026-06-19 19:00:56,840 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] BarBlurEffect: 'acrylic' - No longer supported and can be removed from the config.
+2026-06-19 19:00:56,872 [WARNING] [MainThread] [root/widget_builder.py:39]: No widget config could be found for widget 'komorebi_active_layout
+2026-06-19 19:00:57,236 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] MediaWidgetConfig: 'label_shadow' - Use CSS text-shadow instead.
+2026-06-19 19:00:57,243 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] LanguageConfig: 'label_shadow' - Use CSS text-shadow instead.
+2026-06-19 19:00:57,248 [WARNING] [MainThread] [deprecation/deprecation.py:140]: [DEPRECATED] VolumeConfig: 'volume_icons' renamed to 'icons' - Use 'icons' with the dictionary format instead.
+2026-06-19 19:00:57,248 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] VolumeConfig: 'label_shadow' - Use CSS text-shadow instead.
+2026-06-19 19:00:57,257 [INFO] [MainThread] [root/service.py:52]: AudioOutputService starting...
+2026-06-19 19:00:57,291 [INFO] [MainThread] [root/service.py:41]: AudioInputService starting...
+2026-06-19 19:00:57,358 [ERROR] [MainThread] [root/weather.py:40]: API key or location is missing. Please provide a valid API key and location.
+2026-06-19 19:00:57,416 [WARNING] [MainThread] [root/widget_builder.py:36]: Ignoring construction of invalid widget 'komorebi_active_layout'
+2026-06-19 19:00:57,453 [ERROR] [MainThread] [root/weather.py:40]: API key or location is missing. Please provide a valid API key and location.
+2026-06-19 19:00:57,472 [INFO] [MainThread] [root/bar_manager.py:103]: Starting KomorebiEventListener...
+2026-06-19 19:00:57,473 [INFO] [MainThread] [root/bar_manager.py:103]: Starting SystemEventListener...
+2026-06-19 19:00:57,473 [ERROR] [MainThread] [root/widget_builder.py:100]: Failed to add undefined widget(s)  - The widget "komorebi_active_layout" is undefined.
+2026-06-19 19:00:57,474 [INFO] [Dummy-5] [root/event_listener.py:54]: Created named pipe yasb-59b623d7-6c2a-11f1-90d8-001a7dda7113
+2026-06-19 19:00:57,484 [INFO] [MainThread] [root/watcher.py:65]: Watching directory: c:\users\breno\.config\yasb
+2026-06-19 19:00:57,484 [INFO] [MainThread] [root/watcher.py:104]: Created file watcher
+2026-06-19 19:00:57,549 [INFO] [MainThread] [root/update_service.py:434]: Background update checker started
+2026-06-19 19:00:57,571 [WARNING] [Dummy-5] [root/event_listener.py:136]: Komorebi failed to subscribe named pipe. 'komorebic.exe' is not recognized as an internal or external command, operable program or batch file.
+2026-06-19 19:03:50,895 [ERROR] [MainThread] [root/bar_manager.py:80]: Error loading config: while scanning a simple key
+  in "C:\Users\Breno\.config\yasb\config.yaml", line 34, column 5
+could not find expected ':'
+  in "C:\Users\Breno\.config\yasb\config.yaml", line 35, column 11
+2026-06-19 19:07:34,559 [ERROR] [MainThread] [root/bar_manager.py:80]: Error loading config: while scanning a simple key
+  in "C:\Users\Breno\.config\yasb\config.yaml", line 34, column 5
+could not find expected ':'
+  in "C:\Users\Breno\.config\yasb\config.yaml", line 35, column 11
+2026-06-19 19:08:23,789 [ERROR] [MainThread] [root/bar_manager.py:80]: Error loading config: while scanning a simple key
+  in "C:\Users\Breno\.config\yasb\config.yaml", line 34, column 5
+could not find expected ':'
+  in "C:\Users\Breno\.config\yasb\config.yaml", line 35, column 11
+2026-06-19 19:08:26,911 [ERROR] [MainThread] [root/bar_manager.py:80]: Error loading config: while scanning a simple key
+  in "C:\Users\Breno\.config\yasb\config.yaml", line 34, column 5
+could not find expected ':'
+  in "C:\Users\Breno\.config\yasb\config.yaml", line 35, column 11
+2026-06-19 19:08:39,376 [ERROR] [MainThread] [root/bar_manager.py:80]: Error loading config: while scanning a simple key
+  in "C:\Users\Breno\.config\yasb\config.yaml", line 34, column 5
+could not find expected ':'
+  in "C:\Users\Breno\.config\yasb\config.yaml", line 35, column 11
+2026-06-19 19:08:49,878 [INFO] [MainThread] [root/controller.py:21]: Reloading Application from tray...
+2026-06-19 19:08:49,990 [INFO] [MainThread] [cli_server/cli_server.py:114]: Log pipe server stopped
+2026-06-19 19:08:50,109 [INFO] [MainThread] [root/bar_manager.py:119]: Stopping KomorebiEventListener...
+2026-06-19 19:08:50,110 [INFO] [MainThread] [root/bar_manager.py:119]: Stopping SystemEventListener...
+2026-06-19 19:08:50,399 [INFO] [MainThread] [root/log.py:104]: YASB v2.0.4
+2026-06-19 19:08:50,400 [INFO] [CLIPipeServer] [cli_server/cli_server.py:216]: CLI server started v1.1.7
+2026-06-19 19:08:50,400 [INFO] [MainThread] [cli_server/cli_server.py:106]: Log pipe server started
+2026-06-19 19:08:50,440 [ERROR] [MainThread] [root/main.py:190]: Exception during application startup
+Traceback (most recent call last):
+  File "main.py", line 188, in <module>
+  File "main.py", line 98, in main
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\qasync\__init__.py", line 438, in run_until_complete
+  File "main.py", line 123, in main_async
+  File "D:\a\yasb\yasb\src\core\config.py", line 144, in get_config_and_stylesheet
+  File "D:\a\yasb\yasb\src\core\config.py", line 82, in get_config
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\__init__.py", line 125, in safe_load
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\__init__.py", line 81, in load
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\constructor.py", line 49, in get_single_data
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\composer.py", line 36, in get_single_node
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\composer.py", line 55, in compose_document
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\composer.py", line 84, in compose_node
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\composer.py", line 133, in compose_mapping_node
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\composer.py", line 84, in compose_node
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\composer.py", line 133, in compose_mapping_node
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\composer.py", line 84, in compose_node
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\composer.py", line 133, in compose_mapping_node
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\composer.py", line 84, in compose_node
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\composer.py", line 127, in compose_mapping_node
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\parser.py", line 98, in check_event
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\parser.py", line 428, in parse_block_mapping_key
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\scanner.py", line 115, in check_token
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\scanner.py", line 152, in need_more_tokens
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\scanner.py", line 291, in stale_possible_simple_keys
+yaml.scanner.ScannerError: while scanning a simple key
+  in "C:\Users\Breno\.config\yasb\config.yaml", line 34, column 5
+could not find expected ':'
+  in "C:\Users\Breno\.config\yasb\config.yaml", line 35, column 11
+2026-06-19 19:09:02,428 [INFO] [MainThread] [root/log.py:104]: YASB v2.0.4
+2026-06-19 19:09:02,428 [INFO] [CLIPipeServer] [cli_server/cli_server.py:216]: CLI server started v1.1.7
+2026-06-19 19:09:02,428 [INFO] [MainThread] [cli_server/cli_server.py:106]: Log pipe server started
+2026-06-19 19:09:02,470 [ERROR] [MainThread] [root/main.py:190]: Exception during application startup
+Traceback (most recent call last):
+  File "main.py", line 188, in <module>
+  File "main.py", line 98, in main
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\qasync\__init__.py", line 438, in run_until_complete
+  File "main.py", line 123, in main_async
+  File "D:\a\yasb\yasb\src\core\config.py", line 144, in get_config_and_stylesheet
+  File "D:\a\yasb\yasb\src\core\config.py", line 82, in get_config
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\__init__.py", line 125, in safe_load
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\__init__.py", line 81, in load
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\constructor.py", line 49, in get_single_data
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\composer.py", line 36, in get_single_node
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\composer.py", line 55, in compose_document
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\composer.py", line 84, in compose_node
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\composer.py", line 133, in compose_mapping_node
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\composer.py", line 84, in compose_node
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\composer.py", line 133, in compose_mapping_node
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\composer.py", line 84, in compose_node
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\composer.py", line 133, in compose_mapping_node
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\composer.py", line 84, in compose_node
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\composer.py", line 127, in compose_mapping_node
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\parser.py", line 98, in check_event
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\parser.py", line 428, in parse_block_mapping_key
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\scanner.py", line 115, in check_token
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\scanner.py", line 152, in need_more_tokens
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\yaml\scanner.py", line 291, in stale_possible_simple_keys
+yaml.scanner.ScannerError: while scanning a simple key
+  in "C:\Users\Breno\.config\yasb\config.yaml", line 34, column 5
+could not find expected ':'
+  in "C:\Users\Breno\.config\yasb\config.yaml", line 35, column 11
+2026-06-19 19:09:47,943 [INFO] [MainThread] [root/log.py:104]: YASB v2.0.4
+2026-06-19 19:09:47,943 [INFO] [CLIPipeServer] [cli_server/cli_server.py:216]: CLI server started v1.1.7
+2026-06-19 19:09:47,943 [INFO] [MainThread] [cli_server/cli_server.py:106]: Log pipe server started
+2026-06-19 19:09:47,973 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] BarAlignment: 'center' - Use 'align' instead.
+2026-06-19 19:09:47,973 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] BarBlurEffect: 'acrylic' - No longer supported and can be removed from the config.
+2026-06-19 19:09:48,343 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] MediaWidgetConfig: 'label_shadow' - Use CSS text-shadow instead.
+2026-06-19 19:09:48,349 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] LanguageConfig: 'label_shadow' - Use CSS text-shadow instead.
+2026-06-19 19:09:48,354 [WARNING] [MainThread] [deprecation/deprecation.py:140]: [DEPRECATED] VolumeConfig: 'volume_icons' renamed to 'icons' - Use 'icons' with the dictionary format instead.
+2026-06-19 19:09:48,354 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] VolumeConfig: 'label_shadow' - Use CSS text-shadow instead.
+2026-06-19 19:09:48,363 [INFO] [MainThread] [root/service.py:52]: AudioOutputService starting...
+2026-06-19 19:09:48,397 [INFO] [MainThread] [root/service.py:41]: AudioInputService starting...
+2026-06-19 19:09:48,461 [ERROR] [MainThread] [root/weather.py:40]: API key or location is missing. Please provide a valid API key and location.
+2026-06-19 19:09:48,556 [ERROR] [MainThread] [root/weather.py:40]: API key or location is missing. Please provide a valid API key and location.
+2026-06-19 19:09:48,578 [INFO] [MainThread] [root/bar_manager.py:103]: Starting KomorebiEventListener...
+2026-06-19 19:09:48,579 [INFO] [Dummy-6] [root/event_listener.py:54]: Created named pipe yasb-9646795d-6c2b-11f1-b614-001a7dda7113
+2026-06-19 19:09:48,580 [INFO] [MainThread] [root/watcher.py:65]: Watching directory: c:\users\breno\.config\yasb
+2026-06-19 19:09:48,580 [INFO] [MainThread] [root/watcher.py:104]: Created file watcher
+2026-06-19 19:09:48,594 [INFO] [MainThread] [root/update_service.py:434]: Background update checker started
+2026-06-19 19:09:48,689 [INFO] [Dummy-6] [root/event_listener.py:147]: Komorebi connected to named pipe: yasb-9646795d-6c2b-11f1-b614-001a7dda7113
+2026-06-19 19:10:53,524 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] BarAlignment: 'center' - Use 'align' instead.
+2026-06-19 19:10:53,524 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] BarBlurEffect: 'acrylic' - No longer supported and can be removed from the config.
+2026-06-19 19:10:53,525 [INFO] [MainThread] [root/controller.py:21]: Reloading Application because of config change.
+2026-06-19 19:10:53,639 [INFO] [MainThread] [cli_server/cli_server.py:114]: Log pipe server stopped
+2026-06-19 19:10:53,643 [INFO] [MainThread] [root/bar_manager.py:93]: Successfully loaded updated config and re-initialised all bars.
+2026-06-19 19:10:53,756 [INFO] [MainThread] [root/bar_manager.py:119]: Stopping KomorebiEventListener...
+2026-06-19 19:10:54,042 [INFO] [MainThread] [root/log.py:104]: YASB v2.0.4
+2026-06-19 19:10:54,042 [INFO] [CLIPipeServer] [cli_server/cli_server.py:216]: CLI server started v1.1.7
+2026-06-19 19:10:54,043 [INFO] [MainThread] [cli_server/cli_server.py:106]: Log pipe server started
+2026-06-19 19:10:54,073 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] BarAlignment: 'center' - Use 'align' instead.
+2026-06-19 19:10:54,073 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] BarBlurEffect: 'acrylic' - No longer supported and can be removed from the config.
+2026-06-19 19:10:54,451 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] MediaWidgetConfig: 'label_shadow' - Use CSS text-shadow instead.
+2026-06-19 19:10:54,457 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] LanguageConfig: 'label_shadow' - Use CSS text-shadow instead.
+2026-06-19 19:10:54,461 [WARNING] [MainThread] [deprecation/deprecation.py:140]: [DEPRECATED] VolumeConfig: 'volume_icons' renamed to 'icons' - Use 'icons' with the dictionary format instead.
+2026-06-19 19:10:54,461 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] VolumeConfig: 'label_shadow' - Use CSS text-shadow instead.
+2026-06-19 19:10:54,471 [INFO] [MainThread] [root/service.py:52]: AudioOutputService starting...
+2026-06-19 19:10:54,504 [INFO] [MainThread] [root/service.py:41]: AudioInputService starting...
+2026-06-19 19:10:54,569 [ERROR] [MainThread] [root/weather.py:40]: API key or location is missing. Please provide a valid API key and location.
+2026-06-19 19:10:54,659 [ERROR] [MainThread] [root/weather.py:40]: API key or location is missing. Please provide a valid API key and location.
+2026-06-19 19:10:54,678 [INFO] [MainThread] [root/bar_manager.py:103]: Starting KomorebiEventListener...
+2026-06-19 19:10:54,679 [INFO] [Dummy-6] [root/event_listener.py:54]: Created named pipe yasb-bdac8862-6c2b-11f1-afba-001a7dda7113
+2026-06-19 19:10:54,680 [INFO] [MainThread] [root/watcher.py:65]: Watching directory: c:\users\breno\.config\yasb
+2026-06-19 19:10:54,680 [INFO] [MainThread] [root/watcher.py:104]: Created file watcher
+2026-06-19 19:10:54,694 [INFO] [MainThread] [root/update_service.py:434]: Background update checker started
+2026-06-19 19:10:54,783 [INFO] [Dummy-6] [root/event_listener.py:147]: Komorebi connected to named pipe: yasb-bdac8862-6c2b-11f1-afba-001a7dda7113
+2026-06-19 19:11:03,297 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] BarAlignment: 'center' - Use 'align' instead.
+2026-06-19 19:11:03,297 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] BarBlurEffect: 'acrylic' - No longer supported and can be removed from the config.
+2026-06-19 19:11:03,297 [INFO] [MainThread] [root/controller.py:21]: Reloading Application because of config change.
+2026-06-19 19:11:03,397 [INFO] [MainThread] [cli_server/cli_server.py:114]: Log pipe server stopped
+2026-06-19 19:11:03,401 [INFO] [MainThread] [root/bar_manager.py:93]: Successfully loaded updated config and re-initialised all bars.
+2026-06-19 19:11:03,501 [INFO] [MainThread] [root/bar_manager.py:119]: Stopping KomorebiEventListener...
+2026-06-19 19:11:03,788 [INFO] [MainThread] [root/log.py:104]: YASB v2.0.4
+2026-06-19 19:11:03,788 [INFO] [CLIPipeServer] [cli_server/cli_server.py:216]: CLI server started v1.1.7
+2026-06-19 19:11:03,789 [INFO] [MainThread] [cli_server/cli_server.py:106]: Log pipe server started
+2026-06-19 19:11:03,828 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] BarAlignment: 'center' - Use 'align' instead.
+2026-06-19 19:11:03,828 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] BarBlurEffect: 'acrylic' - No longer supported and can be removed from the config.
+2026-06-19 19:11:04,206 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] MediaWidgetConfig: 'label_shadow' - Use CSS text-shadow instead.
+2026-06-19 19:11:04,212 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] LanguageConfig: 'label_shadow' - Use CSS text-shadow instead.
+2026-06-19 19:11:04,217 [WARNING] [MainThread] [deprecation/deprecation.py:140]: [DEPRECATED] VolumeConfig: 'volume_icons' renamed to 'icons' - Use 'icons' with the dictionary format instead.
+2026-06-19 19:11:04,217 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] VolumeConfig: 'label_shadow' - Use CSS text-shadow instead.
+2026-06-19 19:11:04,226 [INFO] [MainThread] [root/service.py:52]: AudioOutputService starting...
+2026-06-19 19:11:04,259 [INFO] [MainThread] [root/service.py:41]: AudioInputService starting...
+2026-06-19 19:11:04,322 [ERROR] [MainThread] [root/weather.py:40]: API key or location is missing. Please provide a valid API key and location.
+2026-06-19 19:11:04,428 [ERROR] [MainThread] [root/weather.py:40]: API key or location is missing. Please provide a valid API key and location.
+2026-06-19 19:11:04,449 [INFO] [MainThread] [root/bar_manager.py:103]: Starting KomorebiEventListener...
+2026-06-19 19:11:04,450 [INFO] [Dummy-6] [root/event_listener.py:54]: Created named pipe yasb-c37f638d-6c2b-11f1-a790-001a7dda7113
+2026-06-19 19:11:04,450 [INFO] [MainThread] [root/watcher.py:65]: Watching directory: c:\users\breno\.config\yasb
+2026-06-19 19:11:04,450 [INFO] [MainThread] [root/watcher.py:104]: Created file watcher
+2026-06-19 19:11:04,465 [INFO] [MainThread] [root/update_service.py:434]: Background update checker started
+2026-06-19 19:11:04,558 [INFO] [Dummy-6] [root/event_listener.py:147]: Komorebi connected to named pipe: yasb-c37f638d-6c2b-11f1-a790-001a7dda7113
+2026-06-19 19:11:45,520 [WARNING] [Dummy-6] [root/event_listener.py:95]: Pipe has been ended: (109, 'PeekNamedPipe', 'The pipe has been ended.')
+2026-06-19 19:11:45,520 [INFO] [Dummy-6] [root/event_listener.py:107]: Attempting to reconnect to Komorebi...
+2026-06-19 19:11:48,524 [INFO] [Dummy-6] [root/event_listener.py:54]: Created named pipe yasb-c37f638d-6c2b-11f1-a790-001a7dda7113
+2026-06-19 19:11:48,569 [WARNING] [Dummy-6] [root/event_listener.py:134]: Komorebi failed to subscribe named pipe. Komorebi is not running, please start Komorebi.
+2026-06-19 19:11:53,641 [INFO] [Dummy-6] [root/event_listener.py:147]: Komorebi connected to named pipe: yasb-c37f638d-6c2b-11f1-a790-001a7dda7113
+2026-06-19 19:14:03,647 [WARNING] [Dummy-6] [root/event_listener.py:95]: Pipe has been ended: (109, 'PeekNamedPipe', 'The pipe has been ended.')
+2026-06-19 19:14:03,648 [INFO] [Dummy-6] [root/event_listener.py:107]: Attempting to reconnect to Komorebi...
+2026-06-19 19:14:06,660 [INFO] [Dummy-6] [root/event_listener.py:54]: Created named pipe yasb-c37f638d-6c2b-11f1-a790-001a7dda7113
+2026-06-19 19:14:06,707 [WARNING] [Dummy-6] [root/event_listener.py:134]: Komorebi failed to subscribe named pipe. Komorebi is not running, please start Komorebi.
+2026-06-19 19:14:11,759 [INFO] [Dummy-6] [root/event_listener.py:147]: Komorebi connected to named pipe: yasb-c37f638d-6c2b-11f1-a790-001a7dda7113
+2026-06-19 19:22:37,700 [WARNING] [Dummy-6] [root/event_listener.py:95]: Pipe has been ended: (109, 'PeekNamedPipe', 'The pipe has been ended.')
+2026-06-19 19:22:37,700 [INFO] [Dummy-6] [root/event_listener.py:107]: Attempting to reconnect to Komorebi...
+2026-06-19 19:22:40,700 [INFO] [Dummy-6] [root/event_listener.py:54]: Created named pipe yasb-c37f638d-6c2b-11f1-a790-001a7dda7113
+2026-06-19 19:22:40,748 [WARNING] [Dummy-6] [root/event_listener.py:134]: Komorebi failed to subscribe named pipe. Komorebi is not running, please start Komorebi.
+2026-06-19 19:22:45,811 [INFO] [Dummy-6] [root/event_listener.py:147]: Komorebi connected to named pipe: yasb-c37f638d-6c2b-11f1-a790-001a7dda7113
+2026-06-19 19:23:25,667 [WARNING] [Dummy-6] [root/event_listener.py:95]: Pipe has been ended: (109, 'PeekNamedPipe', 'The pipe has been ended.')
+2026-06-19 19:23:25,667 [INFO] [Dummy-6] [root/event_listener.py:107]: Attempting to reconnect to Komorebi...
+2026-06-19 19:23:28,680 [INFO] [Dummy-6] [root/event_listener.py:54]: Created named pipe yasb-c37f638d-6c2b-11f1-a790-001a7dda7113
+2026-06-19 19:23:28,727 [WARNING] [Dummy-6] [root/event_listener.py:134]: Komorebi failed to subscribe named pipe. Komorebi is not running, please start Komorebi.
+2026-06-19 19:25:04,787 [INFO] [Dummy-6] [root/event_listener.py:147]: Komorebi connected to named pipe: yasb-c37f638d-6c2b-11f1-a790-001a7dda7113
+2026-06-19 19:26:56,111 [WARNING] [Dummy-6] [root/event_listener.py:95]: Pipe has been ended: (109, 'PeekNamedPipe', 'The pipe has been ended.')
+2026-06-19 19:26:56,111 [INFO] [Dummy-6] [root/event_listener.py:107]: Attempting to reconnect to Komorebi...
+2026-06-19 19:26:59,119 [INFO] [Dummy-6] [root/event_listener.py:54]: Created named pipe yasb-c37f638d-6c2b-11f1-a790-001a7dda7113
+2026-06-19 19:26:59,166 [INFO] [Dummy-6] [root/event_listener.py:147]: Komorebi connected to named pipe: yasb-c37f638d-6c2b-11f1-a790-001a7dda7113
+2026-06-19 19:28:17,263 [WARNING] [Dummy-6] [root/event_listener.py:95]: Pipe has been ended: (109, 'PeekNamedPipe', 'The pipe has been ended.')
+2026-06-19 19:28:17,264 [INFO] [Dummy-6] [root/event_listener.py:107]: Attempting to reconnect to Komorebi...
+2026-06-19 19:28:20,276 [INFO] [Dummy-6] [root/event_listener.py:54]: Created named pipe yasb-c37f638d-6c2b-11f1-a790-001a7dda7113
+2026-06-19 19:28:20,331 [INFO] [Dummy-6] [root/event_listener.py:147]: Komorebi connected to named pipe: yasb-c37f638d-6c2b-11f1-a790-001a7dda7113
+2026-06-19 19:35:21,349 [WARNING] [Dummy-6] [root/event_listener.py:95]: Pipe has been ended: (109, 'PeekNamedPipe', 'The pipe has been ended.')
+2026-06-19 19:35:21,350 [INFO] [Dummy-6] [root/event_listener.py:107]: Attempting to reconnect to Komorebi...
+2026-06-19 19:35:24,355 [INFO] [Dummy-6] [root/event_listener.py:54]: Created named pipe yasb-c37f638d-6c2b-11f1-a790-001a7dda7113
+2026-06-19 19:35:24,407 [WARNING] [Dummy-6] [root/event_listener.py:134]: Komorebi failed to subscribe named pipe. Komorebi is not running, please start Komorebi.
+2026-06-19 19:35:29,473 [INFO] [Dummy-6] [root/event_listener.py:147]: Komorebi connected to named pipe: yasb-c37f638d-6c2b-11f1-a790-001a7dda7113
+2026-06-19 19:36:14,397 [WARNING] [Dummy-6] [root/event_listener.py:95]: Pipe has been ended: (109, 'PeekNamedPipe', 'The pipe has been ended.')
+2026-06-19 19:36:14,397 [INFO] [Dummy-6] [root/event_listener.py:107]: Attempting to reconnect to Komorebi...
+2026-06-19 19:36:17,399 [INFO] [Dummy-6] [root/event_listener.py:54]: Created named pipe yasb-c37f638d-6c2b-11f1-a790-001a7dda7113
+2026-06-19 19:36:17,449 [INFO] [Dummy-6] [root/event_listener.py:147]: Komorebi connected to named pipe: yasb-c37f638d-6c2b-11f1-a790-001a7dda7113
+2026-06-19 19:38:54,875 [WARNING] [Dummy-6] [root/event_listener.py:95]: Pipe has been ended: (109, 'PeekNamedPipe', 'The pipe has been ended.')
+2026-06-19 19:38:54,875 [INFO] [Dummy-6] [root/event_listener.py:107]: Attempting to reconnect to Komorebi...
+2026-06-19 19:38:57,881 [INFO] [Dummy-6] [root/event_listener.py:54]: Created named pipe yasb-c37f638d-6c2b-11f1-a790-001a7dda7113
+2026-06-19 19:38:57,930 [INFO] [Dummy-6] [root/event_listener.py:147]: Komorebi connected to named pipe: yasb-c37f638d-6c2b-11f1-a790-001a7dda7113
+2026-06-19 19:39:35,919 [WARNING] [Dummy-6] [root/event_listener.py:95]: Pipe has been ended: (109, 'PeekNamedPipe', 'The pipe has been ended.')
+2026-06-19 19:39:35,919 [INFO] [Dummy-6] [root/event_listener.py:107]: Attempting to reconnect to Komorebi...
+2026-06-19 19:39:38,934 [INFO] [Dummy-6] [root/event_listener.py:54]: Created named pipe yasb-c37f638d-6c2b-11f1-a790-001a7dda7113
+2026-06-19 19:39:38,983 [WARNING] [Dummy-6] [root/event_listener.py:134]: Komorebi failed to subscribe named pipe. Komorebi is not running, please start Komorebi.
+2026-06-19 19:39:44,039 [INFO] [Dummy-6] [root/event_listener.py:147]: Komorebi connected to named pipe: yasb-c37f638d-6c2b-11f1-a790-001a7dda7113
+2026-06-19 19:40:36,433 [INFO] [MainThread] [root/bar_manager.py:119]: Stopping KomorebiEventListener...
+2026-06-22 08:53:33,269 [INFO] [MainThread] [root/log.py:104]: YASB v2.0.4
+2026-06-22 08:53:33,269 [INFO] [CLIPipeServer] [cli_server/cli_server.py:216]: CLI server started v1.1.7
+2026-06-22 08:53:33,270 [INFO] [MainThread] [cli_server/cli_server.py:106]: Log pipe server started
+2026-06-22 08:53:33,444 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] BarAlignment: 'center' - Use 'align' instead.
+2026-06-22 08:53:33,444 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] BarBlurEffect: 'acrylic' - No longer supported and can be removed from the config.
+2026-06-22 08:53:34,173 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] MediaWidgetConfig: 'label_shadow' - Use CSS text-shadow instead.
+2026-06-22 08:53:34,186 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] LanguageConfig: 'label_shadow' - Use CSS text-shadow instead.
+2026-06-22 08:53:34,192 [WARNING] [MainThread] [deprecation/deprecation.py:140]: [DEPRECATED] VolumeConfig: 'volume_icons' renamed to 'icons' - Use 'icons' with the dictionary format instead.
+2026-06-22 08:53:34,192 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] VolumeConfig: 'label_shadow' - Use CSS text-shadow instead.
+2026-06-22 08:53:34,202 [INFO] [MainThread] [root/service.py:52]: AudioOutputService starting...
+2026-06-22 08:53:34,247 [INFO] [MainThread] [root/service.py:41]: AudioInputService starting...
+2026-06-22 08:53:34,362 [ERROR] [MainThread] [root/weather.py:40]: API key or location is missing. Please provide a valid API key and location.
+2026-06-22 08:53:34,467 [ERROR] [MainThread] [root/weather.py:40]: API key or location is missing. Please provide a valid API key and location.
+2026-06-22 08:53:34,482 [INFO] [MainThread] [root/bar_manager.py:103]: Starting KomorebiEventListener...
+2026-06-22 08:53:34,483 [INFO] [Dummy-5] [root/event_listener.py:54]: Created named pipe yasb-ff3c6301-6e30-11f1-9e28-001a7dda7113
+2026-06-22 08:53:34,484 [INFO] [MainThread] [root/watcher.py:65]: Watching directory: c:\users\breno\.config\yasb
+2026-06-22 08:53:34,484 [INFO] [MainThread] [root/watcher.py:104]: Created file watcher
+2026-06-22 08:53:34,704 [INFO] [MainThread] [root/update_service.py:434]: Background update checker started
+2026-06-22 08:53:34,704 [WARNING] [Dummy-5] [root/event_listener.py:134]: Komorebi failed to subscribe named pipe. Komorebi is not running, please start Komorebi.
+2026-06-22 09:20:21,833 [INFO] [MainThread] [root/log.py:104]: YASB v2.0.4
+2026-06-22 09:20:21,833 [INFO] [CLIPipeServer] [cli_server/cli_server.py:216]: CLI server started v1.1.7
+2026-06-22 09:20:21,833 [INFO] [MainThread] [cli_server/cli_server.py:106]: Log pipe server started
+2026-06-22 09:20:21,929 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] BarAlignment: 'center' - Use 'align' instead.
+2026-06-22 09:20:21,930 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] BarBlurEffect: 'acrylic' - No longer supported and can be removed from the config.
+2026-06-22 09:20:22,500 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] MediaWidgetConfig: 'label_shadow' - Use CSS text-shadow instead.
+2026-06-22 09:20:22,507 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] LanguageConfig: 'label_shadow' - Use CSS text-shadow instead.
+2026-06-22 09:20:22,512 [WARNING] [MainThread] [deprecation/deprecation.py:140]: [DEPRECATED] VolumeConfig: 'volume_icons' renamed to 'icons' - Use 'icons' with the dictionary format instead.
+2026-06-22 09:20:22,512 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] VolumeConfig: 'label_shadow' - Use CSS text-shadow instead.
+2026-06-22 09:20:22,521 [INFO] [MainThread] [root/service.py:52]: AudioOutputService starting...
+2026-06-22 09:20:22,558 [INFO] [MainThread] [root/service.py:41]: AudioInputService starting...
+2026-06-22 09:20:22,663 [ERROR] [MainThread] [root/weather.py:40]: API key or location is missing. Please provide a valid API key and location.
+2026-06-22 09:20:22,770 [ERROR] [MainThread] [root/weather.py:40]: API key or location is missing. Please provide a valid API key and location.
+2026-06-22 09:20:22,787 [INFO] [MainThread] [root/bar_manager.py:103]: Starting KomorebiEventListener...
+2026-06-22 09:20:22,788 [INFO] [Dummy-5] [root/event_listener.py:54]: Created named pipe yasb-bddc4625-6e34-11f1-bf71-001a7dda7113
+2026-06-22 09:20:22,789 [INFO] [MainThread] [root/watcher.py:65]: Watching directory: c:\users\breno\.config\yasb
+2026-06-22 09:20:22,789 [INFO] [MainThread] [root/watcher.py:104]: Created file watcher
+2026-06-22 09:20:23,009 [INFO] [MainThread] [root/update_service.py:434]: Background update checker started
+2026-06-22 09:20:23,009 [INFO] [Dummy-5] [root/event_listener.py:147]: Komorebi connected to named pipe: yasb-bddc4625-6e34-11f1-bf71-001a7dda7113
+2026-06-22 10:03:27,025 [WARNING] [Dummy-5] [root/event_listener.py:95]: Pipe has been ended: (109, 'PeekNamedPipe', 'The pipe has been ended.')
+2026-06-22 10:03:27,026 [INFO] [Dummy-5] [root/event_listener.py:107]: Attempting to reconnect to Komorebi...
+2026-06-22 10:03:30,033 [INFO] [Dummy-5] [root/event_listener.py:54]: Created named pipe yasb-bddc4625-6e34-11f1-bf71-001a7dda7113
+2026-06-22 10:03:30,084 [WARNING] [Dummy-5] [root/event_listener.py:134]: Komorebi failed to subscribe named pipe. Komorebi is not running, please start Komorebi.
+2026-06-22 10:03:35,137 [INFO] [Dummy-5] [root/event_listener.py:147]: Komorebi connected to named pipe: yasb-bddc4625-6e34-11f1-bf71-001a7dda7113
+2026-06-22 14:34:52,620 [WARNING] [Dummy-5] [root/event_listener.py:95]: Pipe has been ended: (109, 'PeekNamedPipe', 'The pipe has been ended.')
+2026-06-22 14:34:52,621 [INFO] [Dummy-5] [root/event_listener.py:107]: Attempting to reconnect to Komorebi...
+2026-06-22 14:34:55,625 [INFO] [Dummy-5] [root/event_listener.py:54]: Created named pipe yasb-bddc4625-6e34-11f1-bf71-001a7dda7113
+2026-06-22 14:34:55,679 [WARNING] [Dummy-5] [root/event_listener.py:134]: Komorebi failed to subscribe named pipe. Komorebi is not running, please start Komorebi.
+2026-06-22 14:35:20,965 [INFO] [Dummy-5] [root/event_listener.py:147]: Komorebi connected to named pipe: yasb-bddc4625-6e34-11f1-bf71-001a7dda7113
+Windows fatal exception: code 0x8001010e
+
+Thread 0x000015f0 [Thread-6] (most recent call first):
+  File "C:\hostedtoolcache\windows\Python\3.14.5\x64\Lib\threading.py", line 369 in wait
+  File "C:\hostedtoolcache\windows\Python\3.14.5\x64\Lib\queue.py", line 199 in get
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\watchdog\observers\api.py", line 379 in dispatch_events
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\watchdog\observers\api.py", line 213 in run
+  File "C:\hostedtoolcache\windows\Python\3.14.5\x64\Lib\threading.py", line 1082 in _bootstrap_inner
+  File "C:\hostedtoolcache\windows\Python\3.14.5\x64\Lib\threading.py", line 1044 in _bootstrap
+
+Thread 0x0000174c [Thread-7] (most recent call first):
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\watchdog\observers\winapi.py", line 326 in read_directory_changes
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\watchdog\observers\winapi.py", line 380 in read_events
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\watchdog\observers\read_directory_changes.py", line 67 in _read_events
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\watchdog\observers\read_directory_changes.py", line 70 in queue_events
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\watchdog\observers\api.py", line 158 in run
+  File "C:\hostedtoolcache\windows\Python\3.14.5\x64\Lib\threading.py", line 1082 in _bootstrap_inner
+  File "C:\hostedtoolcache\windows\Python\3.14.5\x64\Lib\threading.py", line 1044 in _bootstrap
+
+Thread 0x00003580 [KomorebiEventListener] (most recent call first):
+  File "C:\hostedtoolcache\windows\Python\3.14.5\x64\Lib\threading.py", line 373 in wait
+  File "C:\hostedtoolcache\windows\Python\3.14.5\x64\Lib\threading.py", line 670 in wait
+  File "D:\a\yasb\yasb\src\core\widgets\services\komorebi\event_listener.py", line 75 in run
+
+Thread 0x00004158 [_EventWorker] (most recent call first):
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\qasync\_windows.py", line 147 in _poll
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\qasync\_windows.py", line 72 in select
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\qasync\_windows.py", line 199 in run
+
+Thread 0x00003350 [LogPipeServer] (most recent call first):
+  File "D:\a\yasb\yasb\src\core\utils\win32\bindings\kernel32.py", line 288 in ConnectNamedPipe
+  File "D:\a\yasb\yasb\src\core\utils\cli_server.py", line 138 in _run_server
+  File "C:\hostedtoolcache\windows\Python\3.14.5\x64\Lib\threading.py", line 1024 in run
+  File "C:\hostedtoolcache\windows\Python\3.14.5\x64\Lib\threading.py", line 1082 in _bootstrap_inner
+  File "C:\hostedtoolcache\windows\Python\3.14.5\x64\Lib\threading.py", line 1044 in _bootstrap
+
+Thread 0x00003958 [CLIPipeServer] (most recent call first):
+  File "D:\a\yasb\yasb\src\core\utils\win32\bindings\kernel32.py", line 288 in ConnectNamedPipe
+  File "D:\a\yasb\yasb\src\core\utils\cli_server.py", line 235 in _run_server
+  File "C:\hostedtoolcache\windows\Python\3.14.5\x64\Lib\threading.py", line 1024 in run
+  File "C:\hostedtoolcache\windows\Python\3.14.5\x64\Lib\threading.py", line 1082 in _bootstrap_inner
+  File "C:\hostedtoolcache\windows\Python\3.14.5\x64\Lib\threading.py", line 1044 in _bootstrap
+
+Current thread 0x00001b38 (most recent call first):
+  File "C:\hostedtoolcache\windows\Python\3.14.5\x64\Lib\asyncio\events.py", line 94 in _run
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\qasync\__init__.py", line 307 in timerEvent
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\qasync\__init__.py", line 404 in run_forever
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\qasync\__init__.py", line 428 in run_until_complete
+  File "main.py", line 98 in main
+  File "main.py", line 188 in <module>
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\freeze_core\initscripts\console.py", line 27 in run
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\freeze_core\initscripts\__startup__.py", line 137 in run
+
+Current thread's C stack trace (most recent call first):
+  <cannot get C stack on this system>
