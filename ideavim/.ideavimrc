@@ -1,0 +1,218 @@
+" ============================================================
+" Leader Keys
+" ============================================================
+
+let mapleader = " "
+let maplocalleader = " "
+
+" ============================================================
+" Core Settings
+" ============================================================
+
+set number
+set relativenumber
+
+set hlsearch
+set incsearch
+set ignorecase
+set smartcase
+
+set scrolloff=8
+set sidescrolloff=8
+
+set clipboard+=unnamed
+set clipboard+=ideaput
+
+set surround
+set commentary
+set highlightedyank
+
+set ideajoin
+set idearefactormode=keep
+
+set visualbell
+
+" ============================================================
+" General
+" ============================================================
+
+map <C-c> <Esc>
+
+" Zen Mode
+nnoremap <C-z> :action ToggleDistractionFreeMode<CR>
+
+" ============================================================
+" Windows
+" ============================================================
+
+nnoremap <leader>e :action ActivateProjectToolWindow<CR>
+nnoremap <leader>g :action ActivateCommitToolWindow<CR>
+nnoremap <leader>d :action ActivateDebugToolWindow<CR>
+nnoremap <leader>r :action ActivateRunToolWindow<CR>
+nnoremap <leader>t :action ActivateTerminalToolWindow<CR>
+nnoremap <leader>a :action ActivateAIAssistantToolWindow<CR>
+nnoremap <leader>nu :action ActivateNuGetToolWindow<CR>
+
+" ============================================================
+" Window / Split Navigation
+" ============================================================
+
+sethandler <C-j> a:vim
+sethandler <C-k> a:vim
+
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
+
+nnoremap <leader>sv :action SplitVertically<CR>
+nnoremap <leader>sh :action SplitHorizontally<CR>
+
+nnoremap <C-m> :action MoveEditorToOppositeTabGroup<CR>
+
+" ============================================================
+" Tabs / Editors
+" ============================================================
+
+nnoremap <S-h> :action PreviousTab<CR>
+nnoremap <S-l> :action NextTab<CR>
+nnoremap <leader><space> :action Switcher<CR>
+nnoremap <leader>q :action CloseContent<CR>
+
+" ============================================================
+" Folding
+" ============================================================
+
+nnoremap zc :action CollapseRegion<CR>
+nnoremap zo :action ExpandRegion<CR>
+
+nnoremap <leader>zc :action CollapseRegion<CR>
+nnoremap <leader>zo :action ExpandRegion<CR>
+
+nnoremap <leader>zC :action CollapseAllRegions<CR>
+nnoremap <leader>zO :action ExpandAllRegions<CR>
+
+" ============================================================
+" Editing
+" ============================================================
+
+vnoremap < <gv
+vnoremap > >gv
+
+nnoremap [[ :action MethodUp<CR>
+nnoremap ]] :action MethodDown<CR>
+nnoremap <leader>c :action CommentByLineComment<CR>
+nnoremap <leader>F :action ReformatCode<CR>
+
+nnoremap <leader>r  :action Refactorings.QuickListPopupAction<CR>
+nnoremap <leader>rr :action RenameElement<CR>
+nnoremap <leader>ca :action ShowIntentionActions<CR>
+
+nnoremap <leader>=  :action ReformatCode<CR>
+nnoremap <leader>o  :action OptimizeImports<CR>
+
+nnoremap <leader>l  :action RecentLocations<CR>
+nnoremap <C-r>      :action RecentFiles<CR>
+
+nnoremap <leader>hh :action LocalHistory.ShowHistory<CR>
+
+" ============================================================
+" Navigation / Search
+" ============================================================
+
+nnoremap <C-s> :action FileStructurePopup<CR>
+
+nnoremap [[ :action MethodUp<CR>
+nnoremap ]] :action MethodDown<CR>
+
+nnoremap <leader>ff :action GotoFile<CR>
+nnoremap <leader>fs :action GotoSymbol<CR>
+nnoremap <leader>fa :action GotoAction<CR>
+nnoremap <leader>/  :action FindInPath<CR>
+nnoremap <leader>sr :action ReplaceInPath<CR>
+
+nnoremap <leader>s :action GotoRelated<CR>
+nnoremap <leader>b :action ShowNavBar<CR>
+nnoremap <leader>h :action CallHierarchy<CR>
+
+" Go-to
+nnoremap gd :action GotoDeclaration<CR>
+nnoremap gD :action GotoTypeDeclaration<CR>
+nnoremap gi :action GotoImplementation<CR>
+nnoremap gc :action GotoClass<CR>
+nnoremap gt :action GotoTest<CR>
+nnoremap gp :action GotoSuperMethod<CR>
+
+" Usages
+nnoremap gr :action FindUsages<CR>
+
+" Navigation History
+nnoremap <c-i> :action Forward<CR>
+nnoremap <c-o> :action Back<CR>
+
+" Diagnostics
+nnoremap ge :action GotoNextError<CR>
+nnoremap gE :action GotoPreviousError<CR>
+
+" ============================================================
+" Project / Files / VCS
+" ============================================================
+
+nnoremap <leader>w  :write<CR>
+nnoremap <leader>e  :action ActivateProjectToolWindow<CR>
+
+nnoremap <leader>gg :action Vcs.QuickListPopupAction<CR>
+nnoremap <leader>dd :action GotoNextError<CR>
+
+nnoremap <leader>hp :action HelpTopics<CR>
+
+" ============================================================
+" Debugger
+" ============================================================
+
+nnoremap <F5>  :action Resume<CR>
+nnoremap <F10> :action StepOver<CR>
+nnoremap <F11> :action StepInto<CR>
+nnoremap <F12> :action StepOut<CR>
+
+nnoremap <leader>db :action ToggleLineBreakpoint<CR>
+nnoremap <leader>dB :action ViewBreakpoints<CR>
+
+nnoremap <leader>dr :action ActivateDebugToolWindow<CR>
+nnoremap <leader>dt :action Stop<CR>
+
+nnoremap <leader>dh :action QuickEvaluateExpression<CR>
+nnoremap <leader>de :action ViewBreakpoints<CR>
+
+" ============================================================
+" Build
+" ============================================================
+
+nnoremap <leader>bp :action CompileDirty<CR>
+nnoremap <leader>bs :action BuildSolutionAction<CR>
+nnoremap <leader>br :action RebuildSolutionAction<CR>
+
+" ============================================================
+" Testing 
+" ============================================================
+
+nnoremap <leader>tr :action RunContextTest<CR>
+nnoremap <leader>td :action DebugContextTest<CR>
+
+nnoremap <leader>tR :action RerunTests<CR>
+nnoremap <leader>tT :action RunAllTests<CR>
+nnoremap <leader>tf :action RerunFailedTests<CR>
+
+" ============================================================
+" Insert Mode
+" ============================================================
+
+inoremap <Tab>   <C-N>
+inoremap <S-Tab> <C-P>
+
+" ============================================================
+" IdeaVim Config
+" ============================================================
+
+nnoremap <leader>ce :e ~/.ideavimrc<CR>
+nnoremap <leader>cr :so ~/.ideavimrc<CR>

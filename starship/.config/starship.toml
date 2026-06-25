@@ -5,14 +5,12 @@
 add_newline = false
 command_timeout = 1000
 
-format = """
-$os $username$hostname\
+format = """$os $username$hostname\
 $directory\
 $git_branch$git_status\
 $nodejs$dotnet$python$rust$golang\
 $time
-$character
-"""
+$character"""
 
 # -----------------------------
 # Core UI

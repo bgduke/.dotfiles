@@ -1,0 +1,24 @@
+[2m2025-12-21T07:39:31.093339Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Failed to execute 'zebar'.
+
+Error: The operation was canceled by the user. (0x800704C7)
+[2m2025-12-21T10:59:33.008377Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m No common ancestor between containers.
+[2m2026-02-04T04:25:26.771150Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m workspaces[0].bind_to_monitor: invalid type: string "0", expected u32 at line 124 column 22
+[2m2026-02-04T04:25:53.255274Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m did not find expected ',' or ']' at line 197 column 5, while parsing a flow sequence at line 196 column 15
+[2m2026-02-04T06:23:23.099396Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Another instance of the application is already running.
+[2m2026-02-04T06:28:08.429516Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m No displayed workspace.
+[2m2026-02-04T06:28:14.572854Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m No Workspace
+[2m2026-02-04T12:38:01.852741Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Another instance of the application is already running.
+[2m2026-04-16T12:58:41.706399Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Another instance of the application is already running.
+[2m2026-04-16T15:12:43.942261Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Another instance of the application is already running.
+[2m2026-04-19T22:50:36.198113Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Another instance of the application is already running.
+[2m2026-04-19T22:51:31.890375Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Another instance of the application is already running.
+[2m2026-04-19T23:49:50.011200Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Workspace with name '10' doesn't exist or is already active.
+[2m2026-04-24T09:58:29.266611Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m No displayed workspace.
+[2m2026-04-27T11:37:20.393702Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m No displayed workspace.
+[2m2026-04-27T12:08:02.031659Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m No Workspace
+[2m2026-04-27T12:08:09.104013Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m No Workspace
+[2m2026-04-28T17:56:36.668890Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m No displayed workspace.
+[2m2026-04-29T11:56:28.677436Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m No displayed workspace.
+[2m2026-04-30T12:26:10.962488Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m No displayed workspace.
+[2m2026-05-04T11:54:35.831688Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m No displayed workspace.
+[2m2026-06-16T19:20:19.775571Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Platform error: Another instance of the application is already running.

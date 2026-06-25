@@ -1,0 +1,124 @@
+" VsVim config for Visual Studio 2026
+" Based on the Neovim config in this repository.
+
+" -----------------------------------------------------------------------------
+" Core Vim behavior
+" -----------------------------------------------------------------------------
+let mapleader = " "
+let maplocalleader = " "
+
+set nocompatible
+set number
+set relativenumber
+set cursorline
+set ignorecase
+set smartcase
+set incsearch
+set hlsearch
+set scrolloff=8
+set sidescrolloff=8
+set nowrap
+set tabstop=4
+set shiftwidth=4
+set expandtab
+set clipboard=unnamed
+
+" Let Visual Studio keep ownership of features where it is stronger than Vim.
+set vsvim_useeditordefaults
+
+" -----------------------------------------------------------------------------
+" Window, document, and editor basics
+" -----------------------------------------------------------------------------
+" Visual Studio does not expose directional editor-pane movement like <C-w>h/j/k/l.
+" These use native pane/document navigation instead.
+nnoremap <C-h> :vsc Window.PreviousPane<CR>
+nnoremap <C-j> :vsc Window.NextPane<CR>
+nnoremap <C-k> :vsc Window.PreviousPane<CR>
+nnoremap <C-l> :vsc Window.NextPane<CR>
+
+nnoremap <Leader>h :nohlsearch<CR>
+nnoremap <Leader>w :vsc File.SaveSelectedItems<CR>
+nnoremap <Leader>W :vsc File.SaveAll<CR>
+
+" Tabs and buffers -> Visual Studio document windows.
+nnoremap <S-h> :vsc Window.PreviousDocumentWindow<CR>
+nnoremap <S-l> :vsc Window.NextDocumentWindow<CR>
+nnoremap <Leader><Space> :vsc Window.ShowEzMDIFileList<CR>
+nnoremap <Leader>q :vsc Window.CloseDocumentWindow<CR>
+nnoremap <Leader>sv :vsc Window.NewVerticalTabGroup<CR>
+nnoremap <Leader>sh :vsc Window.NewHorizontalTabGroup<CR>
+
+" Folds -> Visual Studio outlining.
+nnoremap <Leader>zc :vsc Edit.CollapseCurrentRegion<CR>
+nnoremap <Leader>zo :vsc Edit.ExpandCurrentRegion<CR>
+nnoremap <Leader>zC :vsc Edit.CollapseAllOutlining<CR>
+nnoremap <Leader>zO :vsc Edit.ToggleAllOutlining<CR>
+
+" -----------------------------------------------------------------------------
+" Mini.nvim replacements using Visual Studio features
+" -----------------------------------------------------------------------------
+" Mini.Files
+nnoremap <Leader>e :vsc View.SolutionExplorer<CR>
+
+" Mini.Git
+nnoremap <Leader>gg :vsc View.GitChanges<CR>
+
+" Mini.Pick
+nnoremap <Leader>ff :vsc Edit.NavigateTo<CR>
+nnoremap <Leader>/ :vsc Edit.FindinFiles<CR>
+nnoremap <Leader>dd :vsc View.ErrorList<CR>
+nnoremap <Leader>sr :vsc Edit.ReplaceinFiles<CR>
+nnoremap <Leader>hh :vsc Help.ViewHelp<CR>
+
+" Formatting. Visual Studio owns formatters and format-on-save settings.
+nnoremap <Leader>F :vsc Edit.FormatDocument<CR>
+nnoremap <Leader>kp :vsc Edit.FormatDocument<CR>
+
+" -----------------------------------------------------------------------------
+" LSP-style navigation and refactoring via Visual Studio/Roslyn
+" -----------------------------------------------------------------------------
+nnoremap gl :vsc View.ErrorList<CR>
+nnoremap K :vsc Edit.QuickInfo<CR>
+nnoremap gs :vsc Edit.ParameterInfo<CR>
+nnoremap gd :vsc Edit.GoToDefinition<CR>
+nnoremap gD :vsc Edit.GoToDeclaration<CR>
+nnoremap gr :vsc Edit.FindAllReferences<CR>
+nnoremap <Leader>ca :vsc Edit.QuickActions<CR>
+nnoremap <Leader>rr :vsc Refactor.Rename<CR>
+nnoremap <Leader>gv :vsc Window.NewVerticalTabGroup<CR>:vsc Edit.GoToDefinition<CR>
+
+" -----------------------------------------------------------------------------
+" DAP/easy-dotnet replacements using Visual Studio debug and test tooling
+" -----------------------------------------------------------------------------
+nnoremap <F5> :vsc Debug.Start<CR>
+nnoremap <F10> :vsc Debug.StepOver<CR>
+nnoremap <F11> :vsc Debug.StepInto<CR>
+nnoremap <F12> :vsc Debug.StepOut<CR>
+
+nnoremap <Leader>db :vsc Debug.ToggleBreakpoint<CR>
+nnoremap <Leader>dB :vsc Debug.NewBreakpoint<CR>
+nnoremap <Leader>dl :vsc Debug.NewBreakpoint<CR>
+nnoremap <Leader>dr :vsc View.ImmediateWindow<CR>
+nnoremap <Leader>du :vsc Debug.Windows.Autos<CR>
+nnoremap <Leader>dt :vsc Debug.StopDebugging<CR>
+nnoremap <Leader>dh :vsc Debug.QuickWatch<CR>
+nnoremap <Leader>de :vsc Debug.ExceptionSettings<CR>
+nnoremap <Leader>dE :vsc Debug.ExceptionSettings<CR>
+
+" easy-dotnet test runner approximations.
+nnoremap <Leader>t :vsc TestExplorer.ShowTestExplorer<CR>
+nnoremap <Leader>r :vsc TestExplorer.RunAllTestsInView<CR>
+nnoremap <Leader>R :vsc TestExplorer.RunAllTests<CR>
+nnoremap <Leader>p :vsc TestExplorer.ShowTestExplorer<CR>
+nnoremap <Leader>d :vsc TestExplorer.DebugAllTestsInView<CR>
+
+" Package/project helpers from easy-dotnet map to Visual Studio windows.
+nnoremap <Leader>pu :vsc Project.ManageNuGetPackages<CR>
+nnoremap <Leader>pa :vsc Project.ManageNuGetPackages<CR>
+
+" -----------------------------------------------------------------------------
+" Insert-mode completion
+" -----------------------------------------------------------------------------
+" Mini.completion, mini.pairs, and snippets are intentionally left to Visual
+" Studio/IntelliSense. Keeping Tab, Shift-Tab, Enter, and Backspace unmapped
+" avoids fighting the editor completion list.
