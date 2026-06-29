@@ -67,6 +67,7 @@
 #workspaces button.focused {
   background-color: @transparent;
   color: @fg;
+  font-size: 700;
   border-radius: 0px;
 }
 
