@@ -37,7 +37,7 @@
   font-size: 12px;
   color: var(--text1);
   font-weight: 600;
-  font-family: "JetBrainsMono NFP";
+  font-family: "JetBrainsMono Nerd Font";
 }
 .yasb-bar {
   background-color: var(--bg-color1);
@@ -50,7 +50,7 @@
   color: var(--text1);
   padding: 5px 10px;
   font-size: 12px;
-  font-family: "Segoe UI";
+  font-family: "JetBrainsMono Nerd Font";
   font-weight: 600;
   margin-top: 4px;
 }
@@ -60,7 +60,7 @@
   background-color: var(--bg-color1);
   border: none;
   padding: 4px 0px;
-  font-family: "Segoe UI";
+  font-family: "JetBrainsMono Nerd Font";
   font-size: 12px;
   color: var(--text1);
 }
@@ -100,7 +100,7 @@
   font-size: 12px;
   margin: 0;
   color: var(--text1);
-  font-family: "Segoe UI";
+  font-family: "JetBrainsMono Nerd Font";
 }
 .context-menu .submenu::item:disabled {
   margin: 0;
@@ -293,7 +293,7 @@
   font-size: 14px;
   font-weight: 600;
   margin-left: 10px;
-  font-family: "Segoe UI";
+  font-family: "JetBrainsMono Nerd Font";
 }
 .media-menu .artist {
   font-size: 13px;
@@ -356,7 +356,7 @@
 
 .media-menu .playback-time {
   font-size: 13px;
-  font-family: "Segoe UI";
+  font-family: "JetBrainsMono Nerd Font";
   color: var(--bg4);
   margin-top: 20px;
   min-width: 100px;
@@ -409,7 +409,7 @@
 .home-menu .menu-item {
   padding: 8px 48px 9px 16px;
   font-size: 12px;
-  font-family: "Segoe UI";
+  font-family: "JetBrainsMono Nerd Font";
   color: var(--text1);
   font-weight: 600;
 }
@@ -440,7 +440,7 @@
 .calendar .calendar-table::item {
   background-color: transparent;
   color: var(--fg2);
-  font-family: "Segoe UI";
+  font-family: "JetBrainsMono Nerd Font";
   margin: 0;
   padding: 0;
   border: none;
@@ -459,7 +459,7 @@
 .calendar .date-label,
 .calendar .week-label,
 .calendar .holiday-label {
-  font-family: "Segoe UI";
+  font-family: "JetBrainsMono Nerd Font";
   font-size: 16px;
   color: var(--fg0);
   font-weight: 700;
@@ -565,7 +565,7 @@
   min-width: 300px;
 }
 .language-menu .header {
-  font-family: "Segoe UI";
+  font-family: "JetBrainsMono Nerd Font";
   font-size: 14px;
   font-weight: 600;
   margin-bottom: 2px;
@@ -575,7 +575,7 @@
   color: var(--text1);
 }
 .language-menu .footer {
-  font-family: "Segoe UI";
+  font-family: "JetBrainsMono Nerd Font";
   font-size: 12px;
   font-weight: 600;
   padding: 12px;
@@ -620,13 +620,13 @@
 }
 .language-menu .language-item .name {
   font-weight: 600;
-  font-family: "Segoe UI";
+  font-family: "JetBrainsMono Nerd Font";
   font-size: 14px;
   color: var(--text1);
 }
 .language-menu .language-item .layout {
   font-weight: 600;
-  font-family: "Segoe UI";
+  font-family: "JetBrainsMono Nerd Font";
   font-size: 12px;
   color: var(--text2);
 }
