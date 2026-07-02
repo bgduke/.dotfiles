@@ -11,6 +11,7 @@ let maplocalleader = " "
 
 set number
 set relativenumber
+set VimEverywhere
 
 set hlsearch
 set incsearch
@@ -57,8 +58,8 @@ nnoremap <leader>nu :action ActivateNuGetToolWindow<CR>
 " Window / Split Navigation
 " ============================================================
 
-sethandler <C-j> a:vim
-sethandler <C-k> a:vim
+" sethandler <C-j> a:vim
+" sethandler <C-k> a:vim
 
 nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j

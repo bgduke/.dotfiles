@@ -8,7 +8,7 @@ bars:
     screens: ["*"]
     class_name: "yasb-bar"
     alignment:
-      position: "top"
+      position: "bottom"
       center: false
     animation:
       enabled: true
@@ -25,7 +25,7 @@ bars:
       windows_app_bar: true
     dimensions:
       width: "100%"
-      height: 32
+      height: 24
     padding:
       top: 0
       left: 0
@@ -36,14 +36,13 @@ bars:
         # - "komorebi_workspaces"
         - "glazewm_workspaces"
         - "glazewm_tiling_direction"
-      center:
-        - "clock"
       right:
         - "media"
         - "language"
         - "volume"
         - "microphone"
-        - "weather"
+        # - "weather"
+        - "clock"
         - "power_menu"
 widgets:
   home:
@@ -121,7 +120,7 @@ widgets:
   clock:
     type: "yasb.clock.ClockWidget"
     options:
-      label: "{%a, %d %b %H:%M}"
+      label: "{%a %d %b | %H:%M}"
       label_alt: "{%A, %d %B %Y %H:%M}"
       timezones: []
       calendar:
@@ -234,14 +233,14 @@ widgets:
   power_menu:
     type: "yasb.power_menu.PowerMenuWidget"
     options:
-      label: "\uf011"
+      label: "⏻"
       uptime: True
       blur: False
       blur_background: True
       animation_duration: 200
       button_row: 5
       buttons:
-        shutdown: ["\uf011", "Shut Down"]
+        shutdown: ["⏻", "Shut Down"]
         restart: ["\uead2", "Restart"]
         signout: ["\udb80\udf43", "Sign out"]
         hibernate: ["\uf28e", "Hibernate"]
@@ -257,11 +256,12 @@ widgets:
       callbacks:
         on_left: "toggle_notification"
         on_right: "do_nothing"
+
   glazewm_workspaces:
     type: "glazewm.workspaces.GlazewmWorkspacesWidget"
     options:
       offline_label: "GlazeWM Offline"
-      hide_empty_workspaces: true
+      hide_empty_workspaces: false
       hide_if_offline: false
       enable_scroll_switching: true
       btn_shadow:
@@ -288,6 +288,7 @@ widgets:
         color: "black"
         radius: 3
         offset: [1, 1]
+
   # komorebi_workspaces:
   #   type: "komorebi.workspaces.WorkspaceWidget"
   #   options:
@@ -308,6 +309,7 @@ widgets:
   #       hide_label: false
   #       hide_duplicates: false
   #       hide_floating: false
+
   language:
     type: "yasb.language.LanguageWidget"
     options:

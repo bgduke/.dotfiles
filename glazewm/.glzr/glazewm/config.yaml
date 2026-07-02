@@ -15,18 +15,18 @@ general:
 
 gaps:
   scale_with_dpi: true
-  inner_gap: "4px"
+  inner_gap: "6px"
   outer_gap:
-    top: "4px"
-    right: "4px"
-    bottom: "4px"
-    left: "4px"
+    top: "6px"
+    right: "6px"
+    bottom: "6px"
+    left: "6px"
 
 window_effects:
   focused_window:
     border:
       enabled: true
-      color: "#fbf1c7"
+      color: "#282828"
 
     hide_title_bar:
       enabled: false
@@ -49,8 +49,8 @@ window_effects:
       enabled: true
       style: "square"
     transparency:
-      enabled: false
-      opacity: "0%"
+      enabled: true
+      opacity: "95%"
 
 window_behavior:
   initial_state: "tiling"
@@ -65,25 +65,17 @@ window_behavior:
 
 workspaces:
   - name: "1"
-    bind_to_monitor: 0
   - name: "2"
-    bind_to_monitor: 0
   - name: "3"
-    bind_to_monitor: 0
   - name: "4"
-    bind_to_monitor: 0
   - name: "5"
-    bind_to_monitor: 0
   - name: "6"
-    bind_to_monitor: 0
   - name: "7"
-    bind_to_monitor: 1
   - name: "8"
-    bind_to_monitor: 1
   - name: "9"
-    bind_to_monitor: 1
   - name: "10"
-    bind_to_monitor: 1
+  - name: "11"
+  - name: "12"
 
 window_rules:
   - commands: ["ignore"]
@@ -253,6 +245,10 @@ keybindings:
     bindings: ["alt+9"]
   - commands: ["focus --workspace 10"]
     bindings: ["alt+0"]
+  - commands: ["focus --workspace 11"]
+    bindings: ["alt+-"]
+  - commands: ["focus --workspace 12"]
+    bindings: ["alt+="]
 
   # Move the focused window's parent workspace to a monitor in a given
   # direction.
@@ -286,5 +282,9 @@ keybindings:
     bindings: ["alt+shift+9"]
   - commands: ["move --workspace 10", "focus --workspace 10"]
     bindings: ["alt+shift+0"]
+  - commands: ["move --workspace 11", "focus --workspace 11"]
+    bindings: ["alt+shift+-"]
+  - commands: ["move --workspace 12", "focus --workspace 12"]
+    bindings: ["alt+shift+="]
 
 

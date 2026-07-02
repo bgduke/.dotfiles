@@ -40,10 +40,10 @@ alt + shift + up            : komorebic move up
 alt + shift + right         : komorebic move right
 
 # Resize
-alt + oem_plus              : komorebic resize-axis horizontal increase
-alt + oem_minus             : komorebic resize-axis horizontal decrease
-alt + shift + oem_plus      : komorebic resize-axis vertical increase
-alt + shift + oem_minus     : komorebic resize-axis vertical decrease
+# alt + oem_plus              : komorebic resize-axis horizontal increase
+# alt + oem_minus             : komorebic resize-axis horizontal decrease
+# alt + shift + oem_plus      : komorebic resize-axis vertical increase
+# alt + shift + oem_minus     : komorebic resize-axis vertical decrease
 
 # Workspaces
 alt + 1                     : komorebic focus-workspace 0
@@ -56,6 +56,8 @@ alt + 7                     : komorebic focus-workspace 6
 alt + 8                     : komorebic focus-workspace 7
 alt + 9                     : komorebic focus-workspace 8
 alt + 0                     : komorebic focus-workspace 9
+alt + oem_minus             : komorebic focus-workspace 10
+alt + oem_plus              : komorebic focus-workspace 11
 
 # Move windows across workspaces
 alt + shift + 1             : komorebic move-to-workspace 0
@@ -68,6 +70,8 @@ alt + shift + 7             : komorebic move-to-workspace 6
 alt + shift + 8             : komorebic move-to-workspace 7
 alt + shift + 9             : komorebic move-to-workspace 8
 alt + shift + 0             : komorebic move-to-workspace 9
+alt + shift + oem_minus     : komorebic move-to-workspace 10
+alt + shift + oem_plus      : komorebic move-to-workspace 11
 
 # Not ported 1:1 from Sway:
 # - scratchpad actions (`alt+m`, `alt+shift+m`)

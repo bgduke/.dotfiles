@@ -22,6 +22,7 @@
   --purple: #d3869b;
   --aqua: #8ec07c;
   --orange: #fe8019;
+  --aqua-dark: #689d6a;
 
   /* Theme mapping */
   --mauve: var(--purple);
@@ -36,8 +37,8 @@
 * {
   font-size: 12px;
   color: var(--text1);
-  font-weight: 600;
-  font-family: "JetBrainsMono Nerd Font";
+  font-weight: 400;
+  font-family: "JetBrainsMono NFP";
 }
 .yasb-bar {
   background-color: var(--bg-color1);
@@ -50,8 +51,7 @@
   color: var(--text1);
   padding: 5px 10px;
   font-size: 12px;
-  font-family: "JetBrainsMono Nerd Font";
-  font-weight: 600;
+  font-weight: 700;
   margin-top: 4px;
 }
 /* Global context menu style */
@@ -60,7 +60,6 @@
   background-color: var(--bg-color1);
   border: none;
   padding: 4px 0px;
-  font-family: "JetBrainsMono Nerd Font";
   font-size: 12px;
   color: var(--text1);
 }
@@ -100,7 +99,6 @@
   font-size: 12px;
   margin: 0;
   color: var(--text1);
-  font-family: "JetBrainsMono Nerd Font";
 }
 .context-menu .submenu::item:disabled {
   margin: 0;
@@ -150,7 +148,7 @@
 .power-menu-popup .button {
   padding: 0;
   width: 180px;
-  height: 230px;
+  height: 200px;
   border-radius: 8px;
   background-color: var(--bg-color1);
   border: 4px solid transparent;
@@ -162,12 +160,13 @@
 }
 .power-menu-popup .button .label {
   margin-bottom: 8px;
-  font-size: 16px;
-  font-weight: 500;
+  font-family: "NotoSans";
+  font-size: 14px;
+  font-weight: 400;
   color: var(--text3);
 }
 .power-menu-popup .button .icon {
-  font-size: 64px;
+  font-size: 48px;
   padding-top: 32px;
   color: var(--text4);
 }
@@ -327,7 +326,6 @@
 }
 
 .media-menu .btn {
-  font-family: "Segoe Fluent Icons";
   font-size: 14px;
   font-weight: 400;
   margin: 10px 2px 0px 2px;
@@ -356,7 +354,6 @@
 
 .media-menu .playback-time {
   font-size: 13px;
-  font-family: "JetBrainsMono Nerd Font";
   color: var(--bg4);
   margin-top: 20px;
   min-width: 100px;
@@ -392,9 +389,6 @@
   background-color: var(--aqua);
   padding: 10px;
   font-weight: bolder;
-  font-family:
-    "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
-    Arial, sans-serif;
   font-size: 18px;
   width: 16px;
 }
@@ -409,7 +403,6 @@
 .home-menu .menu-item {
   padding: 8px 48px 9px 16px;
   font-size: 12px;
-  font-family: "JetBrainsMono Nerd Font";
   color: var(--text1);
   font-weight: 600;
 }
@@ -440,7 +433,6 @@
 .calendar .calendar-table::item {
   background-color: transparent;
   color: var(--fg2);
-  font-family: "JetBrainsMono Nerd Font";
   margin: 0;
   padding: 0;
   border: none;
@@ -459,7 +451,6 @@
 .calendar .date-label,
 .calendar .week-label,
 .calendar .holiday-label {
-  font-family: "JetBrainsMono Nerd Font";
   font-size: 16px;
   color: var(--fg0);
   font-weight: 700;
@@ -493,24 +484,25 @@
 
 .glazewm-workspaces .ws-btn,
 .komorebi-workspaces .ws-btn {
-  font-size: 14px;
+  font-size: 16px;
   background-color: transparent;
   border: none;
   border-radius: 0px;
-  padding: 10px 10px 10px 10px;
+  padding: 5px 5px 5px 5px;
   width: 16px;
   margin: 0px;
   color: var(--bg3);
 }
 
-.glazewm-workspaces .ws-btn.active_populated,
-.glazewm-workspaces .ws-btn.active_empty,
+.glazewm-workspaces  .ws-btn.active_populated,
+.glazewm-workspaces  .ws-btn.active_empty,
 .komorebi-workspaces .ws-btn.active_populated,
 .komorebi-workspaces .ws-btn.active_empty,
 .komorebi-workspaces .ws-btn.active {
   color: var(--fg0);
-  background-color: var(--transparent);
-  font-weight: bolder;
+  background-color: var(--aqua-dark);
+  color: var(--bg0);
+  font-weight: 700;
 }
 
 .glazewm-workspaces .ws-btn.populated,
@@ -518,18 +510,19 @@
   color: var(--bg4);
 }
 
-.glazewm-workspaces .ws-btn:hover,
-.glazewm-workspaces .ws-btn.populated:hover,
-.glazewm-workspaces .ws-btn.empty:hover,
+.glazewm-workspaces  .ws-btn:hover,
+.glazewm-workspaces  .ws-btn.populated:hover,
+.glazewm-workspaces  .ws-btn.empty:hover,
 .komorebi-workspaces .ws-btn:hover,
 .komorebi-workspaces .ws-btn.populated:hover,
 .komorebi-workspaces .ws-btn.empty:hover {
   background-color: var(--bg2);
+  color: var(--fg0);
 }
 .komorebi-active-layout {
   background-color: transparent;
   padding: 0;
-  margin: 0 -10px 0 2px;
+  margin: 0;
 }
 
 .komorebi-active-layout .label {
@@ -545,13 +538,13 @@
 .glazewm-tiling-direction {
   background-color: transparent;
   padding: 0;
-  margin: 0 -10px 0 2px;
+  margin: 0 0 0 0;
 }
 
 .glazewm-tiling-direction .btn {
   font-size: 18px;
   width: 14px;
-  padding: 10px;
+  padding: 0 5 0 5;
   color: var(--fg1);
   border: none;
 }
@@ -565,7 +558,6 @@
   min-width: 300px;
 }
 .language-menu .header {
-  font-family: "JetBrainsMono Nerd Font";
   font-size: 14px;
   font-weight: 600;
   margin-bottom: 2px;
@@ -575,7 +567,6 @@
   color: var(--text1);
 }
 .language-menu .footer {
-  font-family: "JetBrainsMono Nerd Font";
   font-size: 12px;
   font-weight: 600;
   padding: 12px;
@@ -620,13 +611,11 @@
 }
 .language-menu .language-item .name {
   font-weight: 600;
-  font-family: "JetBrainsMono Nerd Font";
   font-size: 14px;
   color: var(--text1);
 }
 .language-menu .language-item .layout {
   font-weight: 600;
-  font-family: "JetBrainsMono Nerd Font";
   font-size: 12px;
   color: var(--text2);
 }

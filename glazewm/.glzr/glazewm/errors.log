@@ -22,3 +22,7 @@ Error: The operation was canceled by the user. (0x800704C7)
 [2m2026-04-30T12:26:10.962488Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m No displayed workspace.
 [2m2026-05-04T11:54:35.831688Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m No displayed workspace.
 [2m2026-06-16T19:20:19.775571Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Platform error: Another instance of the application is already running.
+[2m2026-07-02T00:57:23.657161Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Workspace with name '10' doesn't exist or is already active.
+[2m2026-07-02T00:57:25.321686Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Workspace with name '10' doesn't exist or is already active.
+[2m2026-07-02T00:57:26.444669Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Workspace with name '12' doesn't exist or is already active.
+[2m2026-07-02T00:57:43.086419Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Workspace with name '12' doesn't exist or is already active.
