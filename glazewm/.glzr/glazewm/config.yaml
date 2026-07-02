@@ -15,12 +15,12 @@ general:
 
 gaps:
   scale_with_dpi: true
-  inner_gap: "6px"
+  inner_gap: "0px"
   outer_gap:
-    top: "6px"
-    right: "6px"
-    bottom: "6px"
-    left: "6px"
+    top: "0px"
+    right: "0px"
+    bottom: "0px"
+    left: "0px"
 
 window_effects:
   focused_window:
@@ -50,7 +50,7 @@ window_effects:
       style: "square"
     transparency:
       enabled: true
-      opacity: "95%"
+      opacity: "90%"
 
 window_behavior:
   initial_state: "tiling"
