@@ -6139,3 +6139,403 @@ bars:
 2026-07-02 11:46:15,945 [INFO] [MainThread] [root/watcher.py:65]: Watching directory: c:\users\breno\.config\yasb
 2026-07-02 11:46:15,945 [INFO] [MainThread] [root/watcher.py:104]: Created file watcher
 2026-07-02 11:46:15,958 [INFO] [MainThread] [root/update_service.py:434]: Background update checker started
+2026-07-02 11:59:30,910 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] BarAlignment: 'center' - Use 'align' instead.
+2026-07-02 11:59:30,910 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] BarBlurEffect: 'acrylic' - No longer supported and can be removed from the config.
+2026-07-02 11:59:30,910 [INFO] [MainThread] [root/controller.py:21]: Reloading Application because of config change.
+2026-07-02 11:59:31,011 [INFO] [MainThread] [cli_server/cli_server.py:114]: Log pipe server stopped
+2026-07-02 11:59:31,015 [INFO] [MainThread] [root/bar_manager.py:93]: Successfully loaded updated config and re-initialised all bars.
+2026-07-02 11:59:31,153 [INFO] [MainThread] [root/bar_manager.py:119]: Stopping SystemEventListener...
+2026-07-02 11:59:31,478 [INFO] [MainThread] [root/log.py:104]: YASB v2.0.5
+2026-07-02 11:59:31,478 [INFO] [CLIPipeServer] [cli_server/cli_server.py:216]: CLI server started v1.1.7
+2026-07-02 11:59:31,479 [INFO] [MainThread] [cli_server/cli_server.py:106]: Log pipe server started
+2026-07-02 11:59:31,510 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] BarAlignment: 'center' - Use 'align' instead.
+2026-07-02 11:59:31,510 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] BarBlurEffect: 'acrylic' - No longer supported and can be removed from the config.
+2026-07-02 11:59:31,546 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] GlazewmWorkspacesConfig: 'hide_empty_workspaces' - No longer supported and can be removed from the config.
+2026-07-02 11:59:31,546 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] GlazewmWorkspacesConfig: 'btn_shadow' - Use CSS box-shadow instead.
+2026-07-02 11:59:31,546 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] GlazewmWorkspacesConfig: 'animation' - Use CSS animations instead.
+2026-07-02 11:59:31,559 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] GlazewmTilingDirectionConfig: 'btn_shadow' - Use CSS box-shadow instead.
+2026-07-02 11:59:31,711 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] MediaWidgetConfig: 'label_shadow' - Use CSS text-shadow instead.
+2026-07-02 11:59:31,722 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] LanguageConfig: 'label_shadow' - Use CSS text-shadow instead.
+2026-07-02 11:59:31,728 [WARNING] [MainThread] [deprecation/deprecation.py:140]: [DEPRECATED] VolumeConfig: 'volume_icons' renamed to 'icons' - Use 'icons' with the dictionary format instead.
+2026-07-02 11:59:31,728 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] VolumeConfig: 'label_shadow' - Use CSS text-shadow instead.
+2026-07-02 11:59:31,738 [INFO] [MainThread] [root/service.py:52]: AudioOutputService starting...
+2026-07-02 11:59:31,776 [INFO] [MainThread] [root/service.py:41]: AudioInputService starting...
+2026-07-02 11:59:32,352 [INFO] [MainThread] [taskbar_window_manager/window_manager.py:178]: TaskbarWindowManager is starting...
+2026-07-02 11:59:32,356 [INFO] [MainThread] [root/bar_manager.py:103]: Starting SystemEventListener...
+2026-07-02 11:59:32,357 [INFO] [MainThread] [root/watcher.py:65]: Watching directory: c:\users\breno\.config\yasb
+2026-07-02 11:59:32,357 [INFO] [MainThread] [root/watcher.py:104]: Created file watcher
+2026-07-02 11:59:32,369 [INFO] [MainThread] [root/update_service.py:434]: Background update checker started
+2026-07-02 12:02:25,801 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] BarAlignment: 'center' - Use 'align' instead.
+2026-07-02 12:02:25,801 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] BarBlurEffect: 'acrylic' - No longer supported and can be removed from the config.
+2026-07-02 12:02:25,802 [INFO] [MainThread] [root/controller.py:21]: Reloading Application because of config change.
+2026-07-02 12:02:25,917 [INFO] [MainThread] [cli_server/cli_server.py:114]: Log pipe server stopped
+2026-07-02 12:02:25,921 [INFO] [MainThread] [root/bar_manager.py:93]: Successfully loaded updated config and re-initialised all bars.
+2026-07-02 12:02:26,041 [INFO] [MainThread] [root/bar_manager.py:119]: Stopping SystemEventListener...
+2026-07-02 12:02:26,055 [INFO] [MainThread] [taskbar_window_manager/window_manager.py:205]: TaskbarWindowManager stopped
+2026-07-02 12:02:26,357 [INFO] [MainThread] [root/log.py:104]: YASB v2.0.5
+2026-07-02 12:02:26,358 [INFO] [CLIPipeServer] [cli_server/cli_server.py:216]: CLI server started v1.1.7
+2026-07-02 12:02:26,358 [INFO] [MainThread] [cli_server/cli_server.py:106]: Log pipe server started
+2026-07-02 12:02:26,389 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] BarAlignment: 'center' - Use 'align' instead.
+2026-07-02 12:02:26,390 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] BarBlurEffect: 'acrylic' - No longer supported and can be removed from the config.
+2026-07-02 12:02:26,427 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] GlazewmWorkspacesConfig: 'hide_empty_workspaces' - No longer supported and can be removed from the config.
+2026-07-02 12:02:26,427 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] GlazewmWorkspacesConfig: 'btn_shadow' - Use CSS box-shadow instead.
+2026-07-02 12:02:26,427 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] GlazewmWorkspacesConfig: 'animation' - Use CSS animations instead.
+2026-07-02 12:02:26,439 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] GlazewmTilingDirectionConfig: 'btn_shadow' - Use CSS box-shadow instead.
+2026-07-02 12:02:26,502 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] MediaWidgetConfig: 'label_shadow' - Use CSS text-shadow instead.
+2026-07-02 12:02:26,511 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] LanguageConfig: 'label_shadow' - Use CSS text-shadow instead.
+2026-07-02 12:02:26,517 [WARNING] [MainThread] [deprecation/deprecation.py:140]: [DEPRECATED] VolumeConfig: 'volume_icons' renamed to 'icons' - Use 'icons' with the dictionary format instead.
+2026-07-02 12:02:26,517 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] VolumeConfig: 'label_shadow' - Use CSS text-shadow instead.
+2026-07-02 12:02:26,527 [INFO] [MainThread] [root/service.py:52]: AudioOutputService starting...
+2026-07-02 12:02:26,563 [INFO] [MainThread] [root/service.py:41]: AudioInputService starting...
+2026-07-02 12:02:27,003 [INFO] [MainThread] [taskbar_window_manager/window_manager.py:178]: TaskbarWindowManager is starting...
+2026-07-02 12:02:27,006 [INFO] [MainThread] [root/bar_manager.py:103]: Starting SystemEventListener...
+2026-07-02 12:02:27,007 [INFO] [MainThread] [root/watcher.py:65]: Watching directory: c:\users\breno\.config\yasb
+2026-07-02 12:02:27,008 [INFO] [MainThread] [root/watcher.py:104]: Created file watcher
+2026-07-02 12:02:27,020 [INFO] [MainThread] [root/update_service.py:434]: Background update checker started
+2026-07-02 12:02:33,588 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] BarAlignment: 'center' - Use 'align' instead.
+2026-07-02 12:02:33,588 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] BarBlurEffect: 'acrylic' - No longer supported and can be removed from the config.
+2026-07-02 12:02:33,588 [INFO] [MainThread] [root/controller.py:21]: Reloading Application because of config change.
+2026-07-02 12:02:33,699 [INFO] [MainThread] [cli_server/cli_server.py:114]: Log pipe server stopped
+2026-07-02 12:02:33,703 [INFO] [MainThread] [root/bar_manager.py:93]: Successfully loaded updated config and re-initialised all bars.
+2026-07-02 12:02:33,831 [INFO] [MainThread] [root/bar_manager.py:119]: Stopping SystemEventListener...
+2026-07-02 12:02:33,841 [INFO] [MainThread] [taskbar_window_manager/window_manager.py:205]: TaskbarWindowManager stopped
+2026-07-02 12:02:34,131 [INFO] [MainThread] [root/log.py:104]: YASB v2.0.5
+2026-07-02 12:02:34,131 [INFO] [CLIPipeServer] [cli_server/cli_server.py:216]: CLI server started v1.1.7
+2026-07-02 12:02:34,131 [INFO] [MainThread] [cli_server/cli_server.py:106]: Log pipe server started
+2026-07-02 12:02:34,162 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] BarAlignment: 'center' - Use 'align' instead.
+2026-07-02 12:02:34,162 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] BarBlurEffect: 'acrylic' - No longer supported and can be removed from the config.
+2026-07-02 12:02:34,198 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] GlazewmWorkspacesConfig: 'hide_empty_workspaces' - No longer supported and can be removed from the config.
+2026-07-02 12:02:34,198 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] GlazewmWorkspacesConfig: 'btn_shadow' - Use CSS box-shadow instead.
+2026-07-02 12:02:34,198 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] GlazewmWorkspacesConfig: 'animation' - Use CSS animations instead.
+2026-07-02 12:02:34,212 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] GlazewmTilingDirectionConfig: 'btn_shadow' - Use CSS box-shadow instead.
+2026-07-02 12:02:34,295 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] MediaWidgetConfig: 'label_shadow' - Use CSS text-shadow instead.
+2026-07-02 12:02:34,304 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] LanguageConfig: 'label_shadow' - Use CSS text-shadow instead.
+2026-07-02 12:02:34,310 [WARNING] [MainThread] [deprecation/deprecation.py:140]: [DEPRECATED] VolumeConfig: 'volume_icons' renamed to 'icons' - Use 'icons' with the dictionary format instead.
+2026-07-02 12:02:34,310 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] VolumeConfig: 'label_shadow' - Use CSS text-shadow instead.
+2026-07-02 12:02:34,321 [INFO] [MainThread] [root/service.py:52]: AudioOutputService starting...
+2026-07-02 12:02:34,356 [INFO] [MainThread] [root/service.py:41]: AudioInputService starting...
+2026-07-02 12:02:34,787 [INFO] [MainThread] [taskbar_window_manager/window_manager.py:178]: TaskbarWindowManager is starting...
+2026-07-02 12:02:34,790 [INFO] [MainThread] [root/bar_manager.py:103]: Starting SystemEventListener...
+2026-07-02 12:02:34,791 [INFO] [MainThread] [root/watcher.py:65]: Watching directory: c:\users\breno\.config\yasb
+2026-07-02 12:02:34,791 [INFO] [MainThread] [root/watcher.py:104]: Created file watcher
+2026-07-02 12:02:34,803 [INFO] [MainThread] [root/update_service.py:434]: Background update checker started
+2026-07-02 12:03:41,370 [INFO] [MainThread] [root/controller.py:21]: Reloading Application from tray...
+2026-07-02 12:03:41,483 [INFO] [MainThread] [cli_server/cli_server.py:114]: Log pipe server stopped
+2026-07-02 12:03:41,628 [INFO] [MainThread] [root/bar_manager.py:119]: Stopping SystemEventListener...
+2026-07-02 12:03:41,642 [INFO] [MainThread] [taskbar_window_manager/window_manager.py:205]: TaskbarWindowManager stopped
+2026-07-02 12:03:41,951 [INFO] [MainThread] [root/log.py:104]: YASB v2.0.5
+2026-07-02 12:03:41,952 [INFO] [CLIPipeServer] [cli_server/cli_server.py:216]: CLI server started v1.1.7
+2026-07-02 12:03:41,952 [INFO] [MainThread] [cli_server/cli_server.py:106]: Log pipe server started
+2026-07-02 12:03:41,984 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] BarAlignment: 'center' - Use 'align' instead.
+2026-07-02 12:03:41,984 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] BarBlurEffect: 'acrylic' - No longer supported and can be removed from the config.
+2026-07-02 12:03:42,023 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] GlazewmWorkspacesConfig: 'hide_empty_workspaces' - No longer supported and can be removed from the config.
+2026-07-02 12:03:42,023 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] GlazewmWorkspacesConfig: 'btn_shadow' - Use CSS box-shadow instead.
+2026-07-02 12:03:42,023 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] GlazewmWorkspacesConfig: 'animation' - Use CSS animations instead.
+2026-07-02 12:03:42,035 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] GlazewmTilingDirectionConfig: 'btn_shadow' - Use CSS box-shadow instead.
+2026-07-02 12:03:42,111 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] MediaWidgetConfig: 'label_shadow' - Use CSS text-shadow instead.
+2026-07-02 12:03:42,121 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] LanguageConfig: 'label_shadow' - Use CSS text-shadow instead.
+2026-07-02 12:03:42,127 [WARNING] [MainThread] [deprecation/deprecation.py:140]: [DEPRECATED] VolumeConfig: 'volume_icons' renamed to 'icons' - Use 'icons' with the dictionary format instead.
+2026-07-02 12:03:42,127 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] VolumeConfig: 'label_shadow' - Use CSS text-shadow instead.
+2026-07-02 12:03:42,141 [INFO] [MainThread] [root/service.py:52]: AudioOutputService starting...
+2026-07-02 12:03:42,179 [INFO] [MainThread] [root/service.py:41]: AudioInputService starting...
+2026-07-02 12:03:42,612 [INFO] [MainThread] [taskbar_window_manager/window_manager.py:178]: TaskbarWindowManager is starting...
+2026-07-02 12:03:42,615 [INFO] [MainThread] [root/bar_manager.py:103]: Starting SystemEventListener...
+2026-07-02 12:03:42,616 [INFO] [MainThread] [root/watcher.py:65]: Watching directory: c:\users\breno\.config\yasb
+2026-07-02 12:03:42,616 [INFO] [MainThread] [root/watcher.py:104]: Created file watcher
+2026-07-02 12:03:42,629 [INFO] [MainThread] [root/update_service.py:434]: Background update checker started
+2026-07-02 12:04:42,641 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] BarAlignment: 'center' - Use 'align' instead.
+2026-07-02 12:04:42,641 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] BarBlurEffect: 'acrylic' - No longer supported and can be removed from the config.
+2026-07-02 12:04:42,642 [INFO] [MainThread] [root/controller.py:21]: Reloading Application because of config change.
+2026-07-02 12:04:42,748 [INFO] [MainThread] [cli_server/cli_server.py:114]: Log pipe server stopped
+2026-07-02 12:04:42,751 [INFO] [MainThread] [root/bar_manager.py:93]: Successfully loaded updated config and re-initialised all bars.
+2026-07-02 12:04:42,874 [INFO] [MainThread] [root/bar_manager.py:119]: Stopping SystemEventListener...
+2026-07-02 12:04:42,898 [INFO] [MainThread] [taskbar_window_manager/window_manager.py:205]: TaskbarWindowManager stopped
+2026-07-02 12:04:43,206 [INFO] [MainThread] [root/log.py:104]: YASB v2.0.5
+2026-07-02 12:04:43,206 [INFO] [CLIPipeServer] [cli_server/cli_server.py:216]: CLI server started v1.1.7
+2026-07-02 12:04:43,206 [INFO] [MainThread] [cli_server/cli_server.py:106]: Log pipe server started
+2026-07-02 12:04:43,238 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] BarAlignment: 'center' - Use 'align' instead.
+2026-07-02 12:04:43,238 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] BarBlurEffect: 'acrylic' - No longer supported and can be removed from the config.
+2026-07-02 12:04:43,275 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] GlazewmWorkspacesConfig: 'hide_empty_workspaces' - No longer supported and can be removed from the config.
+2026-07-02 12:04:43,275 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] GlazewmWorkspacesConfig: 'btn_shadow' - Use CSS box-shadow instead.
+2026-07-02 12:04:43,275 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] GlazewmWorkspacesConfig: 'animation' - Use CSS animations instead.
+2026-07-02 12:04:43,288 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] GlazewmTilingDirectionConfig: 'btn_shadow' - Use CSS box-shadow instead.
+2026-07-02 12:04:43,360 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] MediaWidgetConfig: 'label_shadow' - Use CSS text-shadow instead.
+2026-07-02 12:04:43,368 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] LanguageConfig: 'label_shadow' - Use CSS text-shadow instead.
+2026-07-02 12:04:43,374 [WARNING] [MainThread] [deprecation/deprecation.py:140]: [DEPRECATED] VolumeConfig: 'volume_icons' renamed to 'icons' - Use 'icons' with the dictionary format instead.
+2026-07-02 12:04:43,374 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] VolumeConfig: 'label_shadow' - Use CSS text-shadow instead.
+2026-07-02 12:04:43,386 [INFO] [MainThread] [root/service.py:52]: AudioOutputService starting...
+2026-07-02 12:04:43,420 [INFO] [MainThread] [root/service.py:41]: AudioInputService starting...
+2026-07-02 12:04:43,842 [INFO] [MainThread] [taskbar_window_manager/window_manager.py:178]: TaskbarWindowManager is starting...
+2026-07-02 12:04:43,845 [INFO] [MainThread] [root/bar_manager.py:103]: Starting SystemEventListener...
+2026-07-02 12:04:43,846 [INFO] [MainThread] [root/watcher.py:65]: Watching directory: c:\users\breno\.config\yasb
+2026-07-02 12:04:43,846 [INFO] [MainThread] [root/watcher.py:104]: Created file watcher
+2026-07-02 12:04:43,859 [INFO] [MainThread] [root/update_service.py:434]: Background update checker started
+2026-07-02 12:05:15,545 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] BarAlignment: 'center' - Use 'align' instead.
+2026-07-02 12:05:15,546 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] BarBlurEffect: 'acrylic' - No longer supported and can be removed from the config.
+2026-07-02 12:05:15,546 [INFO] [MainThread] [root/controller.py:21]: Reloading Application because of config change.
+2026-07-02 12:05:15,655 [INFO] [MainThread] [cli_server/cli_server.py:114]: Log pipe server stopped
+2026-07-02 12:05:15,659 [INFO] [MainThread] [root/bar_manager.py:93]: Successfully loaded updated config and re-initialised all bars.
+2026-07-02 12:05:15,788 [INFO] [MainThread] [root/bar_manager.py:119]: Stopping SystemEventListener...
+2026-07-02 12:05:15,795 [INFO] [MainThread] [taskbar_window_manager/window_manager.py:205]: TaskbarWindowManager stopped
+2026-07-02 12:05:16,102 [INFO] [MainThread] [root/log.py:104]: YASB v2.0.5
+2026-07-02 12:05:16,103 [INFO] [CLIPipeServer] [cli_server/cli_server.py:216]: CLI server started v1.1.7
+2026-07-02 12:05:16,103 [INFO] [MainThread] [cli_server/cli_server.py:106]: Log pipe server started
+2026-07-02 12:05:16,135 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] BarAlignment: 'center' - Use 'align' instead.
+2026-07-02 12:05:16,135 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] BarBlurEffect: 'acrylic' - No longer supported and can be removed from the config.
+2026-07-02 12:05:16,173 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] GlazewmWorkspacesConfig: 'hide_empty_workspaces' - No longer supported and can be removed from the config.
+2026-07-02 12:05:16,173 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] GlazewmWorkspacesConfig: 'btn_shadow' - Use CSS box-shadow instead.
+2026-07-02 12:05:16,173 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] GlazewmWorkspacesConfig: 'animation' - Use CSS animations instead.
+2026-07-02 12:05:16,185 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] GlazewmTilingDirectionConfig: 'btn_shadow' - Use CSS box-shadow instead.
+2026-07-02 12:05:16,258 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] MediaWidgetConfig: 'label_shadow' - Use CSS text-shadow instead.
+2026-07-02 12:05:16,267 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] LanguageConfig: 'label_shadow' - Use CSS text-shadow instead.
+2026-07-02 12:05:16,273 [WARNING] [MainThread] [deprecation/deprecation.py:140]: [DEPRECATED] VolumeConfig: 'volume_icons' renamed to 'icons' - Use 'icons' with the dictionary format instead.
+2026-07-02 12:05:16,274 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] VolumeConfig: 'label_shadow' - Use CSS text-shadow instead.
+2026-07-02 12:05:16,286 [INFO] [MainThread] [root/service.py:52]: AudioOutputService starting...
+2026-07-02 12:05:16,322 [INFO] [MainThread] [root/service.py:41]: AudioInputService starting...
+2026-07-02 12:05:16,322 [INFO] [SystrayHook] [systray_hook/systray_hook.py:193]: Injecting into Explorer (PID: 4140)
+2026-07-02 12:05:16,751 [INFO] [MainThread] [taskbar_window_manager/window_manager.py:178]: TaskbarWindowManager is starting...
+2026-07-02 12:05:16,755 [INFO] [MainThread] [root/bar_manager.py:103]: Starting SystemEventListener...
+2026-07-02 12:05:16,756 [INFO] [MainThread] [root/watcher.py:65]: Watching directory: c:\users\breno\.config\yasb
+2026-07-02 12:05:16,756 [INFO] [MainThread] [root/watcher.py:104]: Created file watcher
+2026-07-02 12:05:16,770 [INFO] [MainThread] [root/update_service.py:434]: Background update checker started
+2026-07-02 12:14:58,284 [WARNING] [MainThread] [glazewm_client/client.py:134]: WebSocket error: SocketError.RemoteHostClosedError. Reconnecting...
+2026-07-02 12:14:58,285 [WARNING] [MainThread] [glazewm_client/client.py:134]: WebSocket error: SocketError.RemoteHostClosedError. Reconnecting...
+2026-07-02 14:09:17,306 [INFO] [MainThread] [root/bar_manager.py:97]: Screens updated. Re-initialising all bars.
+2026-07-02 14:09:17,306 [INFO] [MainThread] [root/controller.py:21]: Reloading Application because of screen update.
+2026-07-02 14:09:17,408 [INFO] [MainThread] [cli_server/cli_server.py:114]: Log pipe server stopped
+2026-07-02 14:09:18,454 [INFO] [MainThread] [root/log.py:104]: YASB v2.0.5
+2026-07-02 14:09:18,455 [INFO] [CLIPipeServer] [cli_server/cli_server.py:216]: CLI server started v1.1.7
+2026-07-02 14:09:18,455 [INFO] [MainThread] [cli_server/cli_server.py:106]: Log pipe server started
+2026-07-02 14:09:18,455 [INFO] [MainThread] [root/main.py:48]: Waiting for previous YASB instance to exit...
+2026-07-02 14:09:18,774 [INFO] [MainThread] [root/bar_manager.py:119]: Stopping SystemEventListener...
+2026-07-02 14:09:18,779 [INFO] [MainThread] [taskbar_window_manager/window_manager.py:205]: TaskbarWindowManager stopped
+2026-07-02 14:09:18,956 [INFO] [MainThread] [root/main.py:74]: Previous instance exited, continuing startup.
+2026-07-02 14:09:18,996 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] BarAlignment: 'center' - Use 'align' instead.
+2026-07-02 14:09:18,996 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] BarBlurEffect: 'acrylic' - No longer supported and can be removed from the config.
+2026-07-02 14:09:19,101 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] GlazewmWorkspacesConfig: 'hide_empty_workspaces' - No longer supported and can be removed from the config.
+2026-07-02 14:09:19,101 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] GlazewmWorkspacesConfig: 'btn_shadow' - Use CSS box-shadow instead.
+2026-07-02 14:09:19,101 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] GlazewmWorkspacesConfig: 'animation' - Use CSS animations instead.
+2026-07-02 14:09:19,115 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] GlazewmTilingDirectionConfig: 'btn_shadow' - Use CSS box-shadow instead.
+2026-07-02 14:09:19,292 [INFO] [SystrayHook] [systray_hook/systray_hook.py:193]: Injecting into Explorer (PID: 4140)
+2026-07-02 14:09:19,397 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] MediaWidgetConfig: 'label_shadow' - Use CSS text-shadow instead.
+2026-07-02 14:09:19,410 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] LanguageConfig: 'label_shadow' - Use CSS text-shadow instead.
+2026-07-02 14:09:19,417 [WARNING] [MainThread] [deprecation/deprecation.py:140]: [DEPRECATED] VolumeConfig: 'volume_icons' renamed to 'icons' - Use 'icons' with the dictionary format instead.
+2026-07-02 14:09:19,417 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] VolumeConfig: 'label_shadow' - Use CSS text-shadow instead.
+2026-07-02 14:09:19,431 [INFO] [MainThread] [root/service.py:52]: AudioOutputService starting...
+2026-07-02 14:09:19,469 [INFO] [MainThread] [root/service.py:41]: AudioInputService starting...
+2026-07-02 14:09:20,147 [INFO] [MainThread] [taskbar_window_manager/window_manager.py:178]: TaskbarWindowManager is starting...
+2026-07-02 14:09:20,432 [INFO] [MainThread] [root/bar_manager.py:103]: Starting SystemEventListener...
+2026-07-02 14:09:20,433 [INFO] [MainThread] [root/watcher.py:65]: Watching directory: c:\users\breno\.config\yasb
+2026-07-02 14:09:20,433 [INFO] [MainThread] [root/watcher.py:104]: Created file watcher
+2026-07-02 14:09:20,449 [INFO] [MainThread] [root/update_service.py:434]: Background update checker started
+2026-07-02 14:09:44,258 [INFO] [MainThread] [root/bar_manager.py:97]: Screens updated. Re-initialising all bars.
+2026-07-02 14:09:44,259 [INFO] [MainThread] [root/controller.py:21]: Reloading Application because of screen update.
+2026-07-02 14:09:44,368 [INFO] [MainThread] [cli_server/cli_server.py:114]: Log pipe server stopped
+2026-07-02 14:09:44,457 [INFO] [MainThread] [root/bar_manager.py:119]: Stopping SystemEventListener...
+2026-07-02 14:09:44,458 [INFO] [MainThread] [taskbar_window_manager/window_manager.py:205]: TaskbarWindowManager stopped
+2026-07-02 14:09:44,849 [INFO] [MainThread] [root/log.py:104]: YASB v2.0.5
+2026-07-02 14:09:44,849 [INFO] [CLIPipeServer] [cli_server/cli_server.py:216]: CLI server started v1.1.7
+2026-07-02 14:09:44,849 [INFO] [MainThread] [cli_server/cli_server.py:106]: Log pipe server started
+2026-07-02 14:09:44,883 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] BarAlignment: 'center' - Use 'align' instead.
+2026-07-02 14:09:44,883 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] BarBlurEffect: 'acrylic' - No longer supported and can be removed from the config.
+2026-07-02 14:09:44,921 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] GlazewmWorkspacesConfig: 'hide_empty_workspaces' - No longer supported and can be removed from the config.
+2026-07-02 14:09:44,921 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] GlazewmWorkspacesConfig: 'btn_shadow' - Use CSS box-shadow instead.
+2026-07-02 14:09:44,921 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] GlazewmWorkspacesConfig: 'animation' - Use CSS animations instead.
+2026-07-02 14:09:44,935 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] GlazewmTilingDirectionConfig: 'btn_shadow' - Use CSS box-shadow instead.
+2026-07-02 14:09:45,014 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] MediaWidgetConfig: 'label_shadow' - Use CSS text-shadow instead.
+2026-07-02 14:09:45,024 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] LanguageConfig: 'label_shadow' - Use CSS text-shadow instead.
+2026-07-02 14:09:45,031 [WARNING] [MainThread] [deprecation/deprecation.py:140]: [DEPRECATED] VolumeConfig: 'volume_icons' renamed to 'icons' - Use 'icons' with the dictionary format instead.
+2026-07-02 14:09:45,031 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] VolumeConfig: 'label_shadow' - Use CSS text-shadow instead.
+2026-07-02 14:09:45,044 [INFO] [MainThread] [root/service.py:52]: AudioOutputService starting...
+2026-07-02 14:09:45,082 [INFO] [MainThread] [root/service.py:41]: AudioInputService starting...
+2026-07-02 14:09:45,093 [INFO] [SystrayHook] [systray_hook/systray_hook.py:193]: Injecting into Explorer (PID: 4140)
+2026-07-02 14:09:45,537 [INFO] [MainThread] [taskbar_window_manager/window_manager.py:178]: TaskbarWindowManager is starting...
+2026-07-02 14:09:45,542 [INFO] [MainThread] [root/bar_manager.py:103]: Starting SystemEventListener...
+2026-07-02 14:09:45,543 [INFO] [MainThread] [root/watcher.py:65]: Watching directory: c:\users\breno\.config\yasb
+2026-07-02 14:09:45,543 [INFO] [MainThread] [root/watcher.py:104]: Created file watcher
+2026-07-02 14:09:45,558 [INFO] [MainThread] [root/update_service.py:434]: Background update checker started
+2026-07-02 14:10:54,577 [INFO] [MainThread] [root/bar_manager.py:97]: Screens updated. Re-initialising all bars.
+2026-07-02 14:10:54,577 [INFO] [MainThread] [root/controller.py:21]: Reloading Application because of screen update.
+2026-07-02 14:10:54,679 [INFO] [MainThread] [cli_server/cli_server.py:114]: Log pipe server stopped
+2026-07-02 14:10:55,134 [INFO] [MainThread] [root/bar_manager.py:119]: Stopping SystemEventListener...
+2026-07-02 14:10:55,135 [INFO] [MainThread] [taskbar_window_manager/window_manager.py:205]: TaskbarWindowManager stopped
+2026-07-02 14:10:55,306 [INFO] [MainThread] [root/log.py:104]: YASB v2.0.5
+2026-07-02 14:10:55,309 [INFO] [CLIPipeServer] [cli_server/cli_server.py:216]: CLI server started v1.1.7
+2026-07-02 14:10:55,311 [INFO] [MainThread] [cli_server/cli_server.py:106]: Log pipe server started
+2026-07-02 14:10:55,384 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] BarAlignment: 'center' - Use 'align' instead.
+2026-07-02 14:10:55,384 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] BarBlurEffect: 'acrylic' - No longer supported and can be removed from the config.
+2026-07-02 14:10:55,428 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] GlazewmWorkspacesConfig: 'hide_empty_workspaces' - No longer supported and can be removed from the config.
+2026-07-02 14:10:55,428 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] GlazewmWorkspacesConfig: 'btn_shadow' - Use CSS box-shadow instead.
+2026-07-02 14:10:55,428 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] GlazewmWorkspacesConfig: 'animation' - Use CSS animations instead.
+2026-07-02 14:10:55,446 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] GlazewmTilingDirectionConfig: 'btn_shadow' - Use CSS box-shadow instead.
+2026-07-02 14:10:55,543 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] MediaWidgetConfig: 'label_shadow' - Use CSS text-shadow instead.
+2026-07-02 14:10:55,553 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] LanguageConfig: 'label_shadow' - Use CSS text-shadow instead.
+2026-07-02 14:10:55,561 [WARNING] [MainThread] [deprecation/deprecation.py:140]: [DEPRECATED] VolumeConfig: 'volume_icons' renamed to 'icons' - Use 'icons' with the dictionary format instead.
+2026-07-02 14:10:55,562 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] VolumeConfig: 'label_shadow' - Use CSS text-shadow instead.
+2026-07-02 14:10:55,576 [INFO] [MainThread] [root/service.py:52]: AudioOutputService starting...
+2026-07-02 14:10:55,616 [INFO] [MainThread] [root/service.py:41]: AudioInputService starting...
+2026-07-02 14:10:55,626 [INFO] [SystrayHook] [systray_hook/systray_hook.py:193]: Injecting into Explorer (PID: 4140)
+2026-07-02 14:10:56,081 [INFO] [MainThread] [taskbar_window_manager/window_manager.py:178]: TaskbarWindowManager is starting...
+2026-07-02 14:10:56,373 [INFO] [MainThread] [root/bar_manager.py:103]: Starting SystemEventListener...
+2026-07-02 14:10:56,374 [INFO] [MainThread] [root/watcher.py:65]: Watching directory: c:\users\breno\.config\yasb
+2026-07-02 14:10:56,374 [INFO] [MainThread] [root/watcher.py:104]: Created file watcher
+2026-07-02 14:10:56,394 [INFO] [MainThread] [root/update_service.py:434]: Background update checker started
+2026-07-02 14:14:31,104 [INFO] [MainThread] [root/bar.py:153]: Screen geometry changed. Updating position for bar primary-bar on screen ARZOPA
+2026-07-02 20:23:42,851 [INFO] [MainThread] [root/bar_manager.py:97]: Screens updated. Re-initialising all bars.
+2026-07-02 20:23:42,852 [INFO] [MainThread] [root/controller.py:21]: Reloading Application because of screen update.
+2026-07-02 20:23:42,954 [INFO] [MainThread] [cli_server/cli_server.py:114]: Log pipe server stopped
+2026-07-02 20:23:43,379 [INFO] [MainThread] [root/bar_manager.py:119]: Stopping SystemEventListener...
+2026-07-02 20:23:43,384 [INFO] [MainThread] [taskbar_window_manager/window_manager.py:205]: TaskbarWindowManager stopped
+2026-07-02 20:23:43,637 [INFO] [MainThread] [root/log.py:104]: YASB v2.0.5
+2026-07-02 20:23:43,638 [INFO] [CLIPipeServer] [cli_server/cli_server.py:216]: CLI server started v1.1.7
+2026-07-02 20:23:43,638 [INFO] [MainThread] [cli_server/cli_server.py:106]: Log pipe server started
+2026-07-02 20:23:43,671 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] BarAlignment: 'center' - Use 'align' instead.
+2026-07-02 20:23:43,671 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] BarBlurEffect: 'acrylic' - No longer supported and can be removed from the config.
+2026-07-02 20:23:43,711 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] GlazewmWorkspacesConfig: 'hide_empty_workspaces' - No longer supported and can be removed from the config.
+2026-07-02 20:23:43,711 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] GlazewmWorkspacesConfig: 'btn_shadow' - Use CSS box-shadow instead.
+2026-07-02 20:23:43,711 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] GlazewmWorkspacesConfig: 'animation' - Use CSS animations instead.
+2026-07-02 20:23:43,725 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] GlazewmTilingDirectionConfig: 'btn_shadow' - Use CSS box-shadow instead.
+2026-07-02 20:23:43,805 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] MediaWidgetConfig: 'label_shadow' - Use CSS text-shadow instead.
+2026-07-02 20:23:43,817 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] LanguageConfig: 'label_shadow' - Use CSS text-shadow instead.
+2026-07-02 20:23:43,824 [WARNING] [MainThread] [deprecation/deprecation.py:140]: [DEPRECATED] VolumeConfig: 'volume_icons' renamed to 'icons' - Use 'icons' with the dictionary format instead.
+2026-07-02 20:23:43,824 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] VolumeConfig: 'label_shadow' - Use CSS text-shadow instead.
+2026-07-02 20:23:43,837 [INFO] [MainThread] [root/service.py:52]: AudioOutputService starting...
+2026-07-02 20:23:43,876 [INFO] [MainThread] [root/service.py:41]: AudioInputService starting...
+2026-07-02 20:23:43,887 [INFO] [SystrayHook] [systray_hook/systray_hook.py:193]: Injecting into Explorer (PID: 4140)
+2026-07-02 20:23:44,467 [INFO] [MainThread] [taskbar_window_manager/window_manager.py:178]: TaskbarWindowManager is starting...
+2026-07-02 20:23:44,472 [INFO] [MainThread] [root/bar_manager.py:103]: Starting SystemEventListener...
+2026-07-02 20:23:44,473 [INFO] [MainThread] [root/watcher.py:65]: Watching directory: c:\users\breno\.config\yasb
+2026-07-02 20:23:44,473 [INFO] [MainThread] [root/watcher.py:104]: Created file watcher
+2026-07-02 20:23:44,508 [INFO] [MainThread] [root/update_service.py:434]: Background update checker started
+2026-07-02 20:29:18,683 [INFO] [MainThread] [root/bar_manager.py:97]: Screens updated. Re-initialising all bars.
+2026-07-02 20:29:18,683 [INFO] [MainThread] [root/controller.py:21]: Reloading Application because of screen update.
+2026-07-02 20:29:18,787 [INFO] [MainThread] [cli_server/cli_server.py:114]: Log pipe server stopped
+2026-07-02 20:29:20,058 [INFO] [MainThread] [root/log.py:104]: YASB v2.0.5
+2026-07-02 20:29:20,062 [INFO] [CLIPipeServer] [cli_server/cli_server.py:216]: CLI server started v1.1.7
+2026-07-02 20:29:20,080 [INFO] [MainThread] [cli_server/cli_server.py:106]: Log pipe server started
+2026-07-02 20:29:20,081 [INFO] [MainThread] [root/main.py:48]: Waiting for previous YASB instance to exit...
+2026-07-02 20:29:20,619 [INFO] [MainThread] [root/bar_manager.py:119]: Stopping SystemEventListener...
+2026-07-02 20:29:20,628 [INFO] [MainThread] [taskbar_window_manager/window_manager.py:205]: TaskbarWindowManager stopped
+2026-07-02 20:29:20,832 [INFO] [MainThread] [root/main.py:74]: Previous instance exited, continuing startup.
+2026-07-02 20:29:20,868 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] BarAlignment: 'center' - Use 'align' instead.
+2026-07-02 20:29:20,868 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] BarBlurEffect: 'acrylic' - No longer supported and can be removed from the config.
+2026-07-02 20:29:20,909 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] GlazewmWorkspacesConfig: 'hide_empty_workspaces' - No longer supported and can be removed from the config.
+2026-07-02 20:29:20,909 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] GlazewmWorkspacesConfig: 'btn_shadow' - Use CSS box-shadow instead.
+2026-07-02 20:29:20,909 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] GlazewmWorkspacesConfig: 'animation' - Use CSS animations instead.
+2026-07-02 20:29:20,925 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] GlazewmTilingDirectionConfig: 'btn_shadow' - Use CSS box-shadow instead.
+2026-07-02 20:29:21,011 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] MediaWidgetConfig: 'label_shadow' - Use CSS text-shadow instead.
+2026-07-02 20:29:21,022 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] LanguageConfig: 'label_shadow' - Use CSS text-shadow instead.
+2026-07-02 20:29:21,030 [WARNING] [MainThread] [deprecation/deprecation.py:140]: [DEPRECATED] VolumeConfig: 'volume_icons' renamed to 'icons' - Use 'icons' with the dictionary format instead.
+2026-07-02 20:29:21,030 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] VolumeConfig: 'label_shadow' - Use CSS text-shadow instead.
+2026-07-02 20:29:21,042 [INFO] [MainThread] [root/service.py:52]: AudioOutputService starting...
+2026-07-02 20:29:21,079 [INFO] [MainThread] [root/service.py:41]: AudioInputService starting...
+2026-07-02 20:29:21,092 [INFO] [SystrayHook] [systray_hook/systray_hook.py:193]: Injecting into Explorer (PID: 4140)
+2026-07-02 20:29:21,648 [INFO] [MainThread] [taskbar_window_manager/window_manager.py:178]: TaskbarWindowManager is starting...
+2026-07-02 20:29:21,984 [INFO] [MainThread] [root/bar_manager.py:103]: Starting SystemEventListener...
+2026-07-02 20:29:21,985 [INFO] [MainThread] [root/watcher.py:65]: Watching directory: c:\users\breno\.config\yasb
+2026-07-02 20:29:21,985 [INFO] [MainThread] [root/watcher.py:104]: Created file watcher
+2026-07-02 20:29:22,000 [INFO] [MainThread] [root/update_service.py:434]: Background update checker started
+2026-07-02 20:29:55,451 [INFO] [MainThread] [root/bar_manager.py:97]: Screens updated. Re-initialising all bars.
+2026-07-02 20:29:55,451 [INFO] [MainThread] [root/controller.py:21]: Reloading Application because of screen update.
+2026-07-02 20:29:55,555 [INFO] [MainThread] [cli_server/cli_server.py:114]: Log pipe server stopped
+2026-07-02 20:29:56,078 [INFO] [MainThread] [root/bar_manager.py:119]: Stopping SystemEventListener...
+2026-07-02 20:29:56,121 [INFO] [MainThread] [taskbar_window_manager/window_manager.py:205]: TaskbarWindowManager stopped
+2026-07-02 20:29:56,340 [INFO] [MainThread] [root/log.py:104]: YASB v2.0.5
+2026-07-02 20:29:56,340 [INFO] [CLIPipeServer] [cli_server/cli_server.py:216]: CLI server started v1.1.7
+2026-07-02 20:29:56,341 [INFO] [MainThread] [cli_server/cli_server.py:106]: Log pipe server started
+2026-07-02 20:29:56,389 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] BarAlignment: 'center' - Use 'align' instead.
+2026-07-02 20:29:56,389 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] BarBlurEffect: 'acrylic' - No longer supported and can be removed from the config.
+2026-07-02 20:29:56,433 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] GlazewmWorkspacesConfig: 'hide_empty_workspaces' - No longer supported and can be removed from the config.
+2026-07-02 20:29:56,433 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] GlazewmWorkspacesConfig: 'btn_shadow' - Use CSS box-shadow instead.
+2026-07-02 20:29:56,434 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] GlazewmWorkspacesConfig: 'animation' - Use CSS animations instead.
+2026-07-02 20:29:56,449 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] GlazewmTilingDirectionConfig: 'btn_shadow' - Use CSS box-shadow instead.
+2026-07-02 20:29:56,528 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] MediaWidgetConfig: 'label_shadow' - Use CSS text-shadow instead.
+2026-07-02 20:29:56,538 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] LanguageConfig: 'label_shadow' - Use CSS text-shadow instead.
+2026-07-02 20:29:56,544 [WARNING] [MainThread] [deprecation/deprecation.py:140]: [DEPRECATED] VolumeConfig: 'volume_icons' renamed to 'icons' - Use 'icons' with the dictionary format instead.
+2026-07-02 20:29:56,544 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] VolumeConfig: 'label_shadow' - Use CSS text-shadow instead.
+2026-07-02 20:29:56,556 [INFO] [MainThread] [root/service.py:52]: AudioOutputService starting...
+2026-07-02 20:29:56,593 [INFO] [MainThread] [root/service.py:41]: AudioInputService starting...
+2026-07-02 20:29:56,607 [INFO] [SystrayHook] [systray_hook/systray_hook.py:193]: Injecting into Explorer (PID: 4140)
+2026-07-02 20:29:57,077 [INFO] [MainThread] [taskbar_window_manager/window_manager.py:178]: TaskbarWindowManager is starting...
+2026-07-02 20:29:57,082 [INFO] [MainThread] [root/bar_manager.py:103]: Starting SystemEventListener...
+2026-07-02 20:29:57,083 [INFO] [MainThread] [root/watcher.py:65]: Watching directory: c:\users\breno\.config\yasb
+2026-07-02 20:29:57,083 [INFO] [MainThread] [root/watcher.py:104]: Created file watcher
+2026-07-02 20:29:57,099 [INFO] [MainThread] [root/update_service.py:434]: Background update checker started
+2026-07-02 20:30:07,404 [INFO] [MainThread] [root/bar_manager.py:97]: Screens updated. Re-initialising all bars.
+2026-07-02 20:30:07,404 [INFO] [MainThread] [root/controller.py:21]: Reloading Application because of screen update.
+2026-07-02 20:30:07,517 [INFO] [MainThread] [cli_server/cli_server.py:114]: Log pipe server stopped
+2026-07-02 20:30:08,046 [INFO] [MainThread] [root/bar_manager.py:119]: Stopping SystemEventListener...
+2026-07-02 20:30:08,063 [INFO] [MainThread] [taskbar_window_manager/window_manager.py:205]: TaskbarWindowManager stopped
+2026-07-02 20:30:08,236 [INFO] [MainThread] [root/log.py:104]: YASB v2.0.5
+2026-07-02 20:30:08,236 [INFO] [CLIPipeServer] [cli_server/cli_server.py:216]: CLI server started v1.1.7
+2026-07-02 20:30:08,238 [INFO] [MainThread] [cli_server/cli_server.py:106]: Log pipe server started
+2026-07-02 20:30:08,318 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] BarAlignment: 'center' - Use 'align' instead.
+2026-07-02 20:30:08,318 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] BarBlurEffect: 'acrylic' - No longer supported and can be removed from the config.
+2026-07-02 20:30:08,381 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] GlazewmWorkspacesConfig: 'hide_empty_workspaces' - No longer supported and can be removed from the config.
+2026-07-02 20:30:08,381 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] GlazewmWorkspacesConfig: 'btn_shadow' - Use CSS box-shadow instead.
+2026-07-02 20:30:08,381 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] GlazewmWorkspacesConfig: 'animation' - Use CSS animations instead.
+2026-07-02 20:30:08,406 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] GlazewmTilingDirectionConfig: 'btn_shadow' - Use CSS box-shadow instead.
+2026-07-02 20:30:08,545 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] MediaWidgetConfig: 'label_shadow' - Use CSS text-shadow instead.
+2026-07-02 20:30:08,558 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] LanguageConfig: 'label_shadow' - Use CSS text-shadow instead.
+2026-07-02 20:30:08,566 [WARNING] [MainThread] [deprecation/deprecation.py:140]: [DEPRECATED] VolumeConfig: 'volume_icons' renamed to 'icons' - Use 'icons' with the dictionary format instead.
+2026-07-02 20:30:08,566 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] VolumeConfig: 'label_shadow' - Use CSS text-shadow instead.
+2026-07-02 20:30:08,581 [INFO] [MainThread] [root/service.py:52]: AudioOutputService starting...
+2026-07-02 20:30:08,627 [INFO] [MainThread] [root/service.py:41]: AudioInputService starting...
+2026-07-02 20:30:08,635 [INFO] [SystrayHook] [systray_hook/systray_hook.py:193]: Injecting into Explorer (PID: 4140)
+2026-07-02 20:30:09,149 [INFO] [MainThread] [taskbar_window_manager/window_manager.py:178]: TaskbarWindowManager is starting...
+2026-07-02 20:30:09,485 [INFO] [MainThread] [root/bar_manager.py:103]: Starting SystemEventListener...
+2026-07-02 20:30:09,486 [INFO] [MainThread] [root/watcher.py:65]: Watching directory: c:\users\breno\.config\yasb
+2026-07-02 20:30:09,486 [INFO] [MainThread] [root/watcher.py:104]: Created file watcher
+2026-07-02 20:30:09,501 [INFO] [MainThread] [root/update_service.py:434]: Background update checker started
+2026-07-02 21:12:45,005 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] BarAlignment: 'center' - Use 'align' instead.
+2026-07-02 21:12:45,005 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] BarBlurEffect: 'acrylic' - No longer supported and can be removed from the config.
+2026-07-02 21:12:45,007 [INFO] [MainThread] [root/controller.py:21]: Reloading Application because of config change.
+2026-07-02 21:12:45,108 [INFO] [MainThread] [cli_server/cli_server.py:114]: Log pipe server stopped
+2026-07-02 21:12:45,113 [INFO] [MainThread] [root/bar_manager.py:93]: Successfully loaded updated config and re-initialised all bars.
+2026-07-02 21:12:45,353 [INFO] [MainThread] [root/bar_manager.py:119]: Stopping SystemEventListener...
+2026-07-02 21:12:45,356 [INFO] [MainThread] [taskbar_window_manager/window_manager.py:205]: TaskbarWindowManager stopped
+2026-07-02 21:12:45,782 [INFO] [MainThread] [root/log.py:104]: YASB v2.0.5
+2026-07-02 21:12:45,782 [INFO] [CLIPipeServer] [cli_server/cli_server.py:216]: CLI server started v1.1.7
+2026-07-02 21:12:45,783 [INFO] [MainThread] [cli_server/cli_server.py:106]: Log pipe server started
+2026-07-02 21:12:45,822 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] BarAlignment: 'center' - Use 'align' instead.
+2026-07-02 21:12:45,822 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] BarBlurEffect: 'acrylic' - No longer supported and can be removed from the config.
+2026-07-02 21:12:45,867 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] GlazewmWorkspacesConfig: 'hide_empty_workspaces' - No longer supported and can be removed from the config.
+2026-07-02 21:12:45,867 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] GlazewmWorkspacesConfig: 'btn_shadow' - Use CSS box-shadow instead.
+2026-07-02 21:12:45,867 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] GlazewmWorkspacesConfig: 'animation' - Use CSS animations instead.
+2026-07-02 21:12:45,882 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] GlazewmTilingDirectionConfig: 'btn_shadow' - Use CSS box-shadow instead.
+2026-07-02 21:12:45,987 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] MediaWidgetConfig: 'label_shadow' - Use CSS text-shadow instead.
+2026-07-02 21:12:45,999 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] LanguageConfig: 'label_shadow' - Use CSS text-shadow instead.
+2026-07-02 21:12:46,008 [WARNING] [MainThread] [deprecation/deprecation.py:140]: [DEPRECATED] VolumeConfig: 'volume_icons' renamed to 'icons' - Use 'icons' with the dictionary format instead.
+2026-07-02 21:12:46,008 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] VolumeConfig: 'label_shadow' - Use CSS text-shadow instead.
+2026-07-02 21:12:46,023 [INFO] [MainThread] [root/service.py:52]: AudioOutputService starting...
+2026-07-02 21:12:46,067 [INFO] [MainThread] [root/service.py:41]: AudioInputService starting...
+2026-07-02 21:12:46,076 [INFO] [SystrayHook] [systray_hook/systray_hook.py:193]: Injecting into Explorer (PID: 4140)
+2026-07-02 21:12:46,681 [INFO] [MainThread] [taskbar_window_manager/window_manager.py:178]: TaskbarWindowManager is starting...
+2026-07-02 21:12:47,045 [INFO] [MainThread] [root/bar_manager.py:103]: Starting SystemEventListener...
+2026-07-02 21:12:47,046 [INFO] [MainThread] [root/watcher.py:65]: Watching directory: c:\users\breno\.config\yasb
+2026-07-02 21:12:47,046 [INFO] [MainThread] [root/watcher.py:104]: Created file watcher
+2026-07-02 21:12:47,062 [INFO] [MainThread] [root/update_service.py:434]: Background update checker started
+2026-07-03 00:20:52,187 [INFO] [MainThread] [root/bar_manager.py:119]: Stopping SystemEventListener...
+2026-07-03 00:20:52,193 [INFO] [MainThread] [taskbar_window_manager/window_manager.py:205]: TaskbarWindowManager stopped
+2026-07-03 08:04:45,495 [INFO] [MainThread] [root/log.py:104]: YASB v2.0.5
+2026-07-03 08:04:45,496 [INFO] [CLIPipeServer] [cli_server/cli_server.py:216]: CLI server started v1.1.7
+2026-07-03 08:04:45,496 [INFO] [MainThread] [cli_server/cli_server.py:106]: Log pipe server started
+2026-07-03 08:04:45,639 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] BarAlignment: 'center' - Use 'align' instead.
+2026-07-03 08:04:45,639 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] BarBlurEffect: 'acrylic' - No longer supported and can be removed from the config.
+2026-07-03 08:04:45,795 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] GlazewmWorkspacesConfig: 'hide_empty_workspaces' - No longer supported and can be removed from the config.
+2026-07-03 08:04:45,795 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] GlazewmWorkspacesConfig: 'btn_shadow' - Use CSS box-shadow instead.
+2026-07-03 08:04:45,795 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] GlazewmWorkspacesConfig: 'animation' - Use CSS animations instead.
+2026-07-03 08:04:45,838 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] GlazewmTilingDirectionConfig: 'btn_shadow' - Use CSS box-shadow instead.
+2026-07-03 08:04:46,019 [INFO] [SystrayHook] [systray_hook/systray_hook.py:193]: Injecting into Explorer (PID: 8012)
+2026-07-03 08:04:46,121 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] MediaWidgetConfig: 'label_shadow' - Use CSS text-shadow instead.
+2026-07-03 08:04:46,145 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] LanguageConfig: 'label_shadow' - Use CSS text-shadow instead.
+2026-07-03 08:04:46,152 [WARNING] [MainThread] [deprecation/deprecation.py:140]: [DEPRECATED] VolumeConfig: 'volume_icons' renamed to 'icons' - Use 'icons' with the dictionary format instead.
+2026-07-03 08:04:46,152 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] VolumeConfig: 'label_shadow' - Use CSS text-shadow instead.
+2026-07-03 08:04:46,165 [INFO] [MainThread] [root/service.py:52]: AudioOutputService starting...
+2026-07-03 08:04:46,207 [INFO] [MainThread] [root/service.py:41]: AudioInputService starting...
+2026-07-03 08:04:46,669 [INFO] [MainThread] [taskbar_window_manager/window_manager.py:178]: TaskbarWindowManager is starting...
+2026-07-03 08:04:46,843 [INFO] [MainThread] [root/bar_manager.py:103]: Starting SystemEventListener...
+2026-07-03 08:04:46,845 [INFO] [MainThread] [root/watcher.py:65]: Watching directory: c:\users\breno\.config\yasb
+2026-07-03 08:04:46,845 [INFO] [MainThread] [root/watcher.py:104]: Created file watcher
+2026-07-03 08:04:46,895 [INFO] [MainThread] [root/update_service.py:434]: Background update checker started
+2026-07-03 08:04:46,982 [ERROR] [SystrayHook] [root/app_icons.py:282]: GetIconInfo failed: 0

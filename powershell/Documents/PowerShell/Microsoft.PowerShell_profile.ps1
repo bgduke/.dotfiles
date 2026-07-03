@@ -182,10 +182,3 @@ Invoke-IfCommand 'direnv' {
 Invoke-IfCommand 'starship' {
     Invoke-Expression (& starship init powershell)
 }
-
-if ($Host.Name -eq 'ConsoleHost' -or $Host.Name -eq 'Visual Studio Code Host') {
-    Invoke-IfCommand 'fastfetch' {
-        Start-Sleep -Milliseconds 100
-        fastfetch --pipe false
-    }
-}

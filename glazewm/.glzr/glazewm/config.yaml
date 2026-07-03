@@ -3,7 +3,7 @@ general:
   shutdown_commands: []
   config_reload_commands: []
 
-  focus_follows_cursor: true
+  focus_follows_cursor: false
   toggle_workspace_on_refocus: false
 
   cursor_jump:
@@ -15,18 +15,18 @@ general:
 
 gaps:
   scale_with_dpi: true
-  inner_gap: "0px"
+  inner_gap: "5px"
   outer_gap:
-    top: "0px"
-    right: "0px"
-    bottom: "0px"
-    left: "0px"
+    top: "5px"
+    right: "5px"
+    bottom: "5px"
+    left: "5px"
 
 window_effects:
   focused_window:
     border:
       enabled: true
-      color: "#282828"
+      color: "#ebdbb2"
 
     hide_title_bar:
       enabled: false
@@ -49,8 +49,8 @@ window_effects:
       enabled: true
       style: "square"
     transparency:
-      enabled: true
-      opacity: "90%"
+      enabled: false
+      opacity: "100%"
 
 window_behavior:
   initial_state: "tiling"
@@ -65,17 +65,29 @@ window_behavior:
 
 workspaces:
   - name: "1"
+    bind_to_monitor: 0
   - name: "2"
+    bind_to_monitor: 0
   - name: "3"
+    bind_to_monitor: 0
   - name: "4"
+    bind_to_monitor: 0
   - name: "5"
+    bind_to_monitor: 0
   - name: "6"
+    bind_to_monitor: 0
   - name: "7"
+    bind_to_monitor: 0
   - name: "8"
+    bind_to_monitor: 0
   - name: "9"
+    bind_to_monitor: 0
   - name: "10"
+    bind_to_monitor: 0
   - name: "11"
+    bind_to_monitor: 1
   - name: "12"
+    bind_to_monitor: 1
 
 window_rules:
   - commands: ["ignore"]

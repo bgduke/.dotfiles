@@ -689,3 +689,127 @@
 .audio-menu .apps-container .app-volume .app-icon-container:hover {
   background-color: var(--bg1);
 }
+
+/* Taskbar */
+.taskbar-widget .app-container {
+    margin: 2px 2px;
+    border-radius: 4px;
+    padding: 0 4px;
+}
+.taskbar-widget .app-container.foreground {
+    background-color: var(--transparent);
+}
+.taskbar-widget .app-container.flashing {
+    background-color: var(--red);
+}
+.taskbar-widget .app-container.running {
+    background-color: var(--transparent);
+}
+.taskbar-widget .app-container:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+.taskbar-widget .app-container .app-title {
+    padding-left: 4px;
+}
+/* Taskbar preview popup is very limited in styling options, do not use margins/paddings here */
+.taskbar-preview {
+    border-radius: 8px; 
+    background-color: #2b2c2d; 
+}
+.taskbar-preview.flashing { 
+    background-color: #7f434a;
+}
+.taskbar-preview .header {
+    padding-bottom: 12px;
+    padding-top: 4px;
+}
+.taskbar-preview .header .title {
+    color: #d6d6d6;
+    font-weight: 600;
+    font-size: 13px;
+}
+.taskbar-preview .close-button {
+    color: #999;
+    font-size: 20px;
+    background-color: transparent;
+    border: none;
+    min-width: 20px;
+    border-radius: 4px;
+    min-height: 20px;
+}
+.taskbar-preview .close-button:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(226, 0, 0);
+}
+
+/* Systray */
+.systray {
+    background: transparent;
+    border: none;
+    margin: 0;
+}
+.systray .unpinned-container {
+    background: transparent;
+}
+.systray .pinned-container {
+    background: transparent;
+}
+.systray .button {
+    border-radius: 4px;
+    padding: 2px;
+}
+
+.systray .button:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+/* Icon being dragged, we already apply some transparency to it so you don't need to use it */
+.systray .button.dragging {}
+
+.systray .button.drag-over {
+     background: rgba(255, 255, 255, 0.4);
+}
+
+.systray .pinned-container.drop-target {
+    background: rgba(255, 255, 255, 0.1);
+}
+.systray .unpinned-visibility-btn {
+    border-radius: 4px;
+    height: 20px;
+    width: 16px;
+    border: none;
+    outline: none;
+}
+
+.systray .unpinned-visibility-btn:checked {
+    background: transparent;
+}
+
+.systray .unpinned-visibility-btn:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* Popup styles (when show_in_popup is true) */
+ 
+/* The icon the drag is hovering over (drop target icon) */
+.systray-popup .button.drag-over {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+/* Icon being dragged, we already apply some transparency to it so you don't need to use it */
+.systray-popup .button.dragging {}
+
+.systray .pinned-container.pinned-container.drop-target {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.systray-popup {
+    background-color: rgba(48, 48, 48, 0.6);
+    padding: 4px;
+}
+.systray-popup .button {
+    padding: 10px;
+    margin: 0;
+    border: 0;
+    border-radius: 6px;
+}
+.systray-popup .button:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+}
