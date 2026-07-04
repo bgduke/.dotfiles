@@ -26,7 +26,7 @@ window_effects:
   focused_window:
     border:
       enabled: true
-      color: "#ebdbb2"
+      color: "#88c0d0"
 
     hide_title_bar:
       enabled: false
@@ -42,7 +42,7 @@ window_effects:
   other_windows:
     border:
       enabled: true
-      color: "#282828"
+      color: "#3b4252"
     hide_title_bar:
       enabled: false
     corner_style:

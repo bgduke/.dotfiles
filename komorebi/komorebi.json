@@ -11,7 +11,7 @@
   "border_style": "Square",
   "theme": {
     "palette": "Base16",
-    "name": "GruvboxDarkMedium",
+    "name": "Nord",
     "unfocused_border": "Base03",
     "single_border": "Base06"
   },

@@ -1,6 +1,6 @@
 [SddmGreeterTheme]
-Name=Breno Gruvbox Minimal
-Description=A minimalist Gruvbox medium dark SDDM theme with a 1440p wallpaper
+Name=Breno Nord Minimal
+Description=A minimalist Nord dark SDDM theme with a 1440p wallpaper
 Author=Breno + ChatGPT
 Copyright=2026
 License=MIT
@@ -11,6 +11,6 @@ Screenshot=preview.png
 MainScript=Main.qml
 ConfigFile=theme.conf
 Email=
-Theme-Id=breno-gruvbox-minimal
+Theme-Id=breno-nord-minimal
 Theme-API=2.0
 QtVersion=6

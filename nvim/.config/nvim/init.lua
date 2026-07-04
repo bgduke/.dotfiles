@@ -9,7 +9,7 @@ require("plugins.which-key")
 require("plugins.conform")
 require("plugins.obsidian")
 require("plugins.markdown-render")
-require("plugins.gruvbox")
+require("plugins.nord")
 require("plugins.dap")
 require("plugins.easydotnet")
 

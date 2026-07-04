@@ -6539,3 +6539,25 @@ bars:
 2026-07-03 08:04:46,845 [INFO] [MainThread] [root/watcher.py:104]: Created file watcher
 2026-07-03 08:04:46,895 [INFO] [MainThread] [root/update_service.py:434]: Background update checker started
 2026-07-03 08:04:46,982 [ERROR] [SystrayHook] [root/app_icons.py:282]: GetIconInfo failed: 0
+2026-07-04 12:54:32,399 [INFO] [MainThread] [root/log.py:104]: YASB v2.0.5
+2026-07-04 12:54:32,399 [INFO] [CLIPipeServer] [cli_server/cli_server.py:216]: CLI server started v1.1.7
+2026-07-04 12:54:32,400 [INFO] [MainThread] [cli_server/cli_server.py:106]: Log pipe server started
+2026-07-04 12:54:32,478 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] BarAlignment: 'center' - Use 'align' instead.
+2026-07-04 12:54:32,478 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] BarBlurEffect: 'acrylic' - No longer supported and can be removed from the config.
+2026-07-04 12:54:33,007 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] GlazewmWorkspacesConfig: 'hide_empty_workspaces' - No longer supported and can be removed from the config.
+2026-07-04 12:54:33,007 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] GlazewmWorkspacesConfig: 'btn_shadow' - Use CSS box-shadow instead.
+2026-07-04 12:54:33,007 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] GlazewmWorkspacesConfig: 'animation' - Use CSS animations instead.
+2026-07-04 12:54:33,076 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] GlazewmTilingDirectionConfig: 'btn_shadow' - Use CSS box-shadow instead.
+2026-07-04 12:54:34,492 [INFO] [SystrayHook] [systray_hook/systray_hook.py:193]: Injecting into Explorer (PID: 5604)
+2026-07-04 12:54:34,692 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] MediaWidgetConfig: 'label_shadow' - Use CSS text-shadow instead.
+2026-07-04 12:54:34,703 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] LanguageConfig: 'label_shadow' - Use CSS text-shadow instead.
+2026-07-04 12:54:34,709 [WARNING] [MainThread] [deprecation/deprecation.py:140]: [DEPRECATED] VolumeConfig: 'volume_icons' renamed to 'icons' - Use 'icons' with the dictionary format instead.
+2026-07-04 12:54:34,709 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] VolumeConfig: 'label_shadow' - Use CSS text-shadow instead.
+2026-07-04 12:54:34,717 [INFO] [MainThread] [root/service.py:52]: AudioOutputService starting...
+2026-07-04 12:54:34,763 [INFO] [MainThread] [root/service.py:41]: AudioInputService starting...
+2026-07-04 12:54:35,362 [INFO] [MainThread] [taskbar_window_manager/window_manager.py:178]: TaskbarWindowManager is starting...
+2026-07-04 12:54:35,502 [INFO] [MainThread] [root/bar_manager.py:103]: Starting SystemEventListener...
+2026-07-04 12:54:35,503 [INFO] [MainThread] [root/watcher.py:65]: Watching directory: c:\users\breno\.config\yasb
+2026-07-04 12:54:35,504 [INFO] [MainThread] [root/watcher.py:104]: Created file watcher
+2026-07-04 12:54:35,559 [INFO] [MainThread] [root/update_service.py:434]: Background update checker started
+2026-07-04 12:54:48,466 [INFO] [MainThread] [root/utils.py:464]: YASB added to startup

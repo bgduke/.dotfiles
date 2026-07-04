@@ -57,15 +57,15 @@ local statusline = require("mini.statusline")
 
 local set_statusline_hl = function()
 	local colors = {
-		bg = vim.g.terminal_color_0 or "#282828",
-		fg = vim.g.terminal_color_7 or "#ebdbb2",
-		muted = vim.g.terminal_color_8 or "#928374",
-		red = vim.g.terminal_color_1 or "#cc241d",
-		green = vim.g.terminal_color_2 or "#98971a",
-		yellow = vim.g.terminal_color_3 or "#d79921",
-		blue = vim.g.terminal_color_4 or "#458588",
-		purple = vim.g.terminal_color_5 or "#b16286",
-		cyan = vim.g.terminal_color_6 or "#689d6a",
+		bg = vim.g.terminal_color_0 or "#2e3440",
+		fg = vim.g.terminal_color_7 or "#d8dee9",
+		muted = vim.g.terminal_color_8 or "#4c566a",
+		red = vim.g.terminal_color_1 or "#bf616a",
+		green = vim.g.terminal_color_2 or "#a3be8c",
+		yellow = vim.g.terminal_color_3 or "#ebcb8b",
+		blue = vim.g.terminal_color_4 or "#81a1c1",
+		purple = vim.g.terminal_color_5 or "#b48ead",
+		cyan = vim.g.terminal_color_6 or "#88c0d0",
 	}
 
 	vim.api.nvim_set_hl(0, "MiniStatuslineModeNormal", { fg = colors.bg, bg = colors.fg, bold = true })
