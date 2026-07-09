@@ -7,6 +7,44 @@ vim.pack.add({ "https://github.com/rcarriga/nvim-dap-ui" })
 local dap = require("dap")
 local dapui = require("dapui")
 
+dap.adapters.delve = {
+	type = "server",
+	port = "${port}",
+	executable = {
+		command = "dlv",
+		args = { "dap", "-l", "127.0.0.1:${port}" },
+	},
+}
+
+dap.configurations.go = {
+	{
+		type = "delve",
+		name = "Debug file",
+		request = "launch",
+		program = "${file}",
+	},
+	{
+		type = "delve",
+		name = "Debug package",
+		request = "launch",
+		program = "${fileDirname}",
+	},
+	{
+		type = "delve",
+		name = "Debug test file",
+		request = "launch",
+		mode = "test",
+		program = "${file}",
+	},
+	{
+		type = "delve",
+		name = "Debug test package",
+		request = "launch",
+		mode = "test",
+		program = "${fileDirname}",
+	},
+}
+
 dap.defaults["easy-dotnet"].exception_breakpoints = { "all", "user-unhandled" }
 dap.defaults.fallback.exception_breakpoints = { "all", "user-unhandled" }
 

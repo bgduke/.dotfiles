@@ -5,6 +5,7 @@ vim.lsp.enable({
 	"html",
 	"json",
 	"toml",
+	"gopls",
 })
 
 vim.api.nvim_create_autocmd("LspAttach", {

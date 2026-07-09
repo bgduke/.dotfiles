@@ -16,6 +16,7 @@ conform.setup({
 
 	formatters_by_ft = {
 		lua = { "stylua" },
+		go = { "goimports" },
 		javascript = { "prettierd", "prettier", stop_after_first = true },
 		html = { "prettierd", "prettier", stop_after_first = true },
 		json = { "prettier_json" },
