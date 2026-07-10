@@ -1,231 +1,124 @@
 " VsVim config for Visual Studio 2026
-" Adapted from ideavim/.ideavimrc.
+" Based on the Neovim config in this repository.
 
-" ============================================================
-" Leader Keys
-" ============================================================
-
+" -----------------------------------------------------------------------------
+" Core Vim behavior
+" -----------------------------------------------------------------------------
 let mapleader = " "
 let maplocalleader = " "
-
-" ============================================================
-" Core Settings
-" ============================================================
 
 set nocompatible
 set number
 set relativenumber
 set cursorline
-
-set hlsearch
-set incsearch
 set ignorecase
 set smartcase
-
+set incsearch
+set hlsearch
 set scrolloff=8
 set sidescrolloff=8
 set nowrap
-
 set tabstop=4
 set shiftwidth=4
 set expandtab
-
 set clipboard=unnamed
-set visualbell
 
-" Let Visual Studio own editor behavior that VsVim does not emulate directly.
+" Let Visual Studio keep ownership of features where it is stronger than Vim.
 set vsvim_useeditordefaults
 
-" IdeaVim-only options intentionally omitted:
-" VimEverywhere, clipboard+=ideaput, surround, commentary, highlightedyank,
-" ideajoin, and idearefactormode.
-
-" ============================================================
-" General
-" ============================================================
-
-map <C-c> <Esc>
-
-" Clear search highlight. IdeaVim uses <leader>h for Call Hierarchy, so keep
-" this on a nearby non-conflicting binding.
-nnoremap <leader><Esc> :nohlsearch<CR>
-
-" Zen Mode / Focus
-nnoremap <C-z> :vsc View.FullScreen<CR>
-
-" ============================================================
-" Windows
-" ============================================================
-
-nnoremap <leader>e  :vsc View.SolutionExplorer<CR>
-nnoremap <leader>g  :vsc View.GitChanges<CR>
-nnoremap <leader>d  :vsc View.ErrorList<CR>
-nnoremap <leader>r  :vsc Edit.QuickActions<CR>
-nnoremap <leader>t  :vsc View.Terminal<CR>
-nnoremap <leader>a  :vsc View.GitHubCopilotChat<CR>
-nnoremap <leader>nu :vsc Project.ManageNuGetPackages<CR>
-
-" ============================================================
-" Window / Split Navigation
-" ============================================================
-
-" Visual Studio exposes pane cycling rather than Vim-style directional panes.
+" -----------------------------------------------------------------------------
+" Window, document, and editor basics
+" -----------------------------------------------------------------------------
+" Visual Studio does not expose directional editor-pane movement like <C-w>h/j/k/l.
+" These use native pane/document navigation instead.
 nnoremap <C-h> :vsc Window.PreviousPane<CR>
 nnoremap <C-j> :vsc Window.NextPane<CR>
 nnoremap <C-k> :vsc Window.PreviousPane<CR>
 nnoremap <C-l> :vsc Window.NextPane<CR>
 
-nnoremap <leader>sv :vsc Window.NewVerticalTabGroup<CR>
-nnoremap <leader>sh :vsc Window.NewHorizontalTabGroup<CR>
+nnoremap <Leader>h :nohlsearch<CR>
+nnoremap <Leader>w :vsc File.SaveSelectedItems<CR>
+nnoremap <Leader>W :vsc File.SaveAll<CR>
 
-nnoremap <C-m> :vsc Window.MoveToNextTabGroup<CR>
-
-" ============================================================
-" Tabs / Editors
-" ============================================================
-
+" Tabs and buffers -> Visual Studio document windows.
 nnoremap <S-h> :vsc Window.PreviousDocumentWindow<CR>
 nnoremap <S-l> :vsc Window.NextDocumentWindow<CR>
-nnoremap <leader><space> :vsc Window.ShowEzMDIFileList<CR>
-nnoremap <leader>q :vsc Window.CloseDocumentWindow<CR>
+nnoremap <Leader><Space> :vsc Window.ShowEzMDIFileList<CR>
+nnoremap <Leader>q :vsc Window.CloseDocumentWindow<CR>
+nnoremap <Leader>sv :vsc Window.NewVerticalTabGroup<CR>
+nnoremap <Leader>sh :vsc Window.NewHorizontalTabGroup<CR>
 
-" ============================================================
-" Folding
-" ============================================================
+" Folds -> Visual Studio outlining.
+nnoremap <Leader>zc :vsc Edit.CollapseCurrentRegion<CR>
+nnoremap <Leader>zo :vsc Edit.ExpandCurrentRegion<CR>
+nnoremap <Leader>zC :vsc Edit.CollapseAllOutlining<CR>
+nnoremap <Leader>zO :vsc Edit.ToggleAllOutlining<CR>
 
-nnoremap zc :vsc Edit.CollapseCurrentRegion<CR>
-nnoremap zo :vsc Edit.ExpandCurrentRegion<CR>
+" -----------------------------------------------------------------------------
+" Mini.nvim replacements using Visual Studio features
+" -----------------------------------------------------------------------------
+" Mini.Files
+nnoremap <Leader>e :vsc View.SolutionExplorer<CR>
 
-nnoremap <leader>zc :vsc Edit.CollapseCurrentRegion<CR>
-nnoremap <leader>zo :vsc Edit.ExpandCurrentRegion<CR>
+" Mini.Git
+nnoremap <Leader>gg :vsc View.GitChanges<CR>
 
-nnoremap <leader>zC :vsc Edit.CollapseAllOutlining<CR>
-nnoremap <leader>zO :vsc Edit.ToggleAllOutlining<CR>
+" Mini.Pick
+nnoremap <Leader>ff :vsc Edit.NavigateTo<CR>
+nnoremap <Leader>/ :vsc Edit.FindinFiles<CR>
+nnoremap <Leader>dd :vsc View.ErrorList<CR>
+nnoremap <Leader>sr :vsc Edit.ReplaceinFiles<CR>
+nnoremap <Leader>hh :vsc Help.ViewHelp<CR>
 
-" ============================================================
-" Editing
-" ============================================================
+" Formatting. Visual Studio owns formatters and format-on-save settings.
+nnoremap <Leader>F :vsc Edit.FormatDocument<CR>
+nnoremap <Leader>kp :vsc Edit.FormatDocument<CR>
 
-vnoremap < <gv
-vnoremap > >gv
-
-nnoremap [[ :vsc Edit.PreviousMethod<CR>
-nnoremap ]] :vsc Edit.NextMethod<CR>
-nnoremap <leader>c :vsc Edit.ToggleLineComment<CR>
-nnoremap <leader>F :vsc Edit.FormatDocument<CR>
-
-nnoremap <leader>r  :vsc Edit.QuickActions<CR>
-nnoremap <leader>rr :vsc Refactor.Rename<CR>
-nnoremap <leader>ca :vsc Edit.QuickActions<CR>
-
-nnoremap <leader>=  :vsc Edit.FormatDocument<CR>
-nnoremap <leader>o  :vsc Edit.RemoveAndSort<CR>
-
-nnoremap <leader>l  :vsc View.NavigateBackward<CR>
-nnoremap <C-r>      :vsc Edit.GoToRecentFile<CR>
-
-nnoremap <leader>hh :vsc View.History<CR>
-
-" ============================================================
-" Navigation / Search
-" ============================================================
-
-nnoremap <C-s> :vsc Edit.GoToSymbol<CR>
-
-nnoremap [[ :vsc Edit.PreviousMethod<CR>
-nnoremap ]] :vsc Edit.NextMethod<CR>
-
-nnoremap <leader>ff :vsc Edit.GoToFile<CR>
-nnoremap <leader>fs :vsc Edit.GoToSymbol<CR>
-nnoremap <leader>fa :vsc Edit.GoToAll<CR>
-nnoremap <leader>/  :vsc Edit.FindinFiles<CR>
-nnoremap <leader>sr :vsc Edit.ReplaceinFiles<CR>
-
-nnoremap <leader>s :vsc Edit.GoToAll<CR>
-nnoremap <leader>b :vsc View.NavigateBackward<CR>
-nnoremap <leader>h :vsc View.CallHierarchy<CR>
-
-" Go-to
+" -----------------------------------------------------------------------------
+" LSP-style navigation and refactoring via Visual Studio/Roslyn
+" -----------------------------------------------------------------------------
+nnoremap gl :vsc View.ErrorList<CR>
+nnoremap K :vsc Edit.QuickInfo<CR>
+nnoremap gs :vsc Edit.ParameterInfo<CR>
 nnoremap gd :vsc Edit.GoToDefinition<CR>
-nnoremap gD :vsc Edit.GoToTypeDefinition<CR>
-nnoremap gi :vsc Edit.GoToImplementation<CR>
-nnoremap gc :vsc Edit.GoToFile<CR>
-nnoremap gt :vsc TestExplorer.ShowTestExplorer<CR>
-nnoremap gp :vsc Edit.GoToBase<CR>
-
-" Usages
+nnoremap gD :vsc Edit.GoToDeclaration<CR>
 nnoremap gr :vsc Edit.FindAllReferences<CR>
+nnoremap <Leader>ca :vsc Edit.QuickActions<CR>
+nnoremap <Leader>rr :vsc Refactor.Rename<CR>
+nnoremap <Leader>gv :vsc Window.NewVerticalTabGroup<CR>:vsc Edit.GoToDefinition<CR>
 
-" Navigation History
-nnoremap <C-i> :vsc View.NavigateForward<CR>
-nnoremap <C-o> :vsc View.NavigateBackward<CR>
-
-" Diagnostics
-nnoremap ge :vsc Edit.GoToNextLocation<CR>
-nnoremap gE :vsc Edit.GoToPrevLocation<CR>
-
-" ============================================================
-" Project / Files / VCS
-" ============================================================
-
-nnoremap <leader>w  :vsc File.SaveSelectedItems<CR>
-nnoremap <leader>W  :vsc File.SaveAll<CR>
-nnoremap <leader>e  :vsc View.SolutionExplorer<CR>
-
-nnoremap <leader>gg :vsc View.GitChanges<CR>
-nnoremap <leader>dd :vsc View.ErrorList<CR>
-
-nnoremap <leader>hp :vsc Help.ViewHelp<CR>
-
-" ============================================================
-" Debugger
-" ============================================================
-
-nnoremap <F5>  :vsc Debug.Start<CR>
+" -----------------------------------------------------------------------------
+" DAP/easy-dotnet replacements using Visual Studio debug and test tooling
+" -----------------------------------------------------------------------------
+nnoremap <F5> :vsc Debug.Start<CR>
 nnoremap <F10> :vsc Debug.StepOver<CR>
 nnoremap <F11> :vsc Debug.StepInto<CR>
 nnoremap <F12> :vsc Debug.StepOut<CR>
 
-nnoremap <leader>db :vsc Debug.ToggleBreakpoint<CR>
-nnoremap <leader>dB :vsc Debug.Windows.Breakpoints<CR>
+nnoremap <Leader>db :vsc Debug.ToggleBreakpoint<CR>
+nnoremap <Leader>dB :vsc Debug.NewBreakpoint<CR>
+nnoremap <Leader>dl :vsc Debug.NewBreakpoint<CR>
+nnoremap <Leader>dr :vsc View.ImmediateWindow<CR>
+nnoremap <Leader>du :vsc Debug.Windows.Autos<CR>
+nnoremap <Leader>dt :vsc Debug.StopDebugging<CR>
+nnoremap <Leader>dh :vsc Debug.QuickWatch<CR>
+nnoremap <Leader>de :vsc Debug.ExceptionSettings<CR>
+nnoremap <Leader>dE :vsc Debug.ExceptionSettings<CR>
 
-nnoremap <leader>dr :vsc Debug.Windows.Autos<CR>
-nnoremap <leader>dt :vsc Debug.StopDebugging<CR>
+" easy-dotnet test runner approximations.
+nnoremap <Leader>t :vsc TestExplorer.ShowTestExplorer<CR>
+nnoremap <Leader>r :vsc TestExplorer.RunAllTestsInView<CR>
+nnoremap <Leader>R :vsc TestExplorer.RunAllTests<CR>
+nnoremap <Leader>p :vsc TestExplorer.ShowTestExplorer<CR>
+nnoremap <Leader>d :vsc TestExplorer.DebugAllTestsInView<CR>
 
-nnoremap <leader>dh :vsc Debug.QuickWatch<CR>
-nnoremap <leader>de :vsc Debug.ExceptionSettings<CR>
+" Package/project helpers from easy-dotnet map to Visual Studio windows.
+nnoremap <Leader>pu :vsc Project.ManageNuGetPackages<CR>
+nnoremap <Leader>pa :vsc Project.ManageNuGetPackages<CR>
 
-" ============================================================
-" Build
-" ============================================================
-
-nnoremap <leader>bp :vsc Build.BuildSelection<CR>
-nnoremap <leader>bs :vsc Build.BuildSolution<CR>
-nnoremap <leader>br :vsc Build.RebuildSolution<CR>
-
-" ============================================================
-" Testing
-" ============================================================
-
-nnoremap <leader>tr :vsc TestExplorer.RunAllTestsInView<CR>
-nnoremap <leader>td :vsc TestExplorer.DebugAllTestsInView<CR>
-
-nnoremap <leader>tR :vsc TestExplorer.RunAllTests<CR>
-nnoremap <leader>tT :vsc TestExplorer.ShowTestExplorer<CR>
-nnoremap <leader>tf :vsc TestExplorer.RunFailedTests<CR>
-
-" ============================================================
-" Insert Mode
-" ============================================================
-
-" Keep completion ownership with Visual Studio/IntelliSense.
-" If you prefer IdeaVim-style Tab cycling, uncomment these:
-" inoremap <Tab>   <C-N>
-" inoremap <S-Tab> <C-P>
-
-" ============================================================
-" VsVim Config
-" ============================================================
-
-nnoremap <leader>ce :e ~/.vsvimrc<CR>
-nnoremap <leader>cr :source ~/.vsvimrc<CR>
+" -----------------------------------------------------------------------------
+" Insert-mode completion
+" -----------------------------------------------------------------------------
+" Mini.completion, mini.pairs, and snippets are intentionally left to Visual
+" Studio/IntelliSense. Keeping Tab, Shift-Tab, Enter, and Backspace unmapped
+" avoids fighting the editor completion list.

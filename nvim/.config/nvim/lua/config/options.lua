@@ -24,7 +24,7 @@ vim.cmd([[
   hi Normal guibg=NONE ctermbg=NONE
   hi NormalNC guibg=NONE ctermbg=NONE
   hi EndOfBuffer guibg=NONE ctermbg=NONE
-  hi ColorColumn guibg=#3c3836 ctermbg=237
+  hi ColorColumn guibg=#3b4252 ctermbg=237
 ]])
 
 -- Indentation

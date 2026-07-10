@@ -44,10 +44,6 @@
       "rev": "dd3f588bacbeb041be6facf1742e42097f62165d",
       "src": "https://github.com/lewis6991/gitsigns.nvim"
     },
-    "gruvbox.nvim": {
-      "rev": "154eb5ff5b96d0641307113fa385eaf0d36d9796",
-      "src": "https://github.com/ellisonleao/gruvbox.nvim"
-    },
     "lualine.nvim": {
       "rev": "131a558e13f9f28b15cd235557150ccb23f89286",
       "src": "https://github.com/nvim-lualine/lualine.nvim"
@@ -91,6 +87,10 @@
     "nvim-dap-ui": {
       "rev": "1a66cabaa4a4da0be107d5eda6d57242f0fe7e49",
       "src": "https://github.com/rcarriga/nvim-dap-ui"
+    },
+    "nvim-lint": {
+      "rev": "a219b2c9e5b4765e5c845aba119dad55806fcaf1",
+      "src": "https://github.com/mfussenegger/nvim-lint"
     },
     "nvim-lspconfig": {
       "rev": "f7e89f3d19fb436e1fbeff3bf4291eef35da94e3",
