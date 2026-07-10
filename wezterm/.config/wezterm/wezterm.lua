@@ -1,8 +1,23 @@
 local wezterm = require("wezterm")
 
+local is_windows = wezterm.target_triple:find("windows") ~= nil
+local shell
+
+if is_windows then
+	shell = { "pwsh", "-NoLogo" }
+else
+	shell = { "fish" }
+end
+
 return {
+	-- Shell
+	default_prog = shell,
+
 	-- Font
-	font = wezterm.font("Iosevka Nerd Font"),
+	font = wezterm.font({
+		family = "Iosevka Nerd Font",
+		assume_emoji_presentation = false,
+	}),
 	font_size = 11.0,
 	font_rasterizer = "FreeType",
 	freetype_load_target = "Normal",

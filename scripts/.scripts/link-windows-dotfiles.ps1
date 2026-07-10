@@ -19,6 +19,11 @@ $links = @(
         Target = Join-Path $HOME 'Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1'
     },
     @{
+        Name = 'pwsh'
+        Source = Join-Path $repoRoot 'powershell\Documents\PowerShell\Microsoft.PowerShell_profile.ps1'
+        Target = Join-Path $HOME 'Documents\PowerShell\Microsoft.PowerShell_profile.ps1'
+    },
+    @{
         Name = 'glazewm'
         Source = Join-Path $repoRoot 'glazewm\.glzr'
         Target = Join-Path $HOME '.glzr'
