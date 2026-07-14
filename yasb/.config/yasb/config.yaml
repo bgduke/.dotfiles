@@ -8,7 +8,7 @@ bars:
     screens: ["*"]
     class_name: "yasb-bar"
     alignment:
-      position: "top"
+      position: "bottom"
       center: false
     animation:
       enabled: true
@@ -176,7 +176,7 @@ widgets:
         hourly_icon_size: 32
         icon_smoothing: true
         temp_line_width: 2
-        current_line_color: "#8EAEE8"
+        current_line_color: "#83A598"
         current_line_width: 1
         current_line_style: "dot"
   volume:

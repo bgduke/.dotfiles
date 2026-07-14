@@ -60,69 +60,69 @@ return {
 	max_fps = 120,
 	front_end = "WebGpu",
 
-	-- Nord Dark
+	-- Gruvbox Dark
 	colors = {
-		foreground = "#D8DEE9",
-		background = "#2E3440",
+		foreground = "#EBDBB2",
+		background = "#282828",
 
-		cursor_bg = "#D8DEE9",
-		cursor_fg = "#2E3440",
-		cursor_border = "#D8DEE9",
+		cursor_bg = "#EBDBB2",
+		cursor_fg = "#282828",
+		cursor_border = "#EBDBB2",
 
-		selection_fg = "#D8DEE9",
-		selection_bg = "#4C566A",
+		selection_fg = "#EBDBB2",
+		selection_bg = "#504945",
 
-		scrollbar_thumb = "#4C566A",
-		split = "#4C566A",
+		scrollbar_thumb = "#665C54",
+		split = "#665C54",
 
 		ansi = {
-			"#3B4252",
-			"#BF616A",
-			"#A3BE8C",
-			"#EBCB8B",
-			"#81A1C1",
-			"#B48EAD",
-			"#88C0D0",
-			"#E5E9F0",
+			"#282828",
+			"#CC241D",
+			"#98971A",
+			"#D79921",
+			"#458588",
+			"#B16286",
+			"#689D6A",
+			"#A89984",
 		},
 
 		brights = {
-			"#4C566A",
-			"#BF616A",
-			"#A3BE8C",
-			"#EBCB8B",
-			"#81A1C1",
-			"#B48EAD",
-			"#8FBCBB",
-			"#ECEFF4",
+			"#928374",
+			"#FB4934",
+			"#B8BB26",
+			"#FABD2F",
+			"#83A598",
+			"#D3869B",
+			"#8EC07C",
+			"#EBDBB2",
 		},
 
 		tab_bar = {
-			background = "#2E3440",
+			background = "#282828",
 
 			active_tab = {
-				bg_color = "#88C0D0",
-				fg_color = "#2E3440",
+				bg_color = "#83A598",
+				fg_color = "#282828",
 			},
 
 			inactive_tab = {
-				bg_color = "#3B4252",
-				fg_color = "#D8DEE9",
+				bg_color = "#3C3836",
+				fg_color = "#EBDBB2",
 			},
 
 			inactive_tab_hover = {
-				bg_color = "#4C566A",
-				fg_color = "#D8DEE9",
+				bg_color = "#504945",
+				fg_color = "#EBDBB2",
 			},
 
 			new_tab = {
-				bg_color = "#3B4252",
-				fg_color = "#D8DEE9",
+				bg_color = "#3C3836",
+				fg_color = "#EBDBB2",
 			},
 
 			new_tab_hover = {
-				bg_color = "#4C566A",
-				fg_color = "#EBCB8B",
+				bg_color = "#504945",
+				fg_color = "#FABD2F",
 			},
 		},
 	},

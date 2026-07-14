@@ -10,7 +10,7 @@ require("plugins.conform")
 require("plugins.lint")
 require("plugins.obsidian")
 require("plugins.markdown-render")
-require("plugins.nord")
+require("plugins.gruvbox")
 require("plugins.dap")
 -- require("plugins.easydotnet")
 

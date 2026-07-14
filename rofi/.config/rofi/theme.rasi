@@ -1,14 +1,14 @@
-/* Nord Dark */
+/* Gruvbox Dark */
 * {
-    bg:       #2e3440;
-    bg-alt:   #3b4252;
-    fg:       #d8dee9;
-    fg-alt:   #e5e9f0;
+    bg:       #282828;
+    bg-alt:   #3c3836;
+    fg:       #ebdbb2;
+    fg-alt:   #d5c4a1;
 
-    border:   #4c566a;
-    selected: #3b4252;
+    border:   #665c54;
+    selected: #504945;
 
-    accent:   #88c0d0;
+    accent:   #83a598;
 
     spacing:  8;
     border-radius: 10;

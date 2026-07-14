@@ -5,13 +5,13 @@ import QtQuick.Layouts 1.15
 Rectangle {
     id: root
     anchors.fill: parent
-    color: config.bg || "#2e3440"
+    color: config.bg || "#282828"
 
-    readonly property string bg: config.bg || "#2e3440"
+    readonly property string bg: config.bg || "#282828"
     readonly property string bgSoft: config.bgSoft || "#32302f"
-    readonly property string fg: config.text || "#d8dee9"
+    readonly property string fg: config.text || "#ebdbb2"
     readonly property string muted: config.muted || "#a89984"
-    readonly property string accent: config.accent || "#88c0d0"
+    readonly property string accent: config.accent || "#83a598"
     readonly property string red: config.red || "#fb4934"
     readonly property int primaryScreenHeight: 1440
 
@@ -24,7 +24,7 @@ Rectangle {
 
     Rectangle {
         anchors.fill: parent
-        color: "#aa282828"
+        color: "#aa1d2021"
     }
     ColumnLayout {
         id: loginPanel

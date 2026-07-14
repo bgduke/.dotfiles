@@ -10,19 +10,19 @@
 /* @define-color bg           #1e1e2e; */
 /* @define-color bg-alt       #181825; */
 
-/* Nord Dark */
-@define-color main-hl         #b48ead;
-@define-color main-hl-hover   #88c0d0;
-@define-color green           #a3be8c;
-@define-color blue            #81a1c1;
-@define-color blue-hover      #88c0d0;
-@define-color red             #bf616a;
-@define-color red-hover       #d08770;
-@define-color fg              #d8dee9;
-@define-color fg-alt          #e5e9f0;
-@define-color bg              #2e3440;
-@define-color bg4             #4c566a;
-@define-color bg-alt          #3b4252;
+/* Gruvbox Dark */
+@define-color main-hl         #d3869b;
+@define-color main-hl-hover   #83a598;
+@define-color green           #b8bb26;
+@define-color blue            #458588;
+@define-color blue-hover      #83a598;
+@define-color red             #cc241d;
+@define-color red-hover       #fb4934;
+@define-color fg              #ebdbb2;
+@define-color fg-alt          #d5c4a1;
+@define-color bg              #282828;
+@define-color bg4             #665c54;
+@define-color bg-alt          #3c3836;
 
 * {
   font-family: "JetBrainsMono Nerd Font";
@@ -91,8 +91,8 @@ window#waybar.hidden {
 }
 
 #pulseaudio.muted {
-  background-color: #bf616a;
-  color: #2e3440;
+  background-color: #cc241d;
+  color: #282828;
 }
 
 #language {

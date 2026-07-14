@@ -213,7 +213,7 @@ load_plugins {
     "zellij:link"
 }
 
-theme "nord"
+theme "gruvbox-dark"
 
 default_layout "default"
 default_mode "locked"

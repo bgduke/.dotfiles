@@ -22,10 +22,10 @@ alignment = left
 word_wrap = yes
 ellipsize = middle
 
-# Nord Dark
-background = "#2E3440"
-foreground = "#D8DEE9"
-frame_color = "#88C0D0"
+# Gruvbox Dark
+background = "#282828"
+foreground = "#EBDBB2"
+frame_color = "#83A598"
 separator_color = frame
 
 # Catppuccin Mocha
@@ -39,10 +39,10 @@ timeout = 5
 corner_radius = 0
 
 [urgency_low]
-# Nord Dark
-background = "#2E3440"
-foreground = "#D8DEE9"
-frame_color = "#88C0D0"
+# Gruvbox Dark
+background = "#282828"
+foreground = "#EBDBB2"
+frame_color = "#83A598"
 
 # Catppuccin Mocha
 # background = "#1e1e2e"
@@ -51,10 +51,10 @@ frame_color = "#88C0D0"
 # timeout = 4
 
 [urgency_normal]
-# Nord Dark
-background = "#2E3440"
-foreground = "#D8DEE9"
-frame_color = "#88C0D0"
+# Gruvbox Dark
+background = "#282828"
+foreground = "#EBDBB2"
+frame_color = "#83A598"
 
 # Catppuccin Mocha
 # background = "#1e1e2e"
@@ -63,10 +63,10 @@ frame_color = "#88C0D0"
 timeout = 6
 
 [urgency_critical]
-# Nord Dark
-background = "#2E3440"
-foreground = "#BF616A"
-frame_color = "#BF616A"
+# Gruvbox Dark
+background = "#282828"
+foreground = "#FB4934"
+frame_color = "#FB4934"
 
 # Catppuccin Mocha
 # background = "#1e1e2e"

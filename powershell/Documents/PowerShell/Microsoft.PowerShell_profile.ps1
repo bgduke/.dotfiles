@@ -102,7 +102,7 @@ function gl { git log --oneline --graph --decorate @args }
 
 function v { nvim @args }
 function c { Clear-Host }
-function ff { fastfetch @args }
+function ff { fastfetch }
 function tm { tmux @args }
 function tma { tmux attach @args }
 function tmn { tmux new-session @args }
