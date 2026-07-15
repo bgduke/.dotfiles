@@ -22,6 +22,15 @@ set -U __done_exclude '^git (?!push|pull|fetch)|^ls|^cd|^clear'
 set -U __done_sway_ignore_visible 1
 
 # -----------------------------------------
+# Greeting
+# -----------------------------------------
+function fish_greeting
+    if type -q fastfetch
+        sleep 0.1 && fastfetch --pipe false
+    end
+end
+
+# -----------------------------------------
 # Environment
 # -----------------------------------------
 set -gx EDITOR nvim
@@ -46,16 +55,6 @@ fish_add_path \
     ~/Applications/depot_tools \
     ~/root/.dotnet/tools \
     ~/.dotnet/tools \
-
-# -----------------------------------------
-# Pyenv
-# -----------------------------------------
-set -gx PYENV_ROOT $HOME/.pyenv
-if test -d $PYENV_ROOT/bin
-    fish_add_path $PYENV_ROOT/bin
-    pyenv init - fish | source
-    pyenv virtualenv-init - | source
-end
 
 # -----------------------------------------
 # History shortcuts (!! and !$)
@@ -220,6 +219,3 @@ end
 if type -q starship
     starship init fish | source
 end
-set -gx PATH $HOME/.local/bin $PATH
-
-eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv fish)"

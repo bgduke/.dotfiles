@@ -7,7 +7,7 @@ command_timeout = 1000
 
 format = """$os $username$hostname\
 $directory\
-$git_branch$git_status\
+$git_branch\
 $nodejs$dotnet$python$rust$golang\
 $time
 $character"""
@@ -62,18 +62,6 @@ Linux = " "
 symbol = " "
 style = "bold purple"
 format = "[$symbol$branch]($style) "
-
-[git_status]
-style = "bold yellow"
-format = "[$all_status$ahead_behind]($style) "
-conflicted = "⚔ "
-ahead = "⇡${count} "
-behind = "⇣${count} "
-diverged = "⇕⇡${ahead_count}⇣${behind_count} "
-modified = " "
-staged = " "
-untracked = " "
-deleted = "✖ "
 
 # -----------------------------
 # Languages / Runtimes

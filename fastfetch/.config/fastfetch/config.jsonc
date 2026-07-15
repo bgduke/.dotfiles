@@ -51,6 +51,10 @@
       "key": "  󰖯 WM"
     },
     {
+      "type": "shell",
+      "key": "   Shell"
+    },
+    {
       "type": "terminal",
       "key": "   Term"
     },
