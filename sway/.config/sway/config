@@ -1,7 +1,7 @@
 include ~/.config/sway/config.d/variables.conf
 include ~/.config/sway/config.d/autostart.conf
-include ~/.config/sway/config.d/appearance.conf
 include ~/.config/sway/config.d/hardware.conf
 include ~/.config/sway/config.d/keybindings.conf
 include ~/.config/sway/config.d/window-rules.conf
 include ~/.config/sway/config.d/bar.conf
+include ~/.config/sway/config.d/appearance.conf

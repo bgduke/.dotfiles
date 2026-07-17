@@ -1,0 +1,14 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=DaVinci Resolve
+GenericName=DaVinci Resolve
+Comment=Revolutionary new tools for editing, visual effects, color correction and professional audio post production, all in a single application!
+Path=/home/bgduke
+Exec=distrobox-enter -n davincibox -- /opt/resolve/bin/resolve
+Terminal=false
+MimeType=application/x-resolveproj;
+Icon=/home/bgduke/.local/share/resolve/graphics/DV_Resolve.png
+StartupNotify=true
+Name[en_US]=DaVinci Resolve
+StartupWMClass=resolve

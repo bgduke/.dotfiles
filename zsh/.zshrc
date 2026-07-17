@@ -5,11 +5,9 @@
 # -----------------------------------------
 # Auto-start Sway on tty1
 # -----------------------------------------
-if [[ -o interactive ]]; then
-  if [[ "$(tty)" == "/dev/tty1" ]]; then
-    if [[ -z "$DISPLAY" && -z "$WAYLAND_DISPLAY" ]]; then
-      exec sway
-    fi
+if [[ -o interactive && "$(tty)" == /dev/tty1 ]]; then
+  if [[ -z "$DISPLAY" && -z "$WAYLAND_DISPLAY" ]]; then
+    exec sway
   fi
 fi
 
@@ -20,15 +18,18 @@ export EDITOR=nvim
 export VISUAL=nvim
 export TERMINAL=kitty
 export BROWSER=firefox
-export MANROFFOPT="-c"
 
-if command -v bat >/dev/null 2>&1; then
+# Better man pages
+export MANROFFOPT=-c
+
+if (( $+commands[bat] )); then
   export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 fi
 
 # -----------------------------------------
 # PATH
 # -----------------------------------------
+typeset -U path PATH
 path=(
   "$HOME/.local/bin"
   "$HOME/.scripts"
@@ -36,18 +37,21 @@ path=(
   "$HOME/Applications/depot_tools"
   "$HOME/root/.dotnet/tools"
   "$HOME/.dotnet/tools"
-  "$HOME/.nvm"
-  "$HOME/.npm-global/bin"
-  "$HOME/.npm/bin"
-  "$HOME/node_modules/.bin"
   $path
 )
 
-typeset -U path
-export PATH
+# -----------------------------------------
+# Pyenv
+# -----------------------------------------
+export PYENV_ROOT="$HOME/.pyenv"
+if [[ -d "$PYENV_ROOT/bin" ]]; then
+  path=("$PYENV_ROOT/bin" $path)
+  eval "$(pyenv init - zsh)"
+  eval "$(pyenv virtualenv-init -)"
+fi
 
 # -----------------------------------------
-# Fish-like completion
+# Completion and key bindings
 # -----------------------------------------
 fpath=(/usr/share/zsh/site-functions $fpath)
 
@@ -57,12 +61,11 @@ compinit
 zstyle ':completion:*' menu select
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
 zstyle ':completion:*' group-name ''
-zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
+[[ -n "$LS_COLORS" ]] && zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
 
 bindkey -e
 bindkey '^I' expand-or-complete
 
-# Keep editing keys explicit so EDITOR=nvim does not switch zsh into vi mode.
 [[ -n "${terminfo[kbs]}" ]] && bindkey -- "${terminfo[kbs]}" backward-delete-char
 [[ -n "${terminfo[kdch1]}" ]] && bindkey -- "${terminfo[kdch1]}" delete-char
 bindkey '^?' backward-delete-char
@@ -70,7 +73,8 @@ bindkey '^H' backward-delete-char
 bindkey '^[[3~' delete-char
 
 # -----------------------------------------
-# Fish-like history
+# History and Fish-like history search
+# Zsh provides !! and !$ natively.
 # -----------------------------------------
 HISTFILE="$HOME/.zsh_history"
 HISTSIZE=100000
@@ -88,7 +92,6 @@ setopt HIST_VERIFY
 
 autoload -Uz up-line-or-beginning-search
 autoload -Uz down-line-or-beginning-search
-
 zle -N up-line-or-beginning-search
 zle -N down-line-or-beginning-search
 
@@ -107,41 +110,28 @@ bindkey '^[OF' end-of-line
 bindkey '^[[5~' up-line-or-beginning-search
 bindkey '^[[6~' down-line-or-beginning-search
 
-# -----------------------------------------
-# Fish-like autosuggestions
-# -----------------------------------------
-if [[ -f /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh ]]; then
+# Fish includes these features by default; load their Zsh plugins when present.
+if [[ -r /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh ]]; then
   source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
-fi
-
-# -----------------------------------------
-# Fish-like syntax highlighting
-# Keep this near the end.
-# -----------------------------------------
-if [[ -f /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ]]; then
-  source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-fi
-
-# -----------------------------------------
-# Greeting
-# -----------------------------------------
-if [[ -o interactive ]] && command -v fastfetch >/dev/null 2>&1; then
-  sleep 0.1 && fastfetch --pipe false
 fi
 
 # -----------------------------------------
 # Useful functions
 # -----------------------------------------
+
+# Better history timestamps
 history() {
   builtin history -i "$@"
 }
 
+# Quick backup
 backup() {
   cp "$1" "$1.bak"
 }
 
+# Smart copy
 copy() {
-  if [[ "$#" -eq 2 && -d "$1" ]]; then
+  if (( $# == 2 )) && [[ -d "$1" ]]; then
     local from="${1%/}"
     local to="$2"
     command cp -r "$from" "$to"
@@ -150,43 +140,51 @@ copy() {
   fi
 }
 
+# mkdir + cd
 mkcd() {
   mkdir -p "$1" && cd "$1"
 }
 
+# Extract archives easily
 extract() {
   case "$1" in
     *.tar.gz|*.tgz) tar -xvzf "$1" ;;
     *.tar.xz)       tar -xvJf "$1" ;;
     *.zip)          unzip "$1" ;;
     *.rar)          unrar x "$1" ;;
-    *)              echo "Unsupported archive" ;;
+    *)              echo 'Unsupported archive' ;;
   esac
 }
 
 # -----------------------------------------
 # Aliases
 # -----------------------------------------
-if command -v eza >/dev/null 2>&1; then
+
+# eza replacements
+if (( $+commands[eza] )); then
   alias ls='eza -al --icons=always --group-directories-first'
   alias la='eza -a --icons=always --group-directories-first'
   alias ll='eza -lg --icons=always --group-directories-first'
   alias lt='eza -aT --icons=always --group-directories-first'
 fi
 
+# Navigation
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
 alias .....='cd ../../../..'
 
+# Safer defaults
 alias cp='cp -iv'
 alias mv='mv -iv'
 alias rm='rm -Iv'
 
+# Better grep
 alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
 
+# Git
 alias g='git'
 alias gs='git status'
 alias ga='git add'
@@ -194,22 +192,28 @@ alias gc='git commit'
 alias gp='git push'
 alias gl='git log --oneline --graph --decorate'
 
+# Pacman / Arch
 alias cleanup='sudo pacman -Rns $(pacman -Qtdq)'
 alias fixpacman='sudo rm /var/lib/pacman/db.lck'
 
+# System
 alias jctl='journalctl -p 3 -xb'
 alias psmem='ps auxf | sort -nr -k 4'
 alias psmem10='ps auxf | sort -nr -k 4 | head -10'
 
+# Hardware
 alias hw='hwinfo --short'
 
+# Files
 alias wget='wget -c'
 alias tarnow='tar -acf'
 alias untar='tar -zxvf'
 
+# Dev
 alias v='nvim'
 alias c='clear'
 
+# Terminal
 alias ff='fastfetch'
 alias tm='tmux'
 alias tma='tmux a'
@@ -218,42 +222,32 @@ alias tmn='tmux new-session'
 # -----------------------------------------
 # Zoxide integration
 # -----------------------------------------
-if command -v zoxide >/dev/null 2>&1; then
+if (( $+commands[zoxide] )); then
   eval "$(zoxide init zsh --cmd cd)"
 fi
 
 # -----------------------------------------
 # Direnv integration
 # -----------------------------------------
-if command -v direnv >/dev/null 2>&1; then
+if (( $+commands[direnv] )); then
   eval "$(direnv hook zsh)"
-fi
-
-# -----------------------------------------
-# Node Version Manager
-# -----------------------------------------
-export NVM_DIR="${XDG_CONFIG_HOME:-$HOME/.config}/nvm"
-
-if [[ -s "$NVM_DIR/nvm.sh" ]]; then
-  source "$NVM_DIR/nvm.sh" --no-use
-elif [[ -s "$HOME/.nvm/nvm.sh" ]]; then
-  export NVM_DIR="$HOME/.nvm"
-  source "$NVM_DIR/nvm.sh" --no-use
-fi
-
-# Add active npm global bin after nvm loads
-if command -v npm >/dev/null 2>&1; then
-  npm_global_bin="$(npm bin -g 2>/dev/null)"
-  if [[ -n "$npm_global_bin" && -d "$npm_global_bin" ]]; then
-    path=("$npm_global_bin" $path)
-    typeset -U path
-    export PATH
-  fi
 fi
 
 # -----------------------------------------
 # Starship prompt
 # -----------------------------------------
-if command -v starship >/dev/null 2>&1; then
+if (( $+commands[starship] )); then
   eval "$(starship init zsh)"
+fi
+
+# Keep syntax highlighting last among interactive plugins.
+if [[ -r /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ]]; then
+  source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+fi
+
+# -----------------------------------------
+# Homebrew
+# -----------------------------------------
+if [[ -x /home/linuxbrew/.linuxbrew/bin/brew ]]; then
+  eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv zsh)"
 fi

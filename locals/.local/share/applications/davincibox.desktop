@@ -1,0 +1,17 @@
+[Desktop Entry]
+Name=Davincibox
+GenericName=Terminal entering Davincibox
+Comment=Terminal entering Davincibox
+Categories=Distrobox;System;Utility
+Exec=/usr/bin/distrobox enter  davincibox
+Icon=/home/bgduke/.local/share/icons/distrobox/fedora.png
+Keywords=distrobox;
+NoDisplay=false
+Terminal=true
+TryExec=/usr/bin/distrobox
+Type=Application
+Actions=Remove;
+
+[Desktop Action Remove]
+Name=Remove Davincibox from system
+Exec=/usr/bin/distrobox rm  davincibox
