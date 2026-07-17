@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=Application
+Name=TickTick
+Comment=TickTick is a powerful to-do & task management app with seamless cloud synchronization across all your devices. Whether you need to schedule an agenda, make memos, share shopping lists, collaborate in a team, or even develop a new habit, TickTick is always here to help you get stuff done and keep life on track.
+Icon=/home/bgduke/AppImages/.icons/ticktick
+TryExec=/home/bgduke/AppImages/ticktick.appimage
+Exec=env DESKTOPINTEGRATION=1 /home/bgduke/AppImages/ticktick.appimage --no-sandbox %U
+Terminal=false
+Categories=Office;
+StartupWMClass=TickTick
+X-AppImage-Version=8.0.10
+X-AppImage-Name=TickTick
