@@ -1,7 +1,16 @@
 [MIME Cache]
+application/pdf=todoist.desktop;
+application/x-braw-clip=blackmagicraw-player.desktop;
+application/x-braw-sidecar=blackmagicraw-player.desktop;
+application/x-resolveproj=DaVinciResolve.desktop;
+image/jpeg=todoist.desktop;
+image/png=todoist.desktop;
+image/webp=todoist.desktop;
 text/html=helium.desktop;
 x-scheme-handler/about=helium.desktop;
+x-scheme-handler/com.todoist=todoist.desktop;
 x-scheme-handler/http=helium.desktop;
 x-scheme-handler/https=helium.desktop;
 x-scheme-handler/jetbrains=jetbrainsd.desktop;
+x-scheme-handler/todoist=todoist.desktop;
 x-scheme-handler/unknown=helium.desktop;

@@ -1,0 +1,13 @@
+[Desktop Entry]
+Type=Application
+Name=Todoist
+Comment=The Best To-Do List App and Task Manager
+Icon=/home/bgduke/AppImages/.icons/todoist
+TryExec=/home/bgduke/AppImages/todoist.appimage
+Exec=/home/bgduke/AppImages/todoist.appimage --no-sandbox %U
+Terminal=false
+MimeType=x-scheme-handler/todoist;x-scheme-handler/com.todoist;image/png;image/jpeg;image/jpeg;image/webp;application/pdf;
+Categories=Office;
+StartupWMClass=todoist
+X-AppImage-Version=9.29.1
+X-AppImage-Name=Todoist

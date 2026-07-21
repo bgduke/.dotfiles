@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Name=Vial
+NoDisplay=false
+Icon=/home/bgduke/AppImages/.icons/vial
+TryExec=/home/bgduke/AppImages/vial.appimage
+Exec=env DESKTOPINTEGRATION=1 /home/bgduke/AppImages/vial.appimage
+Terminal=false
+Categories=Utility;
+X-AppImage-Version=.glibc2.3.4
+X-AppImage-Name=Vial
