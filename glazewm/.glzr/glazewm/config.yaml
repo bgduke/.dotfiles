@@ -15,12 +15,12 @@ general:
 
 gaps:
   scale_with_dpi: true
-  inner_gap: "0px"
+  inner_gap: "5px"
   outer_gap:
-    top: "0px"
-    right: "0px"
-    bottom: "0px"
-    left: "0px"
+    top: "5px"
+    right: "5px"
+    bottom: "5px"
+    left: "5px"
 
 window_effects:
   focused_window:
@@ -84,10 +84,6 @@ workspaces:
     bind_to_monitor: 0
   - name: "10"
     bind_to_monitor: 0
-  - name: "11"
-    bind_to_monitor: 1
-  - name: "12"
-    bind_to_monitor: 1
 
 window_rules:
   - commands: ["ignore"]
@@ -227,10 +223,10 @@ keybindings:
     bindings: ["alt+enter"]
 
   # Focus the next/previous active workspace defined in `workspaces` config.
-  - commands: ["focus --next-active-workspace"]
-    bindings: ["alt+s"]
-  - commands: ["focus --prev-active-workspace"]
-    bindings: ["alt+a"]
+  # - commands: ["focus --next-active-workspace"]
+  #   bindings: ["alt+s"]
+  # - commands: ["focus --prev-active-workspace"]
+  #   bindings: ["alt+a"]
 
   # Focus the workspace that last had focus.
   - commands: ["focus --recent-workspace"]
