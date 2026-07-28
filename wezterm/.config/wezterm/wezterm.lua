@@ -6,7 +6,7 @@ local shell
 if is_windows then
 	shell = { "pwsh", "-NoLogo" }
 else
-	shell = { "fish" }
+	shell = { "zsh" }
 end
 
 return {
@@ -38,7 +38,7 @@ return {
 		top = 10,
 		bottom = 10,
 	},
-	window_decorations = "RESIZE",
+	window_decorations = " TITLE | RESIZE",
 
 	enable_wayland = false,
 
