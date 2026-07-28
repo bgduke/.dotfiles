@@ -41,7 +41,8 @@
   font-family: "JetBrainsMono NFP";
 }
 .yasb-bar {
-  background-color: var(--bg-color1);
+  /* background-color: var(--bg-color1); */
+  background-color: rgba(0,0,0,0.3);
   border-radius: 0px;
 }
 /* Global styles for ToolTip */
@@ -262,7 +263,7 @@
   color: var(--text3);
   padding: 0 4px;
   margin: 0;
-  font-family: "JetBrainsMono NFP";
+  font-family: "JetBrainsMono NFM";
   font-weight: 400;
   font-size: 20px;
 }
@@ -292,7 +293,7 @@
   font-size: 14px;
   font-weight: 600;
   margin-left: 10px;
-  font-family: "JetBrainsMono Nerd Font";
+  font-family: "JetBrainsMono NFP";
 }
 .media-menu .artist {
   font-size: 13px;

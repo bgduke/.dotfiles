@@ -14,9 +14,9 @@ bars:
       enabled: true
       duration: 400
     blur_effect:
-      enabled: false
-      acrylic: false
-      dark_mode: false
+      enabled: true
+      acrylic: true
+      dark_mode: true
       round_corners: false
       round_corners_type: "normal"
       border_color: "system"
@@ -60,7 +60,8 @@ widgets:
         - { title: "Pictures", path: "~\\Pictures" }
       system_menu: true
       power_menu: true
-      blur: false
+      blur: true
+        
   media:
     type: "yasb.media.MediaWidget"
     options:

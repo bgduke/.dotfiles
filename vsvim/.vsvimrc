@@ -7,7 +7,6 @@
 let mapleader = " "
 let maplocalleader = " "
 
-set nocompatible
 set number
 set relativenumber
 set cursorline
@@ -16,7 +15,6 @@ set smartcase
 set incsearch
 set hlsearch
 set scrolloff=8
-set sidescrolloff=8
 set nowrap
 set tabstop=4
 set shiftwidth=4
@@ -41,8 +39,8 @@ nnoremap <Leader>w :vsc File.SaveSelectedItems<CR>
 nnoremap <Leader>W :vsc File.SaveAll<CR>
 
 " Tabs and buffers -> Visual Studio document windows.
-nnoremap <S-h> :vsc Window.PreviousDocumentWindow<CR>
-nnoremap <S-l> :vsc Window.NextDocumentWindow<CR>
+nnoremap <S-h> :vsc Window.PreviousTab<CR>
+nnoremap <S-l> :vsc Window.NextTab<CR>
 nnoremap <Leader><Space> :vsc Window.ShowEzMDIFileList<CR>
 nnoremap <Leader>q :vsc Window.CloseDocumentWindow<CR>
 nnoremap <Leader>sv :vsc Window.NewVerticalTabGroup<CR>

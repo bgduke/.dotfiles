@@ -15,12 +15,12 @@ general:
 
 gaps:
   scale_with_dpi: true
-  inner_gap: "5px"
+  inner_gap: "6px"
   outer_gap:
-    top: "5px"
-    right: "5px"
-    bottom: "5px"
-    left: "5px"
+    top: "6px"
+    right: "6px"
+    bottom: "6px"
+    left: "6px"
 
 window_effects:
   focused_window:
@@ -202,7 +202,7 @@ keybindings:
 
   # Close focused window.
   - commands: ["close"]
-    bindings: ["alt+shift+q"]
+    bindings: ["alt+w"]
 
   # Kill GlazeWM process safely.
   - commands: ["wm-exit"]
@@ -219,10 +219,11 @@ keybindings:
   # Launch CMD terminal. Alternatively, use `shell-exec wt` or
   # `shell-exec %ProgramFiles%/Git/git-bash.exe` to start Windows
   # Terminal and Git Bash respectively.
-  - commands: ["shell-exec %ProgramFiles%/WezTerm/wezterm-gui.exe"]
+  # - commands: ["shell-exec %ProgramFiles%/WezTerm/wezterm-gui.exe"]
+  - commands: ["shell-exec wt -w_quake"]
     bindings: ["alt+enter"]
 
-  # Focus the next/previous active workspace defined in `workspaces` config.
+  # Focus the next/previous ative workspace defined in `workspaces` config.
   # - commands: ["focus --next-active-workspace"]
   #   bindings: ["alt+s"]
   # - commands: ["focus --prev-active-workspace"]
@@ -257,17 +258,6 @@ keybindings:
     bindings: ["alt+-"]
   - commands: ["focus --workspace 12"]
     bindings: ["alt+="]
-
-  # Move the focused window's parent workspace to a monitor in a given
-  # direction.
-  - commands: ["move-workspace --direction left"]
-    bindings: ["alt+shift+a"]
-  - commands: ["move-workspace --direction right"]
-    bindings: ["alt+shift+f"]
-  - commands: ["move-workspace --direction up"]
-    bindings: ["alt+shift+d"]
-  - commands: ["move-workspace --direction down"]
-    bindings: ["alt+shift+s"]
 
   # Move focused window to a workspace defined in `workspaces` config.
   - commands: ["move --workspace 1", "focus --workspace 1"]
