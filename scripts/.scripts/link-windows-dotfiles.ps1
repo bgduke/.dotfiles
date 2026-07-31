@@ -47,17 +47,17 @@ $links = @(
         Name = 'vsvim'
         Source = Join-Path $repoRoot 'vsvim\.vsvimrc'
         Target = Join-Path $HOME '.vsvimrc'
-    },
+    # },
     # @{
     #     Name = 'ideavim'
     #     Source = Join-Path $repoRoot 'ideavim\.ideavimrc'
     #     Target = Join-Path $HOME '.ideavimrc'
     # },
-    @{
-        Name = 'fastfetch'
-        Source = Join-Path $repoRoot 'fastfetch\.config\fastfetch'
-        Target = Join-Path $HOME '.config\fastfetch'
-    # },
+    # @{
+    #     Name = 'fastfetch'
+    #     Source = Join-Path $repoRoot 'fastfetch\.config\fastfetch'
+    #     Target = Join-Path $HOME '.config\fastfetch'
+    # # },
     # @{
     #     Name = 'komorebi'
     #     Source = Join-Path $repoRoot 'komorebi\komorebi.json'

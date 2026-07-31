@@ -29,3 +29,5 @@ Error: The operation was canceled by the user. (0x800704C7)
 [2m2026-07-02T12:14:55.250007Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Platform error: Another instance of the application is already running.
 [2m2026-07-02T15:12:56.513410Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m gaps.outer_gap: invalid type: string "5px", expected struct RectDelta at line 19 column 14
 [2m2026-07-02T15:13:55.108257Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m window_effects.focused_window.border: Invalid color '#edbdbb2': must be of format '#RRGGBB' or '#RRGGBBAA'. at line 28 column 7
+[2m2026-07-30T20:57:59.216463Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Workspace with name '12' doesn't exist or is already active.
+[2m2026-07-30T20:59:50.444681Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Workspace with name '12' doesn't exist or is already active.

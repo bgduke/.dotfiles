@@ -42,7 +42,7 @@
 }
 .yasb-bar {
   /* background-color: var(--bg-color1); */
-  background-color: rgba(0,0,0,0.3);
+  background-color: rgba(0,0,0,0);
   border-radius: 0px;
 }
 /* Global styles for ToolTip */

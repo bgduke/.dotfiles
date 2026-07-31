@@ -3,7 +3,7 @@ general:
   shutdown_commands: []
   config_reload_commands: []
 
-  focus_follows_cursor: false
+  focus_follows_cursor: true
   toggle_workspace_on_refocus: false
 
   cursor_jump:
@@ -58,10 +58,10 @@ window_behavior:
   state_defaults:
     floating:
       centered: true
-      shown_on_top: false
+      shown_on_top: true
     fullscreen:
       maximized: true
-      shown_on_top: false
+      shown_on_top: true
 
 workspaces:
   - name: "1"
@@ -81,8 +81,6 @@ workspaces:
   - name: "8"
     bind_to_monitor: 0
   - name: "9"
-    bind_to_monitor: 0
-  - name: "10"
     bind_to_monitor: 0
 
 window_rules:
@@ -202,36 +200,29 @@ keybindings:
 
   # Close focused window.
   - commands: ["close"]
-    bindings: ["alt+w"]
+    bindings: ["alt+shift+w"]
 
   # Kill GlazeWM process safely.
-  - commands: ["wm-exit"]
-    bindings: ["alt+shift+e"]
+  # - commands: ["wm-exit"]
+  #   bindings: ["alt+shift+e"]
 
   # Re-evaluate configuration file.
   - commands: ["wm-reload-config"]
     bindings: ["alt+shift+r"]
 
   # Redraw all windows.
-  - commands: ["wm-redraw"]
-    bindings: ["alt+shift+w"]
+  # - commands: ["wm-redraw"]
+  #   bindings: ["alt+shift+w"]
 
   # Launch CMD terminal. Alternatively, use `shell-exec wt` or
   # `shell-exec %ProgramFiles%/Git/git-bash.exe` to start Windows
   # Terminal and Git Bash respectively.
-  # - commands: ["shell-exec %ProgramFiles%/WezTerm/wezterm-gui.exe"]
-  - commands: ["shell-exec wt -w_quake"]
+  # - commands: ["shell-exec wt -w_quake"]
+  - commands: ["shell-exec %ProgramFiles%/WezTerm/wezterm-gui.exe"]
     bindings: ["alt+enter"]
 
-  # Focus the next/previous ative workspace defined in `workspaces` config.
-  # - commands: ["focus --next-active-workspace"]
-  #   bindings: ["alt+s"]
-  # - commands: ["focus --prev-active-workspace"]
-  #   bindings: ["alt+a"]
-
-  # Focus the workspace that last had focus.
-  - commands: ["focus --recent-workspace"]
-    bindings: ["alt+d"]
+  - commands: ["shell-exec explorer"]
+    bindings: ["alt+e"]
 
   # Change focus to a workspace defined in `workspaces` config.
   - commands: ["focus --workspace 1"]
@@ -252,12 +243,6 @@ keybindings:
     bindings: ["alt+8"]
   - commands: ["focus --workspace 9"]
     bindings: ["alt+9"]
-  - commands: ["focus --workspace 10"]
-    bindings: ["alt+0"]
-  - commands: ["focus --workspace 11"]
-    bindings: ["alt+-"]
-  - commands: ["focus --workspace 12"]
-    bindings: ["alt+="]
 
   # Move focused window to a workspace defined in `workspaces` config.
   - commands: ["move --workspace 1", "focus --workspace 1"]
@@ -278,11 +263,3 @@ keybindings:
     bindings: ["alt+shift+8"]
   - commands: ["move --workspace 9", "focus --workspace 9"]
     bindings: ["alt+shift+9"]
-  - commands: ["move --workspace 10", "focus --workspace 10"]
-    bindings: ["alt+shift+0"]
-  - commands: ["move --workspace 11", "focus --workspace 11"]
-    bindings: ["alt+shift+-"]
-  - commands: ["move --workspace 12", "focus --workspace 12"]
-    bindings: ["alt+shift+="]
-
-

@@ -38,7 +38,7 @@ return {
 		top = 10,
 		bottom = 10,
 	},
-	window_decorations = " TITLE | RESIZE",
+	window_decorations = "RESIZE",
 
 	enable_wayland = false,
 
