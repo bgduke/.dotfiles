@@ -21,13 +21,16 @@ set -U __done_exclude '^git (?!push|pull|fetch)|^ls|^cd|^clear'
 # Better support for sway
 set -U __done_sway_ignore_visible 1
 
+# Disable Fish Greeting
+set -U fish_greeting ""
+
 # -----------------------------------------
 # Environment
 # -----------------------------------------
 set -gx EDITOR nvim
 set -gx VISUAL nvim
-set -gx TERMINAL kitty
-set -gx BROWSER firefox
+set -gx TERMINAL wezterm
+set -gx BROWSER com.brave.Browser
 
 # Better man pages
 set -gx MANROFFOPT "-c"

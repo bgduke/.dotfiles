@@ -6,7 +6,7 @@ local shell
 if is_windows then
 	shell = { "pwsh", "-NoLogo" }
 else
-	shell = { "zsh" }
+	shell = { "fish" }
 end
 
 return {
