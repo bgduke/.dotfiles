@@ -8,7 +8,7 @@ general:
 
   cursor_jump:
     enabled: true
-    trigger: "monitor_focus"
+    trigger: "window_focus"
 
   hide_method: "cloak"
   show_all_in_taskbar: true
@@ -152,21 +152,11 @@ keybindings:
   - commands: ["move --direction down"]
     bindings: ["alt+shift+j", "alt+shift+down"]
 
-  # Resize focused window by a percentage or pixel amount.
-  - commands: ["resize --width -2%"]
-    bindings: ["alt+u"]
-  - commands: ["resize --width +2%"]
-    bindings: ["alt+p"]
-  - commands: ["resize --height +2%"]
-    bindings: ["alt+o"]
-  - commands: ["resize --height -2%"]
-    bindings: ["alt+i"]
-
   # As an alternative to the resize keybindings above, resize mode enables
   # resizing via arrow keys or HJKL. The binding mode is defined above with
   # the name 'resize'.
   - commands: ["wm-enable-binding-mode --name resize"]
-    bindings: ["alt+r"]
+    bindings: ["alt+a"]
 
   # Disables window management and all other keybindings until alt+shift+p
   # is pressed again.
@@ -176,7 +166,7 @@ keybindings:
   # Change tiling direction. This determines where new tiling windows will
   # be inserted.
   - commands: ["toggle-tiling-direction"]
-    bindings: ["alt+v"]
+    bindings: ["alt+b"]
 
   # Change focus from tiling windows -> floating -> fullscreen.
   - commands: ["wm-cycle-focus"]
@@ -192,7 +182,7 @@ keybindings:
 
   # Change the focused window to be fullscreen.
   - commands: ["toggle-fullscreen"]
-    bindings: ["alt+f"]
+    bindings: ["alt+g"]
 
   # Minimize focused window.
   - commands: ["toggle-minimized"]
@@ -200,7 +190,7 @@ keybindings:
 
   # Close focused window.
   - commands: ["close"]
-    bindings: ["alt+shift+w"]
+    bindings: ["alt+q"]
 
   # Kill GlazeWM process safely.
   # - commands: ["wm-exit"]
@@ -208,7 +198,7 @@ keybindings:
 
   # Re-evaluate configuration file.
   - commands: ["wm-reload-config"]
-    bindings: ["alt+shift+r"]
+    bindings: ["alt+shift+t"]
 
   # Redraw all windows.
   # - commands: ["wm-redraw"]
@@ -222,7 +212,7 @@ keybindings:
     bindings: ["alt+enter"]
 
   - commands: ["shell-exec explorer"]
-    bindings: ["alt+e"]
+    bindings: ["alt+g"]
 
   # Change focus to a workspace defined in `workspaces` config.
   - commands: ["focus --workspace 1"]

@@ -7937,3 +7937,285 @@ Current thread's C stack trace (most recent call first):
 2026-07-30 12:08:07,573 [INFO] [MainThread] [root/watcher.py:104]: Created file watcher
 2026-07-30 12:08:07,583 [INFO] [MainThread] [root/update_service.py:434]: Background update checker started
 2026-07-30 17:19:36,481 [ERROR] [SystrayHook] [root/app_icons.py:282]: GetIconInfo failed: 0
+2026-07-30 21:25:58,166 [INFO] [MainThread] [root/bar_manager.py:119]: Stopping SystemEventListener...
+2026-07-30 21:25:58,220 [INFO] [MainThread] [taskbar_window_manager/window_manager.py:205]: TaskbarWindowManager stopped
+2026-07-31 09:28:04,274 [INFO] [MainThread] [root/log.py:104]: YASB v2.0.5
+2026-07-31 09:28:04,274 [INFO] [CLIPipeServer] [cli_server/cli_server.py:216]: CLI server started v1.1.7
+2026-07-31 09:28:04,275 [INFO] [MainThread] [cli_server/cli_server.py:106]: Log pipe server started
+2026-07-31 09:28:04,351 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] BarAlignment: 'center' - Use 'align' instead.
+2026-07-31 09:28:04,351 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] BarBlurEffect: 'acrylic' - No longer supported and can be removed from the config.
+2026-07-31 09:28:04,438 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] GlazewmWorkspacesConfig: 'hide_empty_workspaces' - No longer supported and can be removed from the config.
+2026-07-31 09:28:04,438 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] GlazewmWorkspacesConfig: 'btn_shadow' - Use CSS box-shadow instead.
+2026-07-31 09:28:04,438 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] GlazewmWorkspacesConfig: 'animation' - Use CSS animations instead.
+2026-07-31 09:28:04,510 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] GlazewmTilingDirectionConfig: 'btn_shadow' - Use CSS box-shadow instead.
+2026-07-31 09:28:04,632 [INFO] [SystrayHook] [systray_hook/systray_hook.py:193]: Injecting into Explorer (PID: 6832)
+2026-07-31 09:28:04,633 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] MediaWidgetConfig: 'label_shadow' - Use CSS text-shadow instead.
+2026-07-31 09:28:04,651 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] LanguageConfig: 'label_shadow' - Use CSS text-shadow instead.
+2026-07-31 09:28:04,657 [WARNING] [MainThread] [deprecation/deprecation.py:140]: [DEPRECATED] VolumeConfig: 'volume_icons' renamed to 'icons' - Use 'icons' with the dictionary format instead.
+2026-07-31 09:28:04,657 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] VolumeConfig: 'label_shadow' - Use CSS text-shadow instead.
+2026-07-31 09:28:04,665 [INFO] [MainThread] [root/service.py:52]: AudioOutputService starting...
+2026-07-31 09:28:04,696 [INFO] [MainThread] [root/service.py:41]: AudioInputService starting...
+2026-07-31 09:28:05,042 [INFO] [MainThread] [taskbar_window_manager/window_manager.py:178]: TaskbarWindowManager is starting...
+2026-07-31 09:28:05,045 [INFO] [MainThread] [root/bar_manager.py:103]: Starting SystemEventListener...
+2026-07-31 09:28:05,046 [INFO] [MainThread] [root/watcher.py:65]: Watching directory: c:\users\breno duque\.config\yasb
+2026-07-31 09:28:05,046 [INFO] [MainThread] [root/watcher.py:104]: Created file watcher
+2026-07-31 09:28:05,066 [INFO] [MainThread] [root/update_service.py:434]: Background update checker started
+2026-07-31 14:38:24,634 [ERROR] [MainThread] [MediaWidget/media.py:751]: Error updating popup content: wrapped C/C++ object of type QLabel has been deleted
+Windows fatal exception: code 0x8001010e
+
+Thread 0x00004318 [Thread-6] (most recent call first):
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 369 in wait
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\queue.py", line 199 in get
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\watchdog\observers\api.py", line 379 in dispatch_events
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\watchdog\observers\api.py", line 213 in run
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1082 in _bootstrap_inner
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1044 in _bootstrap
+
+Thread 0x00004340 [Thread-7] (most recent call first):
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\watchdog\observers\winapi.py", line 326 in read_directory_changes
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\watchdog\observers\winapi.py", line 380 in read_events
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\watchdog\observers\read_directory_changes.py", line 67 in _read_events
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\watchdog\observers\read_directory_changes.py", line 70 in queue_events
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\watchdog\observers\api.py", line 158 in run
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1082 in _bootstrap_inner
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1044 in _bootstrap
+
+Thread 0x00004334 [SystemEventListener] (most recent call first):
+  File "D:\a\yasb\yasb\src\core\utils\win32\event_listener.py", line 69 in run
+
+Thread 0x00004314 [SystrayHook] (most recent call first):
+  File "D:\a\yasb\yasb\src\core\widgets\services\systray\systray_hook.py", line 247 in run
+  File "D:\a\yasb\yasb\src\core\widgets\yasb\systray.py", line 79 in run
+
+Thread 0x000040bc [_EventWorker] (most recent call first):
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\qasync\_windows.py", line 147 in _poll
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\qasync\_windows.py", line 72 in select
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\qasync\_windows.py", line 199 in run
+
+Thread 0x00004384 [LogPipeServer] (most recent call first):
+  File "D:\a\yasb\yasb\src\core\utils\win32\bindings\kernel32.py", line 288 in ConnectNamedPipe
+  File "D:\a\yasb\yasb\src\core\utils\cli_server.py", line 138 in _run_server
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1024 in run
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1082 in _bootstrap_inner
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1044 in _bootstrap
+
+Thread 0x00004380 [CLIPipeServer] (most recent call first):
+  File "D:\a\yasb\yasb\src\core\utils\win32\bindings\kernel32.py", line 288 in ConnectNamedPipe
+  File "D:\a\yasb\yasb\src\core\utils\cli_server.py", line 235 in _run_server
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1024 in run
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1082 in _bootstrap_inner
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1044 in _bootstrap
+
+Current thread 0x00003d30 (most recent call first):
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\asyncio\events.py", line 94 in _run
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\qasync\__init__.py", line 307 in timerEvent
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\qasync\__init__.py", line 404 in run_forever
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\qasync\__init__.py", line 428 in run_until_complete
+  File "main.py", line 100 in main
+  File "main.py", line 203 in <module>
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\freeze_core\initscripts\console.py", line 27 in run
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\freeze_core\initscripts\__startup__.py", line 137 in run
+
+Current thread's C stack trace (most recent call first):
+  <cannot get C stack on this system>
+Windows fatal exception: code 0x8001010e
+
+Thread 0x00004318 [Thread-6] (most recent call first):
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 369 in wait
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\queue.py", line 199 in get
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\watchdog\observers\api.py", line 379 in dispatch_events
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\watchdog\observers\api.py", line 213 in run
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1082 in _bootstrap_inner
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1044 in _bootstrap
+
+Thread 0x00004340 [Thread-7] (most recent call first):
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\watchdog\observers\winapi.py", line 326 in read_directory_changes
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\watchdog\observers\winapi.py", line 380 in read_events
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\watchdog\observers\read_directory_changes.py", line 67 in _read_events
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\watchdog\observers\read_directory_changes.py", line 70 in queue_events
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\watchdog\observers\api.py", line 158 in run
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1082 in _bootstrap_inner
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1044 in _bootstrap
+
+Thread 0x00004334 [SystemEventListener] (most recent call first):
+  File "D:\a\yasb\yasb\src\core\utils\win32\event_listener.py", line 69 in run
+
+Thread 0x00004314 [SystrayHook] (most recent call first):
+  File "D:\a\yasb\yasb\src\core\widgets\services\systray\systray_hook.py", line 247 in run
+  File "D:\a\yasb\yasb\src\core\widgets\yasb\systray.py", line 79 in run
+
+Thread 0x000040bc [_EventWorker] (most recent call first):
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\qasync\_windows.py", line 147 in _poll
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\qasync\_windows.py", line 72 in select
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\qasync\_windows.py", line 199 in run
+
+Thread 0x00004384 [LogPipeServer] (most recent call first):
+  File "D:\a\yasb\yasb\src\core\utils\win32\bindings\kernel32.py", line 288 in ConnectNamedPipe
+  File "D:\a\yasb\yasb\src\core\utils\cli_server.py", line 138 in _run_server
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1024 in run
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1082 in _bootstrap_inner
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1044 in _bootstrap
+
+Thread 0x00004380 [CLIPipeServer] (most recent call first):
+  File "D:\a\yasb\yasb\src\core\utils\win32\bindings\kernel32.py", line 288 in ConnectNamedPipe
+  File "D:\a\yasb\yasb\src\core\utils\cli_server.py", line 235 in _run_server
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1024 in run
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1082 in _bootstrap_inner
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1044 in _bootstrap
+
+Current thread 0x00003d30 (most recent call first):
+  File "D:\a\yasb\yasb\src\core\widgets\services\media\media.py", line 172 in _on_current_session_changed
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\asyncio\events.py", line 94 in _run
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\qasync\__init__.py", line 307 in timerEvent
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\qasync\__init__.py", line 404 in run_forever
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\qasync\__init__.py", line 428 in run_until_complete
+  File "main.py", line 100 in main
+  File "main.py", line 203 in <module>
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\freeze_core\initscripts\console.py", line 27 in run
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\freeze_core\initscripts\__startup__.py", line 137 in run
+
+Current thread's C stack trace (most recent call first):
+  <cannot get C stack on this system>
+Windows fatal exception: code 0x8001010e
+
+Thread 0x00004318 [Thread-6] (most recent call first):
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 369 in wait
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\queue.py", line 199 in get
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\watchdog\observers\api.py", line 379 in dispatch_events
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\watchdog\observers\api.py", line 213 in run
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1082 in _bootstrap_inner
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1044 in _bootstrap
+
+Thread 0x00004340 [Thread-7] (most recent call first):
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\watchdog\observers\winapi.py", line 326 in read_directory_changes
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\watchdog\observers\winapi.py", line 380 in read_events
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\watchdog\observers\read_directory_changes.py", line 67 in _read_events
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\watchdog\observers\read_directory_changes.py", line 70 in queue_events
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\watchdog\observers\api.py", line 158 in run
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1082 in _bootstrap_inner
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1044 in _bootstrap
+
+Thread 0x00004334 [SystemEventListener] (most recent call first):
+  File "D:\a\yasb\yasb\src\core\utils\win32\event_listener.py", line 69 in run
+
+Thread 0x00004314 [SystrayHook] (most recent call first):
+  File "D:\a\yasb\yasb\src\core\widgets\services\systray\systray_hook.py", line 247 in run
+  File "D:\a\yasb\yasb\src\core\widgets\yasb\systray.py", line 79 in run
+
+Thread 0x000040bc [_EventWorker] (most recent call first):
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\qasync\_windows.py", line 147 in _poll
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\qasync\_windows.py", line 72 in select
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\qasync\_windows.py", line 199 in run
+
+Thread 0x00004384 [LogPipeServer] (most recent call first):
+  File "D:\a\yasb\yasb\src\core\utils\win32\bindings\kernel32.py", line 288 in ConnectNamedPipe
+  File "D:\a\yasb\yasb\src\core\utils\cli_server.py", line 138 in _run_server
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1024 in run
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1082 in _bootstrap_inner
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1044 in _bootstrap
+
+Thread 0x00004380 [CLIPipeServer] (most recent call first):
+  File "D:\a\yasb\yasb\src\core\utils\win32\bindings\kernel32.py", line 288 in ConnectNamedPipe
+  File "D:\a\yasb\yasb\src\core\utils\cli_server.py", line 235 in _run_server
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1024 in run
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1082 in _bootstrap_inner
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1044 in _bootstrap
+
+Current thread 0x00003d30 (most recent call first):
+  File "D:\a\yasb\yasb\src\core\widgets\services\media\media.py", line 172 in _on_current_session_changed
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\asyncio\events.py", line 94 in _run
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\qasync\__init__.py", line 307 in timerEvent
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\qasync\__init__.py", line 404 in run_forever
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\qasync\__init__.py", line 428 in run_until_complete
+  File "main.py", line 100 in main
+  File "main.py", line 203 in <module>
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\freeze_core\initscripts\console.py", line 27 in run
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\freeze_core\initscripts\__startup__.py", line 137 in run
+
+Current thread's C stack trace (most recent call first):
+  <cannot get C stack on this system>
+Windows fatal exception: code 0x8001010e
+
+Thread 0x00004318 [Thread-6] (most recent call first):
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 369 in wait
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\queue.py", line 199 in get
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\watchdog\observers\api.py", line 379 in dispatch_events
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\watchdog\observers\api.py", line 213 in run
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1082 in _bootstrap_inner
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1044 in _bootstrap
+
+Thread 0x00004340 [Thread-7] (most recent call first):
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\watchdog\observers\winapi.py", line 326 in read_directory_changes
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\watchdog\observers\winapi.py", line 380 in read_events
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\watchdog\observers\read_directory_changes.py", line 67 in _read_events
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\watchdog\observers\read_directory_changes.py", line 70 in queue_events
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\watchdog\observers\api.py", line 158 in run
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1082 in _bootstrap_inner
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1044 in _bootstrap
+
+Thread 0x00004334 [SystemEventListener] (most recent call first):
+  File "D:\a\yasb\yasb\src\core\utils\win32\event_listener.py", line 69 in run
+
+Thread 0x00004314 [SystrayHook] (most recent call first):
+  File "D:\a\yasb\yasb\src\core\widgets\services\systray\systray_hook.py", line 247 in run
+  File "D:\a\yasb\yasb\src\core\widgets\yasb\systray.py", line 79 in run
+
+Thread 0x000040bc [_EventWorker] (most recent call first):
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\qasync\_windows.py", line 147 in _poll
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\qasync\_windows.py", line 72 in select
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\qasync\_windows.py", line 199 in run
+
+Thread 0x00004384 [LogPipeServer] (most recent call first):
+  File "D:\a\yasb\yasb\src\core\utils\win32\bindings\kernel32.py", line 288 in ConnectNamedPipe
+  File "D:\a\yasb\yasb\src\core\utils\cli_server.py", line 138 in _run_server
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1024 in run
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1082 in _bootstrap_inner
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1044 in _bootstrap
+
+Thread 0x00004380 [CLIPipeServer] (most recent call first):
+  File "D:\a\yasb\yasb\src\core\utils\win32\bindings\kernel32.py", line 288 in ConnectNamedPipe
+  File "D:\a\yasb\yasb\src\core\utils\cli_server.py", line 235 in _run_server
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1024 in run
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1082 in _bootstrap_inner
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\threading.py", line 1044 in _bootstrap
+
+Current thread 0x00003d30 (most recent call first):
+  File "C:\hostedtoolcache\windows\Python\3.14.6\x64\Lib\asyncio\events.py", line 94 in _run
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\qasync\__init__.py", line 307 in timerEvent
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\qasync\__init__.py", line 404 in run_forever
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\qasync\__init__.py", line 428 in run_until_complete
+  File "main.py", line 100 in main
+  File "main.py", line 203 in <module>
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\freeze_core\initscripts\console.py", line 27 in run
+  File "D:\a\yasb\yasb\venv\Lib\site-packages\freeze_core\initscripts\__startup__.py", line 137 in run
+
+Current thread's C stack trace (most recent call first):
+  <cannot get C stack on this system>
+2026-08-01 00:39:53,627 [INFO] [MainThread] [root/bar_manager.py:119]: Stopping SystemEventListener...
+2026-08-01 00:39:53,680 [INFO] [MainThread] [taskbar_window_manager/window_manager.py:205]: TaskbarWindowManager stopped
+2026-08-03 10:01:21,065 [INFO] [MainThread] [root/log.py:104]: YASB v2.0.5
+2026-08-03 10:01:21,066 [INFO] [CLIPipeServer] [cli_server/cli_server.py:216]: CLI server started v1.1.7
+2026-08-03 10:01:21,066 [INFO] [MainThread] [cli_server/cli_server.py:106]: Log pipe server started
+2026-08-03 10:01:21,159 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] BarAlignment: 'center' - Use 'align' instead.
+2026-08-03 10:01:21,159 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] BarBlurEffect: 'acrylic' - No longer supported and can be removed from the config.
+2026-08-03 10:01:21,252 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] GlazewmWorkspacesConfig: 'hide_empty_workspaces' - No longer supported and can be removed from the config.
+2026-08-03 10:01:21,252 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] GlazewmWorkspacesConfig: 'btn_shadow' - Use CSS box-shadow instead.
+2026-08-03 10:01:21,252 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] GlazewmWorkspacesConfig: 'animation' - Use CSS animations instead.
+2026-08-03 10:01:21,289 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] GlazewmTilingDirectionConfig: 'btn_shadow' - Use CSS box-shadow instead.
+2026-08-03 10:01:21,412 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] MediaWidgetConfig: 'label_shadow' - Use CSS text-shadow instead.
+2026-08-03 10:01:21,427 [INFO] [SystrayHook] [systray_hook/systray_hook.py:193]: Injecting into Explorer (PID: 10516)
+2026-08-03 10:01:21,432 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] LanguageConfig: 'label_shadow' - Use CSS text-shadow instead.
+2026-08-03 10:01:21,438 [WARNING] [MainThread] [deprecation/deprecation.py:140]: [DEPRECATED] VolumeConfig: 'volume_icons' renamed to 'icons' - Use 'icons' with the dictionary format instead.
+2026-08-03 10:01:21,438 [WARNING] [MainThread] [deprecation/deprecation.py:136]: [DEPRECATED] VolumeConfig: 'label_shadow' - Use CSS text-shadow instead.
+2026-08-03 10:01:21,446 [INFO] [MainThread] [root/service.py:52]: AudioOutputService starting...
+2026-08-03 10:01:21,483 [INFO] [MainThread] [root/service.py:41]: AudioInputService starting...
+2026-08-03 10:01:21,840 [INFO] [MainThread] [taskbar_window_manager/window_manager.py:178]: TaskbarWindowManager is starting...
+2026-08-03 10:01:21,842 [INFO] [MainThread] [root/bar_manager.py:103]: Starting SystemEventListener...
+2026-08-03 10:01:21,843 [INFO] [MainThread] [root/watcher.py:65]: Watching directory: c:\users\breno duque\.config\yasb
+2026-08-03 10:01:21,844 [INFO] [MainThread] [root/watcher.py:104]: Created file watcher
+2026-08-03 10:01:21,866 [INFO] [MainThread] [root/update_service.py:434]: Background update checker started
+2026-08-03 10:05:34,347 [INFO] [MainThread] [root/log.py:104]: YASB v2.0.5
+2026-08-03 10:05:34,347 [INFO] [CLIPipeServer] [cli_server/cli_server.py:216]: CLI server started v1.1.7
+2026-08-03 10:05:34,347 [INFO] [MainThread] [cli_server/cli_server.py:106]: Log pipe server started
+2026-08-03 10:05:34,347 [ERROR] [MainThread] [root/main.py:77]: Another instance of the YASB is already running.
+2026-08-03 10:20:12,528 [INFO] [MainThread] [root/utils.py:464]: YASB added to startup
