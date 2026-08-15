@@ -50,7 +50,8 @@ return {
 
 	-- Scrolling
 	scrollback_lines = 10000,
-	mouse_wheel_scrolls_tabs = false,
+	mouse_wheel_scrolls_tabs = true,
+    enable_scroll_bar = true,
 
 	-- Confirm close
 	window_close_confirmation = "NeverPrompt",
