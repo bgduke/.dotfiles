@@ -2,12 +2,12 @@
 size = 11.0
 
 [font.normal]
-family = "IosevkaTerm Nerd Font"
+family = "ZedMono Nerd Font"
 
 [window]
 dimensions = { columns = 120, lines = 32 }
 padding = { x = 5, y = 5 }
-decorations = "None"
+decorations = "Full"
 
 [scrolling]
 history = 10000
